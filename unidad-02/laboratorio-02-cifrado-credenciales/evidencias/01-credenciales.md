@@ -1,19 +1,19 @@
-#  01 — Protección de credenciales
+# 01 — Protección de credenciales
 
 ## Objetivo
 
-Demostrar por qué no se deben guardar contraseñas en texto claro y cómo protegerlas con hash y sal usando la extensión `pgcrypto` de PostgreSQL 16.
+Demostrar por qué no se deben guardar contraseñas directamente en la base de datos y cómo protegerlas usando hash y sal con `pgcrypto` de PostgreSQL 16.
 
 ## Comando o procedimiento
 
-Los comandos completos están en `sql/01-credenciales.sql`. Se ejecutaron uno por uno en pgAdmin (Query Tool) en este orden:
+Los comandos completos están en `sql/01-credenciales.sql`. Los ejecuté uno por uno en pgAdmin (Query Tool) en este orden:
 
-1. Crear la tabla insegura `usuarios_insegura`, insertar a `juan` con `Password123` y consultarla.
-2. Ejecutar dos veces `SELECT crypt('Password123', gen_salt('bf'));` y comparar.
+1. Crear la tabla insegura `usuarios_insegura`, insertar al usuario `juan` con la contraseña `Password123` y consultar la tabla.
+2. Ejecutar dos veces `SELECT crypt('Password123', gen_salt('bf'));` para comparar los resultados.
 3. Crear la tabla segura `usuarios_segura` con la columna `password_hash`.
-4. Insertar a `juan` usando `crypt('Password123', gen_salt('bf'))`.
-5. Consultar `usuarios_segura`.
-6. Verificar la contraseña correcta (`Password123`) y una incorrecta (`OtraPassword`).
+4. Insertar al usuario `juan` usando `crypt('Password123', gen_salt('bf'))`.
+5. Consultar la tabla `usuarios_segura`.
+6. Probar la contraseña correcta (`Password123`) y una incorrecta (`OtraPassword`) para ver qué resultado aparece.
 
 ## Resultado obtenido
 
@@ -23,11 +23,11 @@ Los comandos completos están en `sql/01-credenciales.sql`. Se ejecutaron uno po
 SELECT * FROM usuarios_insegura;
 ```
 
-| id | usuario | password    |
-|----|---------|-------------|
+| id | usuario | password |
+|----|---------|----------|
 | 1  | juan    | Password123 |
 
-La contraseña se ve completa, tal cual.
+La contraseña aparece completa, tal como se guardó.
 
 ### 2. Dos ejecuciones de `crypt()` con `gen_salt('bf')`
 
@@ -35,9 +35,9 @@ La contraseña se ve completa, tal cual.
 SELECT crypt('Password123', gen_salt('bf'));
 ```
 
-Primera ejecución: $2a$06$eNIaBmSlm//dlc/xTRDr1OC.O0aNbkqh7Vz7fGog6Kg9jm432LSBS
+Primera ejecución: `$2a$06$eNIaBmSlm//dlc/xTRDr1OC.O0aNbkqh7Vz7fGog6Kg9jm432LSBS`
 
-Segunda ejecución: $2a$06$TDP/hiFV8dgxF7yShpHRkuhjtihwUgPKNredk9r4TfV9ziKN9dkIm
+Segunda ejecución: `$2a$06$TDP/hiFV8dgxF7yShpHRkuhjtihwUgPKNredk9r4TfV9ziKN9dkIm`
 
 Los dos resultados son diferentes.
 
@@ -47,11 +47,11 @@ Los dos resultados son diferentes.
 SELECT * FROM usuarios_segura;
 ```
 
-| id | usuario | password_hash          |
-|----|---------|------------------------|
-| 1  | juan    | $2a$06$TDP/hiFV8dgxF7yShpHRkuhjtihwUgPKNredk9r4TfV9ziKN9dkIm|
+| id | usuario | password_hash |
+|----|---------|---------------|
+| 1  | juan    | $2a$06$TDP/hiFV8dgxF7yShpHRkuhjtihwUgPKNredk9r4TfV9ziKN9dkIm |
 
-Ya no aparece la contraseña original.
+Ya no aparece la contraseña original, sino el hash que se guardó.
 
 ### 4. Verificación de contraseña
 
@@ -71,43 +71,52 @@ Contraseña incorrecta (`OtraPassword`):
 
 ### ¿Qué ocurriría si una persona obtiene acceso de lectura a `usuarios_insegura`?
 
-Ve la contraseña tal cual (`Password123`) con un simple `SELECT`. No tiene que romper nada ni adivinar nada. Y si se filtra la base, se filtran también las contraseñas de todos los usuarios, que además mucha gente reutiliza en otros sitios.
+Podría ver las contraseñas de los usuarios directamente, sin tener que hacer nada más. Esto es un problema porque, si alguien obtiene la información de la base de datos, también tendría las contraseñas.
 
 ### Preguntas de la sección 7.3
 
 **1. ¿Son iguales?**
-No, los dos resultados salen distintos aunque la contraseña es la misma.
+
+No, los dos resultados son diferentes aunque se usó la misma contraseña.
 
 **2. Si no son iguales, ¿por qué?**
-Porque cada vez que se ejecuta `gen_salt('bf')` se crea una sal aleatoria diferente, y esa sal se mezcla con la contraseña. Sal distinta, hash distinto.
+
+Porque cada vez que se ejecuta `gen_salt()` se genera una sal diferente. Por eso, aunque la contraseña sea la misma, el resultado cambia.
 
 **3. ¿Qué función cumple `gen_salt()`?**
-Genera la sal, que es un valor aleatorio que se mezcla con la contraseña antes de hacerle el hash. También le indica a `crypt()` qué algoritmo usar (`'bf'` es bcrypt).
+
+Sirve para generar una sal aleatoria que se usa al crear el hash de la contraseña.
 
 **4. ¿Qué función cumple `crypt()`?**
-Toma la contraseña y la sal y las combina con el algoritmo para generar el hash. También sirve para verificar contraseñas: si se le pasa el hash guardado como sal, recalcula el hash con la misma sal.
+
+Sirve para generar el hash de una contraseña y también para comprobar si una contraseña es correcta.
 
 **5. ¿Esto es cifrado reversible?**
-No. Es de un solo sentido: del hash no se puede volver a la contraseña original, no existe forma de "descifrarlo".
+
+No, porque no se puede recuperar directamente la contraseña original a partir del hash. Se usa para guardar la contraseña de una forma más segura.
 
 ### Preguntas de la sección 7.5
 
 **1. ¿Qué resultado obtuviste con la contraseña correcta?**
-`true`, porque al recalcular el hash con la misma sal da exactamente el que está guardado.
+
+Me dio `true`, porque la contraseña que escribí coincide con la que se guardó.
 
 **2. ¿Qué resultado obtuviste con la contraseña incorrecta?**
-`false`, porque al ser otra contraseña el hash resultante no coincide con el guardado.
+
+Me dio `false`, porque la contraseña que escribí era diferente a la original.
 
 **3. ¿Por qué no es necesario recuperar la contraseña original?**
-Porque nunca hace falta saber cuál es la contraseña, solo comprobar si la que escribe el usuario es la correcta. Se calcula el hash de lo que escribió, se compara con el guardado y, si coinciden, se permite el acceso.
+
+Porque solo necesitamos comprobar si la contraseña que escribe el usuario es correcta. No hace falta saber cuál era la contraseña original.
 
 **4. ¿Por qué un hash no debe confundirse con cifrado?**
-Porque el cifrado se hace para poder recuperar el dato original usando una clave, y el hash está diseñado justo para que no se pueda recuperar. Son para cosas distintas: cifrado para datos que se necesitan volver a leer (como un RFC) y hash para contraseñas.
+
+Porque el cifrado permite recuperar la información con una clave, mientras que el hash se utiliza para comprobar datos sin tener que recuperar la contraseña original.
 
 ### Consideración para aplicaciones reales
 
-`crypt()` con bcrypt se usó aquí para demostrar el concepto. En una aplicación real se debe usar el algoritmo recomendado actualmente (como Argon2id, scrypt o bcrypt) con las herramientas del framework, sin inventar un algoritmo propio, sin guardar contraseñas en texto claro y sin cifrarlas con una clave fija como si fueran datos recuperables.
+En esta actividad usamos `crypt()` para aprender cómo proteger las contraseñas. En una aplicación real se deben usar métodos seguros y los que recomiende el framework que se esté utilizando. También es importante no guardar contraseñas directamente en la base de datos ni inventar métodos propios para protegerlas.
 
 ## Conclusión
 
-Las contraseñas nunca deben guardarse en texto claro, porque quien lea la tabla las obtiene de inmediato. Lo correcto es guardar un hash con sal: es irreversible, y como la sal es aleatoria, la misma contraseña genera hashes distintos. Para validar un acceso no se recupera la contraseña, se recalcula el hash y se compara. Esto es diferente al cifrado, que sí es reversible y se usa para datos que necesitan recuperarse.
+Con esta actividad aprendí que no es seguro guardar las contraseñas tal cual en una tabla, porque cualquiera que tenga acceso podría verlas. Al usar un hash, la contraseña queda protegida y se puede comprobar si es correcta sin tener que recuperarla. También entendí que la sal hace que una misma contraseña pueda generar resultados diferentes.

@@ -32,7 +32,7 @@ SELECT *
 FROM usuarios_insegura;
 
 
--- Ejecuta este SELECT dos veces y compara:
+-- Ejecute este SELECT dos veces y compare:
 -- la contraseña es la misma, pero el resultado cambia
 -- porque gen_salt('bf') crea una sal aleatoria cada vez
 SELECT crypt('Password123', gen_salt('bf'));
@@ -74,4 +74,17 @@ SELECT
         AS contraseña_correcta
 FROM usuarios_segura
 WHERE usuario = 'juan';
+
+
+
+
+
+
+
+
+
+
+
+
+
 
