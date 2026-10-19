@@ -39,3 +39,4 @@ SELECT pgp_sym_decrypt(
     'CLAVE-DE-PRUEBA'
 )
 FROM clientes_protegidos;
+
