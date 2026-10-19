@@ -30,3 +30,12 @@ SELECT
         'CLAVE-DE-PRUEBA'
     ) AS rfc
 FROM clientes_protegidos;
+
+
+-- Actividad 3: Ejemplo de mala practica
+-- Se utiliza una clave ficticia para demostrar el problema.
+SELECT pgp_sym_decrypt(
+    rfc_cifrado,
+    'CLAVE-DE-PRUEBA'
+)
+FROM clientes_protegidos;
