@@ -19,3 +19,17 @@
 - Es necesario revisar las reglas de `pg_hba.conf`, los permisos de los usuarios y las restricciones del firewall antes de determinar el nivel real de exposición.
 
 **Estado:** revisión inicial registrada. Todavía no se han aplicado cambios de hardening.
+
+## Actividad 2. Archivos de configuración y registros
+
+| Parámetro | Valor inicial |
+|---|---|
+| `config_file` | `C:/Program Files/PostgreSQL/18/data/postgresql.conf` |
+| `hba_file` | `C:/Program Files/PostgreSQL/18/data/pg_hba.conf` |
+| `ident_file` | `C:/Program Files/PostgreSQL/18/data/pg_ident.conf` |
+| `data_directory` | `C:/Program Files/PostgreSQL/18/data` |
+| `log_directory` | `log` |
+| `log_connections` | Valor vacío en `pg_settings`; origen `default` |
+| `log_disconnections` | `off` |
+
+Los archivos de configuración, autenticación y datos se encuentran dentro del directorio de instalación de PostgreSQL. La revisión de los permisos del sistema operativo y de la generación efectiva de registros queda pendiente.

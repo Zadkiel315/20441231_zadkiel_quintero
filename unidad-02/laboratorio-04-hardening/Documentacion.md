@@ -12,3 +12,19 @@
 **¿Por qué conocer la superficie de ataque debe preceder al hardening?**
 
 Porque primero se necesita conocer cómo está configurado el servidor, quién puede conectarse y qué riesgos existen. Así se pueden identificar los puntos débiles y decidir qué cambios son necesarios sin afectar el funcionamiento de la base de datos.
+
+### Actividad 2. Identificar los archivos de configuración
+
+| Elemento | Ruta o valor obtenido | Función |
+|---|---|---|
+| Archivo principal (`config_file`) | `C:/Program Files/PostgreSQL/18/data/postgresql.conf` | Contiene los parámetros generales del servidor. |
+| Archivo de autenticación (`hba_file`) | `C:/Program Files/PostgreSQL/18/data/pg_hba.conf` | Define las reglas que controlan qué conexiones se permiten y cómo se autentican. |
+| Archivo de identificación (`ident_file`) | `C:/Program Files/PostgreSQL/18/data/pg_ident.conf` | Contiene las asignaciones de identificación de usuarios cuando se utiliza este mecanismo. |
+| Directorio de datos (`data_directory`) | `C:/Program Files/PostgreSQL/18/data` | Almacena los datos y otros archivos internos de PostgreSQL. |
+| Directorio de logs (`log_directory`) | `log` | Indica el directorio configurado para los registros del servidor. Al ser una ruta relativa, se interpreta normalmente respecto al directorio de datos. |
+| Registro de conexiones (`log_connections`) | Valor vacío; origen: `default` | El parámetro aparece sin un valor explícito en las consultas realizadas. |
+| Registro de desconexiones (`log_disconnections`) | `off` | Indica que el registro de desconexiones está desactivado. |
+
+**¿Por qué es importante conocer la ubicación física de estos archivos?**
+
+Porque permite localizar y revisar la configuración, las reglas de autenticación, los datos y los registros del servidor. También ayuda a verificar que los archivos estén protegidos contra accesos no autorizados y facilita realizar respaldos, auditorías y cambios de forma segura.
