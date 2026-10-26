@@ -53,3 +53,13 @@ SHOW data_directory;
 SHOW config_file;
 -- Consultar la ruta del archivo de autenticación
 SHOW hba_file;
+
+-- ========================================================================
+-- ACTIVIDAD 13: Revisar exposición de red
+-- ========================================================================
+
+
+-- Dirección de escucha configurada
+SHOW listen_addresses;
+-- Puerto de escucha
+SHOW port;

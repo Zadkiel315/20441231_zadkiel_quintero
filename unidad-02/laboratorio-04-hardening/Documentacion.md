@@ -264,3 +264,19 @@ No se observaron entradas explícitas para `Everyone` o `Users` en los resultado
 Porque `GRANT` y `REVOKE` controlan los privilegios dentro de PostgreSQL, pero no sustituyen los permisos del sistema operativo. Si una persona puede leer archivos sensibles directamente desde Windows, podría obtener información de configuración sin utilizar los permisos normales de la base de datos. Por eso, también es necesario restringir el acceso a los archivos y al directorio de datos.
 
 **Cambios aplicados:** ninguno. Solo se inspeccionaron los permisos existentes.
+
+### Actividad 13. Revisar exposición de red
+
+**Dirección de escucha:**
+- `0.0.0.0`: todas las interfaces IPv4.
+- `::`: todas las interfaces IPv6.
+
+**Puerto:** `5432`.
+
+**Proceso asociado:** PID `8988`.
+
+**¿Está expuesto fuera de la interfaz necesaria?**
+
+Sí, la configuración de escucha permite que PostgreSQL escuche en todas las interfaces IPv4 e IPv6, en lugar de limitarse a la interfaz local. Esto aumenta la superficie potencial de exposición. Sin embargo, el resultado no demuestra por sí solo que el servicio sea accesible desde otros equipos, ya que también depende de las reglas del firewall y de la configuración de red.
+
+**Cambios aplicados:** ninguno; solo se verificó el puerto de escucha.

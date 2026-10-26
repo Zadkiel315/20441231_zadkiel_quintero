@@ -169,3 +169,17 @@ Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicació
 **Observación:** los permisos de los archivos de configuración y del directorio de datos son relevantes para impedir modificaciones o lecturas por usuarios no autorizados. Los resultados no muestran entradas explícitas para `Everyone` o `Users`, pero para evaluar la seguridad completa también deben considerarse las pertenencias a grupos y los permisos efectivos.
 
 **Recomendación:** mantener el acceso limitado a las cuentas que necesitan administrar o ejecutar PostgreSQL. No modificar los permisos sin verificar primero los requisitos del servicio y las cuentas utilizadas por la instalación.
+
+## Actividad 13. Exposición de red
+
+| Elemento | Estado inicial |
+|---|---|
+| Dirección IPv4 de escucha | `0.0.0.0` |
+| Dirección IPv6 de escucha | `::` |
+| Puerto | `5432` |
+| Proceso asociado | PID `8988` |
+| Cambio aplicado | Ninguno; solo se realizó la verificación. |
+
+**Riesgo identificado:** PostgreSQL escucha en todas las interfaces IPv4 e IPv6. Si el firewall y la red permiten conexiones entrantes, podría recibir conexiones desde otros equipos.
+
+**Recomendación:** limitar la escucha a las interfaces necesarias y permitir conexiones entrantes únicamente desde orígenes autorizados. Antes de aplicar cambios, confirmar si el equipo necesita conexiones remotas.
