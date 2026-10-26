@@ -28,3 +28,17 @@ Porque primero se necesita conocer cómo está configurado el servidor, quién p
 **¿Por qué es importante conocer la ubicación física de estos archivos?**
 
 Porque permite localizar y revisar la configuración, las reglas de autenticación, los datos y los registros del servidor. También ayuda a verificar que los archivos estén protegidos contra accesos no autorizados y facilita realizar respaldos, auditorías y cambios de forma segura.
+
+### Actividad 3. Revisar `listen_addresses`
+
+**Configuración encontrada:** `*`, lo que indica que PostgreSQL escucha en todas las interfaces disponibles.
+
+**Interfaces necesarias:** La interfaz local para utilizar PostgreSQL desde pgAdmin en el mismo equipo. Si se necesitan conexiones desde otros equipos, deberán habilitarse únicamente las interfaces privadas necesarias.
+
+**Interfaces innecesarias:** Las interfaces públicas o externas que no se requieran para conexiones autorizadas.
+
+**Comparación de arquitecturas**
+
+La segunda arquitectura reduce mejor la exposición porque mantiene PostgreSQL dentro de una red privada, protegida por un firewall, y evita su acceso directo desde Internet. De esta manera, las conexiones pueden limitarse a los equipos y redes autorizados.
+
+En la primera arquitectura, si el firewall permite conexiones externas al puerto 5432, el servidor podría recibir intentos de conexión desde Internet. Por eso, también deben revisarse las reglas del firewall y de `pg_hba.conf`.

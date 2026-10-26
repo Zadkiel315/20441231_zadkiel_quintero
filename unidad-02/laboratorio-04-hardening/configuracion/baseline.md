@@ -33,3 +33,14 @@
 | `log_disconnections` | `off` |
 
 Los archivos de configuración, autenticación y datos se encuentran dentro del directorio de instalación de PostgreSQL. La revisión de los permisos del sistema operativo y de la generación efectiva de registros queda pendiente.
+
+### Actividad 3. Configuración de interfaces de escucha
+
+| Parámetro | Estado inicial |
+|---|---|
+| `listen_addresses` | `*` |
+| Alcance configurado | Todas las interfaces disponibles |
+| Riesgo identificado | Podría aceptar conexiones por interfaces innecesarias, según las reglas de red y autenticación. |
+| Cambio aplicado | Ninguno; solo se revisó la configuración. |
+
+Se recomienda limitar las interfaces de escucha a las necesarias para el uso previsto del servidor, después de confirmar si requiere conexiones desde otros equipos.
