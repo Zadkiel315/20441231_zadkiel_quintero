@@ -194,3 +194,18 @@ Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicació
 **Estado:** política propuesta, no implementada.
 
 **Justificación:** restringir el acceso de red al servidor PostgreSQL a la red DBA autorizada y bloquear los demás orígenes. Esta política debe complementarse con las reglas de autenticación de `pg_hba.conf`.
+
+## Actividad 15. Configuración TLS
+
+| Parámetro | Estado inicial |
+|---|---|
+| `ssl` | `off` |
+| `ssl_min_protocol_version` | `TLSv1.2` |
+| Conexión actual cifrada con TLS | No (`ssl = false`) |
+| Versión negociada | `NULL` |
+| Cipher | `NULL` |
+| Cambios aplicados | Ninguno; solo se verificó la configuración. |
+
+**Riesgo identificado:** la conexión actual con PostgreSQL no utiliza TLS. Si se transmiten datos por una red no confiable, estos podrían quedar expuestos al no estar protegidos por TLS.
+
+**Recomendación:** evaluar la habilitación de TLS y la configuración de certificados del servidor, y verificar que los clientes puedan conectarse de forma cifrada. Después de cualquier cambio, debe comprobarse nuevamente el estado de TLS en una conexión real.

@@ -73,3 +73,22 @@ SHOW port;
 -- Acción: permitir conexiones desde la red DBA.
 -- Acción: denegar conexiones desde cualquier otro origen.
 -- NOTA: política conceptual; no se modificó ningún firewall.
+
+
+-- ========================================================================
+-- ACTIVIDAD 15: Verificar si mi conexión actual utiliza TLS/SSL
+-- ========================================================================
+-- Con esta consulta reviso si mis datos viajan encriptados de forma segura
+-- o en texto plano entre mi computadora y el servidor de PostgreSQL.
+
+SELECT
+    a.pid,        
+    a.usename,     
+    a.client_addr, 
+    s.ssl,        
+    s.version,    
+    s.cipher       
+FROM pg_stat_activity AS a
+JOIN pg_stat_ssl AS s
+    ON a.pid = s.pid
+WHERE a.pid = pg_backend_pid(); 

@@ -303,3 +303,21 @@ El firewall controla el tráfico de red que puede llegar al servidor, permitiend
 Por lo tanto, ambos controles se complementan: el firewall reduce el acceso de red al servidor y `pg_hba.conf` restringe qué conexiones acepta PostgreSQL. Ninguno sustituye al otro.
 
 **Cambios aplicados:** ninguno. La política es conceptual y no se modificó ningún firewall.
+
+### Actividad 15. Revisar TLS
+
+**Configuración del servidor (`ssl`):** `off`.
+
+**Versión mínima del protocolo (`ssl_min_protocol_version`):** `TLSv1.2`.
+
+**¿La conexión actual utiliza TLS?** No. La columna `ssl` devuelve `false`.
+
+**Versión:** No aplica; el resultado es `NULL` porque la conexión actual no utiliza TLS.
+
+**Cipher:** No aplica; el resultado es `NULL` porque no se negoció un cifrado TLS para esta conexión.
+
+**Relación con LAB-02 y LAB-04**
+
+En LAB-02 se estudió el cifrado y TLS. En LAB-04 se verifica cómo se integra en la configuración del servidor y de los clientes. En este entorno, el servidor tiene `ssl = off` y la conexión actual no está cifrada mediante TLS. Aunque se configura `TLSv1.2` como versión mínima, este parámetro no habilita TLS por sí solo.
+
+**Cambios aplicados:** ninguno; solo se verificó la configuración.
