@@ -108,3 +108,41 @@ La cuenta específica que necesita conectarse, con los privilegios mínimos nece
 `host    nombre_bd    usuario_app    IP_O_RED_AUTORIZADA    scram-sha-256`
 
 Esta regla es conceptual: los valores `nombre_bd`, `usuario_app` e `IP_O_RED_AUTORIZADA` deben sustituirse por los datos reales antes de aplicarla.
+
+### Actividad 6. Aplicar mínimo privilegio a conexiones
+
+**Regla propuesta:**
+
+`host    db_20441231_zadkiel_quintero    usuario_app    127.0.0.1/32    scram-sha-256`
+
+**Base de datos:** `db_20441231_zadkiel_quintero`, que corresponde a la base de datos identificada durante la inspección inicial.
+
+**Usuario:** `usuario_app`, como nombre conceptual para una cuenta específica de aplicación. Su existencia debe confirmarse antes de utilizar la regla.
+
+**Origen:** `127.0.0.1/32`, que limita las conexiones IPv4 al propio equipo.
+
+**Método de autenticación:** `scram-sha-256`.
+
+La regla propuesta limita el acceso a una base de datos específica, un usuario determinado y una dirección de origen concreta. Esto reduce la exposición frente a una regla que permita todas las bases de datos, todos los usuarios y cualquier dirección IPv4.
+
+La regla es una propuesta conceptual y no se ha aplicado. Antes de implementarla, se debe confirmar que la cuenta de aplicación existe y que necesita conectarse mediante TCP/IP. Si no se requieren conexiones remotas, no es necesario habilitar una red externa.
+
+### Actividad 7. Revisar autenticación
+
+**Configuración encontrada:** `password_encryption = scram-sha-256`.
+
+**1. ¿Qué diferencia existe entre autenticación y autorización?**
+
+La autenticación verifica la identidad del usuario que intenta conectarse a PostgreSQL. La autorización determina qué acciones puede realizar ese usuario según los permisos que tenga asignados.
+
+**2. ¿Qué protege `scram-sha-256`?**
+
+Protege el proceso de autenticación mediante un mecanismo de desafío y respuesta basado en SHA-256, evitando que la contraseña se envíe directamente como texto plano durante el proceso normal de autenticación. Además, permite almacenar un verificador de contraseña en lugar de la contraseña original.
+
+**3. ¿Por qué una contraseña almacenada mediante un mecanismo de autenticación no debe confundirse con cifrado reversible?**
+
+Porque el verificador de contraseña no está diseñado para descifrarse y recuperar la contraseña original. Se utiliza para comprobar las credenciales mediante cálculos criptográficos, a diferencia del cifrado reversible, que permite recuperar los datos originales con la clave correspondiente.
+
+**4. ¿Qué sucede si una cuenta tiene permisos excesivos aunque utilice una contraseña fuerte?**
+
+Si la cuenta es comprometida, un atacante podría aprovechar todos los privilegios que tenga asignados. Por ello, una contraseña fuerte debe complementarse con el principio de mínimo privilegio, otorgando únicamente los permisos necesarios para las funciones de cada usuario.
