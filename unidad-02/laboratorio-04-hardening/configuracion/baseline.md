@@ -141,3 +141,18 @@ Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicació
 **Riesgo y recomendación:** no se identificó un riesgo únicamente por la presencia de estas extensiones. Se recomienda comprobar cuáles son necesarias para las aplicaciones y prácticas antes de considerar cualquier modificación.
 
 **Estado:** extensiones identificadas. No se ha eliminado ni modificado ninguna.
+
+## Actividad 11. Configuración relacionada con conexiones
+
+| Parámetro | Valor inicial | Observación |
+|---|---|---|
+| `max_connections` | `100` | Permite hasta 100 conexiones simultáneas, sujeto a las conexiones reservadas. |
+| `superuser_reserved_connections` | `3` | Reserva tres conexiones para superusuarios. |
+| `statement_timeout` | `0` | No se establece un límite de tiempo para ejecutar instrucciones SQL. |
+| `idle_in_transaction_session_timeout` | `0` | No se establece un límite para sesiones inactivas dentro de una transacción abierta. |
+
+**Riesgo identificado:** al no existir límites de tiempo para las instrucciones SQL ni para las sesiones inactivas dentro de una transacción, algunas conexiones podrían permanecer ocupadas durante periodos prolongados.
+
+**Recomendación:** evaluar límites de tiempo adecuados según las necesidades de las aplicaciones y del entorno, evitando interrumpir operaciones legítimas.
+
+**Estado:** configuración inicial registrada. No se han aplicado cambios.

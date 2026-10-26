@@ -218,3 +218,18 @@ Se consultaron las extensiones instaladas en PostgreSQL mediante la vista `pg_ex
 La presencia de una extensión no significa que sea insegura. El hardening consiste en habilitar únicamente la funcionalidad necesaria para el propósito del sistema.
 
 **Cambios aplicados:** ninguno; solo se realizó una consulta de inspección.
+
+### Actividad 11. Revisar configuración relacionada con conexiones
+
+Se consultaron los parámetros de PostgreSQL relacionados con el número de conexiones y los tiempos límite.
+
+| Parámetro | Valor actual | Función |
+|---|---|---|
+| `max_connections` | `100` | Establece el máximo de conexiones simultáneas permitidas al servidor. |
+| `superuser_reserved_connections` | `3` | Reserva tres conexiones para que los superusuarios puedan acceder cuando se alcanza el límite de conexiones ordinarias. |
+| `statement_timeout` | `0` | No establece un límite de tiempo para la ejecución de instrucciones SQL. |
+| `idle_in_transaction_session_timeout` | `0` | No establece un límite de tiempo para sesiones inactivas que mantienen una transacción abierta. |
+
+**Pregunta: ¿Por qué mantener conexiones indefinidamente abiertas puede representar un problema de disponibilidad o consumo de recursos?**
+
+Porque cada conexión consume recursos del servidor, como memoria y procesos de trabajo. Si muchas conexiones permanecen abiertas sin utilizarse, pueden agotarse las conexiones disponibles e impedir que otros usuarios o aplicaciones accedan al sistema. Además, las transacciones abiertas durante mucho tiempo pueden dificultar el mantenimiento de la base de datos.
