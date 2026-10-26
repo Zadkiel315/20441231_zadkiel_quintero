@@ -326,46 +326,62 @@ En LAB-02 se estudió el cifrado y TLS. En LAB-04 se verifica cómo se integra e
 
 | Control | Antes | Después | Justificación |
 |---|---|---|---|
-| `listen_addresses` | `*` | `*` (sin cambios) | PostgreSQL escucha en todas las interfaces; conviene limitarlo a las necesarias. |
-| `pg_hba.conf` | Reglas locales IPv4 e IPv6 y reglas de replicación; autenticación `scram-sha-256`. | Sin cambios; no se modificó el archivo. | Las reglas observadas limitan las conexiones TCP a loopback, pero permiten cualquier usuario y base de datos en esas reglas. |
-| Método de autenticación | `scram-sha-256` | Sin cambios | Es un método de autenticación robusto; debe combinarse con restricciones de acceso y privilegios mínimos. |
-| Usuarios administrativos | `postgres` tiene `LOGIN`, `SUPERUSER`, `CREATEROLE` y `CREATEDB`. | Sin cambios | Se recomienda reservar la cuenta administrativa para tareas que requieren esos privilegios. |
-| Cuentas de aplicación | No se confirmó una cuenta específica para aplicaciones; `APP` se propuso conceptualmente. | Sin cambios; no se creó ninguna cuenta. | Una cuenta de aplicación debe tener solo los permisos necesarios. |
-| Puerto | `5432` | `5432` (sin cambios) | Es el puerto configurado para PostgreSQL; el acceso debe restringirse según las necesidades. |
-| TLS | `ssl = off`; la conexión actual devuelve `ssl = false`. | Sin cambios | Se debe evaluar la habilitación de TLS y verificar las conexiones cifradas. |
-| Permisos SO | Archivos de configuración con control total para Administradores, SYSTEM, usuario de Windows y NETWORK SERVICE. | Sin cambios | Los permisos deben limitarse a las cuentas que necesitan acceder a los archivos. |
-| Extensiones | `pgcrypto` 1.4 y `plpgsql` 1.0. | Sin cambios | Se debe confirmar cuáles son necesarias; no se eliminó ninguna extensión. |
-| Conexiones | `max_connections = 100`; 3 reservadas para superusuarios; ambos tiempos de espera consultados están en `0`. | Sin cambios | Conviene evaluar límites de tiempo adecuados para reducir conexiones ocupadas durante periodos prolongados. |
+| `listen_addresses` | `*` | `localhost` | Limita la escucha de PostgreSQL a las interfaces locales necesarias para el uso desde el mismo equipo. |
+| `pg_hba.conf` | Reglas locales y de loopback IPv4/IPv6, con autenticación `scram-sha-256`. | Sin cambios; se mantienen las reglas locales con `scram-sha-256`. | Las reglas existentes restringen las conexiones TCP a loopback; no se modificó este archivo. |
+| Método de autenticación | `password_encryption = scram-sha-256` | Sin cambios; permanece `scram-sha-256`. | Mantiene un método robusto para la autenticación mediante contraseña. |
+| Usuario administrativo | `postgres` con privilegios de superusuario. | Sin cambios en sus atributos administrativos. | Se conserva la cuenta administrativa para las tareas que requieren privilegios elevados. |
+| Rol `analista` | Existía, pero no podía iniciar sesión (`LOGIN` deshabilitado). | `LOGIN` habilitado, sin privilegios de superusuario, creación de roles ni creación de bases de datos. | Permite separar las consultas de análisis de las tareas administrativas. |
+| Puerto | `5432` | `5432` | Se conserva el puerto configurado para PostgreSQL. |
+| TLS | `ssl = off` | Sin cambios; continúa desactivado. | Se documenta el estado real del cifrado TLS. La necesidad de habilitarlo depende de los requisitos y del entorno. |
+| Permisos del sistema operativo | Permisos revisados mediante `icacls`; no se modificaron. | Sin cambios. | Se inspeccionaron los permisos, pero no se aplicó una modificación en Windows. |
+| Extensiones | `pgcrypto` 1.4 y `plpgsql` 1.0. | Sin cambios; ambas permanecen instaladas. | No se eliminó ninguna extensión porque no se confirmó que fuera innecesaria. |
+| `log_connections` | Efectivamente desactivado. | `on`. | Permite registrar eventos relacionados con las conexiones. |
+| `log_disconnections` | `off`. | `on`. | Permite registrar eventos de desconexión. |
+| `statement_timeout` | `0`, sin límite global. | `60s`. | Limita la duración de las consultas para reducir el riesgo de ejecuciones prolongadas. |
+| `idle_in_transaction_session_timeout` | `0`, sin límite. | `5min`. | Evita que las sesiones mantengan transacciones abiertas mientras permanecen inactivas durante periodos prolongados. |
+| `log_min_duration_statement` | `-1`, registro de duración desactivado. | `1000ms` (1 segundo). | Registra las consultas cuya duración alcanza o supera el umbral configurado. |
+| Permiso `CONNECT` de `PUBLIC` | `PUBLIC` podía conectarse a la base de datos. | Se revocó `CONNECT` a `PUBLIC` y se concedió explícitamente a `postgres` y `analista`. | Restringe el permiso general de conexión y conserva el acceso de los roles necesarios. |
 
-**Resultado de la comparación:** durante las actividades documentadas se inspeccionó la configuración y se identificaron riesgos y recomendaciones, pero no se aplicaron cambios de hardening. Por tanto, el estado posterior registrado permanece igual al inicial. Esta comparación no demuestra que los controles hayan sido endurecidos; documenta el estado actual y las medidas pendientes.
+**Resultado de la comparación:**
+
+Se aplicaron y verificaron varios cambios de hardening en PostgreSQL. Se restringieron las interfaces de escucha, se habilitaron los registros de conexiones y desconexiones, se establecieron límites de tiempo, se habilitó el inicio de sesión del rol `analista`, se activó el registro de consultas lentas y se restringió el permiso general de conexión de `PUBLIC`.
+
+Las comprobaciones confirmaron que PostgreSQL escucha en las interfaces locales, que los parámetros modificados tienen los valores previstos y que `analista` puede conectarse y consultar `public.v_analitica_clientes`.
+
+No se modificaron `pg_hba.conf`, las reglas del firewall, los permisos de Windows ni la configuración TLS. Por tanto, esos controles deben seguir documentándose como revisados, pero no modificados.
 
 ### Actividad 17. Elaborar checklist de hardening
 
 | # | Control | Verificado | Evidencia |
 |---:|---|---|---|
 | 1 | Puerto documentado (`5432`) | Sí | Actividad 1 |
-| 2 | Interfaces de escucha justificadas | Parcial | Actividades 3 y 13; escucha en todas las interfaces |
-| 3 | `pg_hba.conf` revisado | Sí | Actividad 4 |
-| 4 | Redes autorizadas restringidas | Parcial | Reglas TCP observadas para loopback; falta evaluar la política completa de red |
+| 2 | Interfaces de escucha justificadas | Sí | Actividades 3, 13 y 16; `listen_addresses = 'localhost'` |
+| 3 | `pg_hba.conf` revisado | Sí | Actividad 4; reglas locales y de loopback con `scram-sha-256` |
+| 4 | Redes autorizadas restringidas | Parcial | Reglas de acceso revisadas y escucha local configurada; no se modificaron las reglas del firewall |
 | 5 | Autenticación segura revisada | Sí | `password_encryption = scram-sha-256` |
 | 6 | Superusuarios identificados | Sí | Actividad 8; rol `postgres` |
-| 7 | Cuentas de aplicación separadas | Parcial | Diseño conceptual de la Actividad 9; no se creó una cuenta |
-| 8 | Privilegios mínimos evaluados | Parcial | Actividades 8 y 9; falta verificar privilegios efectivos y membresías |
-| 9 | Extensiones revisadas | Sí | Actividad 10; `pgcrypto` y `plpgsql` |
-| 10 | TLS verificado | Sí | Actividad 15; `ssl = off` y conexión actual sin TLS |
-| 11 | Archivos de configuración revisados | Sí | Actividad 12; consulta de permisos mediante `icacls` |
-| 12 | Directorio de datos revisado | Sí | Actividad 12; consulta de permisos mediante `icacls` |
-| 13 | Política de firewall documentada | Sí | Actividad 14; propuesta conceptual, no implementada |
-| 14 | Actualizaciones documentadas | No | Pendiente de revisar el estado de actualización |
-| 15 | Configuración registrada | Sí | `documentacion.md` y `configuracion/baseline.md` |
-| 16 | Parámetros de conexión revisados | Sí | Actividad 11 |
-| 17 | Exposición del puerto comprobada | Sí | Actividad 13; PowerShell detectó `0.0.0.0:5432` y `[::]:5432` |
-| 18 | Cambios de hardening registrados | Pendiente | Se completará en `configuracion/cambios.md` cuando se apliquen cambios |
-| 19 | Configuración final verificada | Pendiente | Se completará después de aplicar y comprobar los cambios seleccionados |
+| 7 | Cuentas de aplicación separadas | Sí | Actividad 16; rol `analista` habilitado para iniciar sesión |
+| 8 | Privilegios mínimos evaluados | Sí | Verificación del rol `analista`: sin privilegios de superusuario, creación de roles o creación de bases de datos; permisos de consulta comprobados |
+| 9 | Extensiones revisadas | Sí | Actividad 10; `pgcrypto` y `plpgsql` permanecen instaladas |
+| 10 | TLS verificado | Sí | Actividad 15; `ssl = off` y conexión comprobada sin TLS |
+| 11 | Archivos de configuración revisados | Sí | Actividad 12; permisos inspeccionados mediante `icacls` |
+| 12 | Directorio de datos revisado | Sí | Actividad 12; permisos inspeccionados mediante `icacls` |
+| 13 | Política de firewall documentada | Sí | Actividad 14; propuesta conceptual, sin cambios aplicados al firewall |
+| 14 | Actualizaciones documentadas | No | Pendiente de verificar y documentar el estado de actualización |
+| 15 | Configuración registrada | Sí | `documentacion.md`, `configuracion/baseline.md` y `configuracion/cambios.md` |
+| 16 | Parámetros de conexión revisados | Sí | Actividades 11 y 16; límites de tiempo configurados y verificados |
+| 17 | Exposición del puerto comprobada | Sí | Verificación posterior en PowerShell; escucha en `127.0.0.1:5432` y `[::1]:5432` |
+| 18 | Cambios de hardening registrados | Sí | `configuracion/cambios.md`; seis cambios aplicados y documentados |
+| 19 | Configuración final verificada | Sí | Actividad 16; parámetros, permisos de conexión y consulta de la vista de análisis comprobados |
 
-**Resultado:** se revisaron los controles principales de PostgreSQL, la exposición de red, los roles, las extensiones, los permisos del sistema operativo y TLS. Sin embargo, algunos controles están únicamente evaluados o diseñados conceptualmente. La revisión no equivale a haber aplicado todas las medidas de hardening.
+**Resultado:**
 
-Este checklist deberá actualizarse después de implementar y verificar los cambios, indicando las evidencias finales correspondientes.
+Se aplicaron y verificaron seis cambios de hardening en PostgreSQL: restricción de las interfaces de escucha, registro de conexiones y desconexiones, configuración de límites de tiempo, habilitación del inicio de sesión del rol `analista`, registro de consultas lentas y restricción del permiso `CONNECT` para `PUBLIC`.
+
+También se comprobó que el rol `analista` puede conectarse a la base de datos y consultar la vista `public.v_analitica_clientes`, sin contar con privilegios administrativos. Se conservaron sin modificaciones las reglas de `pg_hba.conf`, la configuración TLS, las reglas del firewall y los permisos del sistema operativo.
+
+Queda pendiente verificar y documentar el estado de las actualizaciones de PostgreSQL. Los controles revisados pero no modificados no deben interpretarse como medidas de hardening implementadas.
+
 
 ### Actividad 18. Caso integral
 
