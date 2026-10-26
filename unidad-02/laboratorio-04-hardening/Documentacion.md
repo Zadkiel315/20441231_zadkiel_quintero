@@ -146,3 +146,41 @@ Porque el verificador de contraseña no está diseñado para descifrarse y recup
 **4. ¿Qué sucede si una cuenta tiene permisos excesivos aunque utilice una contraseña fuerte?**
 
 Si la cuenta es comprometida, un atacante podría aprovechar todos los privilegios que tenga asignados. Por ello, una contraseña fuerte debe complementarse con el principio de mínimo privilegio, otorgando únicamente los permisos necesarios para las funciones de cada usuario.
+
+### Actividad 8. Revisar usuarios y privilegios
+
+Se consultaron los roles registrados en PostgreSQL para identificar sus permisos y capacidades de acceso.
+
+| Rol | LOGIN | SUPERUSER | CREATEROLE | CREATEDB | Función |
+|---|---|---|---|---|---|
+| `analista` | No | No | No | No | Rol de análisis; no puede iniciar sesión directamente. |
+| `pg_checkpoint` | No | No | No | No | Rol predefinido de PostgreSQL relacionado con operaciones de checkpoint. |
+| `pg_create_subscription` | No | No | No | No | Rol predefinido relacionado con la creación de suscripciones. |
+| `pg_database_owner` | No | No | No | No | Rol predefinido asociado al propietario de cada base de datos. |
+| `pg_execute_server_program` | No | No | No | No | Rol predefinido relacionado con la ejecución de programas en el servidor. |
+| `pg_maintain` | No | No | No | No | Rol predefinido para determinadas tareas de mantenimiento. |
+| `pg_monitor` | No | No | No | No | Rol predefinido para supervisión del servidor. |
+| `pg_read_all_data` | No | No | No | No | Rol predefinido para leer todos los datos. |
+| `pg_read_all_settings` | No | No | No | No | Rol predefinido para consultar la configuración. |
+| `pg_read_all_stats` | No | No | No | No | Rol predefinido para consultar estadísticas. |
+| `pg_read_server_files` | No | No | No | No | Rol predefinido relacionado con la lectura de archivos del servidor. |
+| `pg_signal_autovacuum_worker` | No | No | No | No | Rol predefinido relacionado con señales a procesos de autovacuum. |
+| `pg_signal_backend` | No | No | No | No | Rol predefinido que permite enviar señales a determinados procesos de PostgreSQL. |
+| `pg_stat_scan_tables` | No | No | No | No | Rol predefinido para determinadas operaciones de análisis de tablas. |
+| `pg_use_reserved_connections` | No | No | No | No | Rol predefinido para utilizar conexiones reservadas. |
+| `pg_write_all_data` | No | No | No | No | Rol predefinido para escribir todos los datos. |
+| `pg_write_server_files` | No | No | No | No | Rol predefinido relacionado con la escritura de archivos del servidor. |
+| `postgres` | Sí | Sí | Sí | Sí | Cuenta administrativa con privilegios de superusuario. |
+
+**Identificación de roles y privilegios**
+
+- **Superusuarios:** `postgres`.
+- **Roles que pueden iniciar sesión:** `postgres`.
+- **Roles con `CREATEROLE`:** `postgres`.
+- **Roles con `CREATEDB`:** `postgres`.
+- **Roles de aplicaciones:** se identificó `analista`, pero no puede iniciar sesión directamente y los resultados no permiten confirmar que se utilice en una aplicación.
+- **Cuentas posiblemente innecesarias:** no se puede determinar únicamente con esta consulta. Los roles predefinidos pertenecen a PostgreSQL y no deben considerarse innecesarios por defecto.
+
+**Pregunta: ¿Por qué no debería utilizarse una cuenta `SUPERUSER` como cuenta normal de una aplicación?**
+
+Porque tiene privilegios administrativos muy amplios y puede eludir muchas restricciones de seguridad. Si sus credenciales se ven comprometidas, un atacante podría acceder o modificar información y realizar operaciones administrativas. Por eso, las aplicaciones deben utilizar cuentas con los permisos mínimos necesarios.

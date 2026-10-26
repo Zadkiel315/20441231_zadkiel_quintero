@@ -1,3 +1,5 @@
+# Baseline de seguridad — LAB-04
+
 ## Actividad 1. Estado inicial de la superficie de ataque
 
 **Versión instalada:** PostgreSQL 18.6 en Windows de 64 bits. La guía del laboratorio menciona PostgreSQL 16, por lo que existe una diferencia de versión que debe tenerse en cuenta.
@@ -7,7 +9,7 @@
 | Puerto | `5432` | Puerto configurado para PostgreSQL. |
 | `listen_addresses` | `*` | Escucha en todas las interfaces disponibles, sujeto a las reglas de red y autenticación. |
 | `ssl` | `off` | SSL/TLS está desactivado en la configuración actual del servidor. |
-| `password_encryption` | `scram-sha-256` | Método predeterminado configurado para el almacenamiento de contraseñas. |
+| `password_encryption` | `scram-sha-256` | Método configurado para almacenar nuevas contraseñas cuando se establecen o cambian. |
 | Usuario observado | `postgres` | Se observa en las conexiones realizadas desde pgAdmin. |
 | Dirección de conexión observada | `::1` | Corresponde a la dirección local de IPv6. |
 | Conexiones remotas | No confirmadas en esta revisión | Las conexiones identificadas muestran `::1`; esto no demuestra por sí solo que el acceso remoto esté bloqueado. |
@@ -34,7 +36,7 @@
 
 Los archivos de configuración, autenticación y datos se encuentran dentro del directorio de instalación de PostgreSQL. La revisión de los permisos del sistema operativo y de la generación efectiva de registros queda pendiente.
 
-### Actividad 3. Configuración de interfaces de escucha
+## Actividad 3. Configuración de interfaces de escucha
 
 | Parámetro | Estado inicial |
 |---|---|
@@ -45,18 +47,74 @@ Los archivos de configuración, autenticación y datos se encuentran dentro del 
 
 Se recomienda limitar las interfaces de escucha a las necesarias para el uso previsto del servidor, después de confirmar si requiere conexiones desde otros equipos.
 
-### Actividad 4. Configuración inicial de `pg_hba.conf`
+## Actividad 4. Configuración inicial de `pg_hba.conf`
 
 | Elemento | Estado inicial |
 |---|---|
 | Reglas locales | 2 reglas de tipo `local` |
-| Reglas IPv4 | `127.0.0.1` |
-| Reglas IPv6 | `::1` |
+| Reglas IPv4 | 2 reglas para `127.0.0.1`: acceso general y replicación |
+| Reglas IPv6 | 2 reglas para `::1`: acceso general y replicación |
 | Bases de datos | `{all}` y `{replication}` |
 | Usuarios | `{all}` |
-| Método de autenticación | `scram-sha-256` |
+| Método de autenticación | `scram-sha-256` en todas las reglas consultadas |
 | Regla `0.0.0.0/0` | No aparece en los resultados |
 | Regla `::/0` | No aparece en los resultados |
 | Cambios aplicados | Ninguno |
 
-Las reglas de tipo `host` están limitadas a las direcciones de loopback. Se recomienda conservar el acceso local necesario y revisar las restricciones de usuarios y bases de datos de acuerdo con los requerimientos del entorno.
+Las reglas de tipo `host` están limitadas a las direcciones de loopback. Las reglas generales permiten la autenticación de todos los usuarios y bases de datos desde esas direcciones, mientras que las reglas de replicación se aplican a las conexiones de replicación. Se recomienda conservar el acceso local necesario y revisar las restricciones de usuarios y bases de datos de acuerdo con los requerimientos del entorno.
+
+## Actividad 5. Análisis de una regla de acceso permisiva
+
+| Elemento | Análisis |
+|---|---|
+| Regla analizada | `host all all 0.0.0.0/0 scram-sha-256` |
+| Alcance | Todas las bases de datos, todos los usuarios y cualquier dirección IPv4 de origen |
+| Método de autenticación | `scram-sha-256` |
+| Riesgo identificado | Permite intentos de conexión desde cualquier origen IPv4 que pueda alcanzar el servidor, aunque la autenticación sigue siendo necesaria |
+| Presencia en la configuración real | No se identificó en las reglas consultadas de `pg_hba.conf` |
+| Cambio aplicado | Ninguno; se analizó una regla hipotética |
+
+La regla se considera permisiva porque no limita el origen de las conexiones, las bases de datos ni los usuarios. Se recomienda definir restricciones según los equipos, las cuentas y las bases de datos que realmente necesiten conectarse.
+
+## Actividad 6. Propuesta de acceso con mínimo privilegio
+
+| Elemento | Configuración propuesta |
+|---|---|
+| Base de datos | `db_20441231_zadkiel_quintero` |
+| Usuario | `usuario_app` (hipotético; existencia no confirmada) |
+| Origen | `127.0.0.1/32` |
+| Método de autenticación | `scram-sha-256` |
+| Regla propuesta | `host db_20441231_zadkiel_quintero usuario_app 127.0.0.1/32 scram-sha-256` |
+| Estado | Propuesta conceptual; no aplicada |
+
+La propuesta restringe la conexión a una base de datos, un usuario y una dirección de origen. Antes de aplicarla, se debe confirmar que el usuario exista y que la aplicación requiera conexiones TCP/IP desde esa dirección.
+
+## Actividad 7. Configuración de autenticación
+
+| Parámetro | Estado inicial |
+|---|---|
+| `password_encryption` | `scram-sha-256` |
+| Método configurado para establecer nuevas contraseñas | `scram-sha-256` |
+| Cambio aplicado | Ninguno; solo se revisó la configuración |
+
+SCRAM-SHA-256 es el mecanismo configurado para almacenar las contraseñas cuando se establecen o cambian. Esta configuración no implica que todas las contraseñas existentes se hayan actualizado automáticamente.
+
+La autenticación verifica la identidad del usuario, mientras que la autorización determina las operaciones que puede realizar. El uso de SCRAM-SHA-256 debe complementarse con contraseñas seguras y permisos limitados para cada cuenta.
+
+## Actividad 8. Roles y privilegios
+
+| Elemento | Estado inicial |
+|---|---|
+| Roles consultados | 18 |
+| Rol con `LOGIN` | `postgres` |
+| Rol con `SUPERUSER` | `postgres` |
+| Rol con `CREATEROLE` | `postgres` |
+| Rol con `CREATEDB` | `postgres` |
+| Rol de análisis identificado | `analista` (`LOGIN = false`) |
+| Cambios aplicados | Ninguno; solo se consultaron los roles |
+
+La consulta mostró que `postgres` es el único rol con capacidad de iniciar sesión y con los privilegios `SUPERUSER`, `CREATEROLE` y `CREATEDB` entre los roles obtenidos. El rol `analista` no puede iniciar sesión directamente.
+
+Los demás roles identificados corresponden a roles predefinidos de PostgreSQL. No deben considerarse innecesarios únicamente por aparecer en la lista. Para determinar los permisos efectivos de cada cuenta, se requiere revisar también sus membresías y privilegios.
+
+Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicación, debido a sus privilegios administrativos amplios. Las aplicaciones deben utilizar cuentas con los permisos mínimos necesarios para sus operaciones.
