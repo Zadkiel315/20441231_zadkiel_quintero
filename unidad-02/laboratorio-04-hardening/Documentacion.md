@@ -321,3 +321,20 @@ Por lo tanto, ambos controles se complementan: el firewall reduce el acceso de r
 En LAB-02 se estudió el cifrado y TLS. En LAB-04 se verifica cómo se integra en la configuración del servidor y de los clientes. En este entorno, el servidor tiene `ssl = off` y la conexión actual no está cifrada mediante TLS. Aunque se configura `TLSv1.2` como versión mínima, este parámetro no habilita TLS por sí solo.
 
 **Cambios aplicados:** ninguno; solo se verificó la configuración.
+
+### Actividad 16. Comparar configuración antes y después
+
+| Control | Antes | Después | Justificación |
+|---|---|---|---|
+| `listen_addresses` | `*` | `*` (sin cambios) | PostgreSQL escucha en todas las interfaces; conviene limitarlo a las necesarias. |
+| `pg_hba.conf` | Reglas locales IPv4 e IPv6 y reglas de replicación; autenticación `scram-sha-256`. | Sin cambios; no se modificó el archivo. | Las reglas observadas limitan las conexiones TCP a loopback, pero permiten cualquier usuario y base de datos en esas reglas. |
+| Método de autenticación | `scram-sha-256` | Sin cambios | Es un método de autenticación robusto; debe combinarse con restricciones de acceso y privilegios mínimos. |
+| Usuarios administrativos | `postgres` tiene `LOGIN`, `SUPERUSER`, `CREATEROLE` y `CREATEDB`. | Sin cambios | Se recomienda reservar la cuenta administrativa para tareas que requieren esos privilegios. |
+| Cuentas de aplicación | No se confirmó una cuenta específica para aplicaciones; `APP` se propuso conceptualmente. | Sin cambios; no se creó ninguna cuenta. | Una cuenta de aplicación debe tener solo los permisos necesarios. |
+| Puerto | `5432` | `5432` (sin cambios) | Es el puerto configurado para PostgreSQL; el acceso debe restringirse según las necesidades. |
+| TLS | `ssl = off`; la conexión actual devuelve `ssl = false`. | Sin cambios | Se debe evaluar la habilitación de TLS y verificar las conexiones cifradas. |
+| Permisos SO | Archivos de configuración con control total para Administradores, SYSTEM, usuario de Windows y NETWORK SERVICE. | Sin cambios | Los permisos deben limitarse a las cuentas que necesitan acceder a los archivos. |
+| Extensiones | `pgcrypto` 1.4 y `plpgsql` 1.0. | Sin cambios | Se debe confirmar cuáles son necesarias; no se eliminó ninguna extensión. |
+| Conexiones | `max_connections = 100`; 3 reservadas para superusuarios; ambos tiempos de espera consultados están en `0`. | Sin cambios | Conviene evaluar límites de tiempo adecuados para reducir conexiones ocupadas durante periodos prolongados. |
+
+**Resultado de la comparación:** durante las actividades documentadas se inspeccionó la configuración y se identificaron riesgos y recomendaciones, pero no se aplicaron cambios de hardening. Por tanto, el estado posterior registrado permanece igual al inicial. Esta comparación no demuestra que los controles hayan sido endurecidos; documenta el estado actual y las medidas pendientes.
