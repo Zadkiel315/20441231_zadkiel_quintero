@@ -17,3 +17,14 @@ FROM pg_hba_file_rules;
 
 -- Método predeterminado para almacenar contraseñas
 SHOW password_encryption;
+
+
+-- =====================================================
+-- ACTIVIDAD 10: Consultar las extensiones instaladas
+-- =====================================================
+
+SELECT
+    extname,    -- Nombre de la extensión
+    extversion  -- Versión instalada
+FROM pg_extension
+ORDER BY extname;

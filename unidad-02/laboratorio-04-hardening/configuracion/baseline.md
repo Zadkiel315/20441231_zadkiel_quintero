@@ -130,3 +130,14 @@ Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicació
 **Estado:** diseño conceptual. Las cuentas no se han creado ni se han modificado los privilegios existentes.
 
 **Recomendación:** utilizar cuentas independientes para la administración, la aplicación y las consultas, evitando conceder permisos administrativos a cuentas que no los necesitan.
+
+## Actividad 10. Extensiones instaladas
+
+| Extensión | Versión inicial | Observación |
+|---|---|---|
+| `pgcrypto` | `1.4` | Proporciona funciones criptográficas. Su necesidad debe confirmarse según el uso del entorno. |
+| `plpgsql` | `1.0` | Lenguaje procedural utilizado para crear funciones y procedimientos en PostgreSQL. |
+
+**Riesgo y recomendación:** no se identificó un riesgo únicamente por la presencia de estas extensiones. Se recomienda comprobar cuáles son necesarias para las aplicaciones y prácticas antes de considerar cualquier modificación.
+
+**Estado:** extensiones identificadas. No se ha eliminado ni modificado ninguna.

@@ -198,3 +198,23 @@ Se propone separar las cuentas según sus responsabilidades para reducir los rie
 **Pregunta: ¿Qué riesgo existe si la aplicación se conecta utilizando una cuenta administrativa?**
 
 Si la aplicación utiliza una cuenta administrativa y sus credenciales se ven comprometidas, un atacante podría realizar operaciones administrativas, acceder a información sensible, modificar o eliminar datos y afectar el funcionamiento del servidor. Por eso, la aplicación debe utilizar una cuenta independiente con permisos mínimos.
+
+### Actividad 10. Revisar extensiones
+
+Se consultaron las extensiones instaladas en PostgreSQL mediante la vista `pg_extension`.
+
+| Extensión | Versión | Función |
+|---|---|---|
+| `pgcrypto` | 1.4 | Proporciona funciones criptográficas, como funciones de hash y generación de datos aleatorios. |
+| `plpgsql` | 1.0 | Permite utilizar el lenguaje procedural PL/pgSQL para crear funciones y procedimientos. |
+
+**Análisis:**
+
+- **Extensiones existentes:** se encontraron `pgcrypto` y `plpgsql`.
+- **Extensiones necesarias:** `plpgsql` suele utilizarse para funciones y procedimientos escritos en este lenguaje. La necesidad de `pgcrypto` depende de si alguna aplicación o práctica utiliza sus funciones.
+- **Extensiones instaladas para prácticas:** con los resultados disponibles no se puede confirmar si `pgcrypto` se instaló específicamente para el laboratorio.
+- **Funcionalidad potencialmente innecesaria:** `pgcrypto` podría no ser necesaria si ninguna aplicación o práctica utiliza sus funciones. Debe verificarse su uso antes de proponer cambios.
+
+La presencia de una extensión no significa que sea insegura. El hardening consiste en habilitar únicamente la funcionalidad necesaria para el propósito del sistema.
+
+**Cambios aplicados:** ninguno; solo se realizó una consulta de inspección.
