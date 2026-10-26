@@ -184,3 +184,17 @@ Se consultaron los roles registrados en PostgreSQL para identificar sus permisos
 **Pregunta: ¿Por qué no debería utilizarse una cuenta `SUPERUSER` como cuenta normal de una aplicación?**
 
 Porque tiene privilegios administrativos muy amplios y puede eludir muchas restricciones de seguridad. Si sus credenciales se ven comprometidas, un atacante podría acceder o modificar información y realizar operaciones administrativas. Por eso, las aplicaciones deben utilizar cuentas con los permisos mínimos necesarios.
+
+### Actividad 9. Separar cuentas administrativas y de aplicación
+
+Se propone separar las cuentas según sus responsabilidades para reducir los riesgos y aplicar el principio de mínimo privilegio.
+
+| Cuenta | Propósito | LOGIN | Privilegios |
+|---|---|---|---|
+| DBA | Administración de PostgreSQL | Sí | Administrativos, únicamente cuando sean necesarios. |
+| APP | Conexión utilizada por la aplicación | Sí | Mínimos, limitados a las operaciones que necesita la aplicación. |
+| CONSULTA | Consultas de información | Sí | Solo lectura sobre las bases de datos y tablas autorizadas. |
+
+**Pregunta: ¿Qué riesgo existe si la aplicación se conecta utilizando una cuenta administrativa?**
+
+Si la aplicación utiliza una cuenta administrativa y sus credenciales se ven comprometidas, un atacante podría realizar operaciones administrativas, acceder a información sensible, modificar o eliminar datos y afectar el funcionamiento del servidor. Por eso, la aplicación debe utilizar una cuenta independiente con permisos mínimos.

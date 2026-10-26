@@ -118,3 +118,15 @@ La consulta mostró que `postgres` es el único rol con capacidad de iniciar ses
 Los demás roles identificados corresponden a roles predefinidos de PostgreSQL. No deben considerarse innecesarios únicamente por aparecer en la lista. Para determinar los permisos efectivos de cada cuenta, se requiere revisar también sus membresías y privilegios.
 
 Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicación, debido a sus privilegios administrativos amplios. Las aplicaciones deben utilizar cuentas con los permisos mínimos necesarios para sus operaciones.
+
+## Actividad 9. Separación de cuentas
+
+| Cuenta propuesta | Propósito | LOGIN | Privilegios |
+|---|---|---|---|
+| DBA | Administración de PostgreSQL | Sí | Administrativos, según necesidad. |
+| APP | Conexión de la aplicación | Sí | Mínimos necesarios para su funcionamiento. |
+| CONSULTA | Consultas de información | Sí | Solo lectura sobre los objetos autorizados. |
+
+**Estado:** diseño conceptual. Las cuentas no se han creado ni se han modificado los privilegios existentes.
+
+**Recomendación:** utilizar cuentas independientes para la administración, la aplicación y las consultas, evitando conceder permisos administrativos a cuentas que no los necesitan.
