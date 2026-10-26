@@ -280,3 +280,26 @@ Porque `GRANT` y `REVOKE` controlan los privilegios dentro de PostgreSQL, pero n
 Sí, la configuración de escucha permite que PostgreSQL escuche en todas las interfaces IPv4 e IPv6, en lugar de limitarse a la interfaz local. Esto aumenta la superficie potencial de exposición. Sin embargo, el resultado no demuestra por sí solo que el servicio sea accesible desde otros equipos, ya que también depende de las reglas del firewall y de la configuración de red.
 
 **Cambios aplicados:** ninguno; solo se verificó el puerto de escucha.
+
+### Actividad 14. Diseñar una política de firewall
+
+**Datos del escenario:**
+
+- **Servidor PostgreSQL:** `10.10.10.20`
+- **Puerto:** `5432`
+- **Red autorizada (DBA):** `10.10.10.0/24`
+
+**Política conceptual de firewall:**
+
+| Origen | Destino | Puerto | Acción |
+|---|---|---|---|
+| `10.10.10.0/24` | PostgreSQL (`10.10.10.20`) | `5432/TCP` | Permitir |
+| Cualquier otro origen | PostgreSQL (`10.10.10.20`) | `5432/TCP` | Denegar |
+
+**Pregunta: ¿Por qué `pg_hba.conf` y el firewall no son controles equivalentes?**
+
+El firewall controla el tráfico de red que puede llegar al servidor, permitiendo o bloqueando conexiones según reglas como la dirección de origen, el destino y el puerto. En cambio, `pg_hba.conf` controla qué conexiones a PostgreSQL pueden autenticarse, según el tipo de conexión, la base de datos, el usuario, la dirección de origen y el método de autenticación.
+
+Por lo tanto, ambos controles se complementan: el firewall reduce el acceso de red al servidor y `pg_hba.conf` restringe qué conexiones acepta PostgreSQL. Ninguno sustituye al otro.
+
+**Cambios aplicados:** ninguno. La política es conceptual y no se modificó ningún firewall.

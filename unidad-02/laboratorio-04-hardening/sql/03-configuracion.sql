@@ -58,8 +58,18 @@ SHOW hba_file;
 -- ACTIVIDAD 13: Revisar exposición de red
 -- ========================================================================
 
-
 -- Dirección de escucha configurada
 SHOW listen_addresses;
 -- Puerto de escucha
 SHOW port;
+
+-- ========================================================================
+-- ACTIVIDAD 14: Diseño conceptual de política de firewall
+-- ========================================================================
+
+-- Servidor PostgreSQL: 10.10.10.20
+-- Puerto: 5432/TCP
+-- Origen autorizado: 10.10.10.0/24 (red DBA)
+-- Acción: permitir conexiones desde la red DBA.
+-- Acción: denegar conexiones desde cualquier otro origen.
+-- NOTA: política conceptual; no se modificó ningún firewall.

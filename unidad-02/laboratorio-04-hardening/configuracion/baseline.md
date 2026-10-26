@@ -183,3 +183,14 @@ Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicació
 **Riesgo identificado:** PostgreSQL escucha en todas las interfaces IPv4 e IPv6. Si el firewall y la red permiten conexiones entrantes, podría recibir conexiones desde otros equipos.
 
 **Recomendación:** limitar la escucha a las interfaces necesarias y permitir conexiones entrantes únicamente desde orígenes autorizados. Antes de aplicar cambios, confirmar si el equipo necesita conexiones remotas.
+
+## Actividad 14. Política conceptual de firewall
+
+| Origen | Destino | Puerto | Acción |
+|---|---|---|---|
+| `10.10.10.0/24` | `10.10.10.20` (PostgreSQL) | `5432/TCP` | Permitir |
+| Cualquier otro origen | `10.10.10.20` (PostgreSQL) | `5432/TCP` | Denegar |
+
+**Estado:** política propuesta, no implementada.
+
+**Justificación:** restringir el acceso de red al servidor PostgreSQL a la red DBA autorizada y bloquear los demás orígenes. Esta política debe complementarse con las reglas de autenticación de `pg_hba.conf`.
