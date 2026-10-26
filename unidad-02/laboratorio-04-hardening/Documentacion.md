@@ -233,3 +233,34 @@ Se consultaron los parámetros de PostgreSQL relacionados con el número de cone
 **Pregunta: ¿Por qué mantener conexiones indefinidamente abiertas puede representar un problema de disponibilidad o consumo de recursos?**
 
 Porque cada conexión consume recursos del servidor, como memoria y procesos de trabajo. Si muchas conexiones permanecen abiertas sin utilizarse, pueden agotarse las conexiones disponibles e impedir que otros usuarios o aplicaciones accedan al sistema. Además, las transacciones abiertas durante mucho tiempo pueden dificultar el mantenimiento de la base de datos.
+
+### Actividad 12. Revisar permisos del sistema operativo
+
+La revisión de permisos se realizó desde PowerShell, debido a que PostgreSQL está instalado en Windows.
+
+**Rutas revisadas:**
+
+| Elemento | Ruta |
+|---|---|
+| Directorio de datos | `C:\Program Files\PostgreSQL\18\data` |
+| Archivo de configuración | `C:\Program Files\PostgreSQL\18\data\postgresql.conf` |
+| Archivo de autenticación | `C:\Program Files\PostgreSQL\18\data\pg_hba.conf` |
+
+**Resultados de la revisión de permisos:**
+
+Los archivos `postgresql.conf` y `pg_hba.conf` presentan permisos de control total (`F`) para los siguientes usuarios y grupos:
+
+- `BUILTIN\Administradores`
+- `NT AUTHORITY\SYSTEM`
+- `LEN-V130-15IGM\Zadkiel Quintero`
+- `NT AUTHORITY\NETWORK SERVICE`
+
+En el directorio `data`, `NETWORK SERVICE` y el usuario de Windows aparecen con permisos de lectura y ejecución (`RX`) en una entrada directa. También tienen entradas con control total (`F`) heredables para los archivos y subdirectorios, indicadas mediante las marcas `(OI)` y `(CI)`. Administradores y SYSTEM también cuentan con entradas de control total.
+
+No se observaron entradas explícitas para `Everyone` o `Users` en los resultados proporcionados. Esto no descarta que existan permisos adicionales por pertenencia a grupos o por otras vías de acceso.
+
+**Pregunta: ¿Por qué no es suficiente proteger PostgreSQL mediante GRANT y REVOKE si cualquier usuario del sistema operativo puede leer archivos sensibles?**
+
+Porque `GRANT` y `REVOKE` controlan los privilegios dentro de PostgreSQL, pero no sustituyen los permisos del sistema operativo. Si una persona puede leer archivos sensibles directamente desde Windows, podría obtener información de configuración sin utilizar los permisos normales de la base de datos. Por eso, también es necesario restringir el acceso a los archivos y al directorio de datos.
+
+**Cambios aplicados:** ninguno. Solo se inspeccionaron los permisos existentes.

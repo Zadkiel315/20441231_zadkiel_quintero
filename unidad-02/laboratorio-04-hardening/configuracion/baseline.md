@@ -156,3 +156,16 @@ Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicació
 **Recomendación:** evaluar límites de tiempo adecuados según las necesidades de las aplicaciones y del entorno, evitando interrumpir operaciones legítimas.
 
 **Estado:** configuración inicial registrada. No se han aplicado cambios.
+
+## Actividad 12. Permisos del sistema operativo
+
+| Elemento | Resultado inicial |
+|---|---|
+| `postgresql.conf` | Control total para Administradores, SYSTEM, usuario de Windows y NETWORK SERVICE. |
+| `pg_hba.conf` | Control total para Administradores, SYSTEM, usuario de Windows y NETWORK SERVICE. |
+| Directorio `data` | Entradas directas `RX` para NETWORK SERVICE y usuario de Windows; también existen entradas heredables de control total. |
+| Permisos modificados | Ninguno; solo se realizó una inspección. |
+
+**Observación:** los permisos de los archivos de configuración y del directorio de datos son relevantes para impedir modificaciones o lecturas por usuarios no autorizados. Los resultados no muestran entradas explícitas para `Everyone` o `Users`, pero para evaluar la seguridad completa también deben considerarse las pertenencias a grupos y los permisos efectivos.
+
+**Recomendación:** mantener el acceso limitado a las cuentas que necesitan administrar o ejecutar PostgreSQL. No modificar los permisos sin verificar primero los requisitos del servicio y las cuentas utilizadas por la instalación.
