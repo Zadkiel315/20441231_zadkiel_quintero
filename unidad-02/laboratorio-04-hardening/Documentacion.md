@@ -338,3 +338,31 @@ En LAB-02 se estudió el cifrado y TLS. En LAB-04 se verifica cómo se integra e
 | Conexiones | `max_connections = 100`; 3 reservadas para superusuarios; ambos tiempos de espera consultados están en `0`. | Sin cambios | Conviene evaluar límites de tiempo adecuados para reducir conexiones ocupadas durante periodos prolongados. |
 
 **Resultado de la comparación:** durante las actividades documentadas se inspeccionó la configuración y se identificaron riesgos y recomendaciones, pero no se aplicaron cambios de hardening. Por tanto, el estado posterior registrado permanece igual al inicial. Esta comparación no demuestra que los controles hayan sido endurecidos; documenta el estado actual y las medidas pendientes.
+
+### Actividad 17. Elaborar checklist de hardening
+
+| # | Control | Verificado | Evidencia |
+|---:|---|---|---|
+| 1 | Puerto documentado (`5432`) | Sí | Actividad 1 |
+| 2 | Interfaces de escucha justificadas | Parcial | Actividades 3 y 13; escucha en todas las interfaces |
+| 3 | `pg_hba.conf` revisado | Sí | Actividad 4 |
+| 4 | Redes autorizadas restringidas | Parcial | Reglas TCP observadas para loopback; falta evaluar la política completa de red |
+| 5 | Autenticación segura revisada | Sí | `password_encryption = scram-sha-256` |
+| 6 | Superusuarios identificados | Sí | Actividad 8; rol `postgres` |
+| 7 | Cuentas de aplicación separadas | Parcial | Diseño conceptual de la Actividad 9; no se creó una cuenta |
+| 8 | Privilegios mínimos evaluados | Parcial | Actividades 8 y 9; falta verificar privilegios efectivos y membresías |
+| 9 | Extensiones revisadas | Sí | Actividad 10; `pgcrypto` y `plpgsql` |
+| 10 | TLS verificado | Sí | Actividad 15; `ssl = off` y conexión actual sin TLS |
+| 11 | Archivos de configuración revisados | Sí | Actividad 12; consulta de permisos mediante `icacls` |
+| 12 | Directorio de datos revisado | Sí | Actividad 12; consulta de permisos mediante `icacls` |
+| 13 | Política de firewall documentada | Sí | Actividad 14; propuesta conceptual, no implementada |
+| 14 | Actualizaciones documentadas | No | Pendiente de revisar el estado de actualización |
+| 15 | Configuración registrada | Sí | `documentacion.md` y `configuracion/baseline.md` |
+| 16 | Parámetros de conexión revisados | Sí | Actividad 11 |
+| 17 | Exposición del puerto comprobada | Sí | Actividad 13; PowerShell detectó `0.0.0.0:5432` y `[::]:5432` |
+| 18 | Cambios de hardening registrados | Pendiente | Se completará en `configuracion/cambios.md` cuando se apliquen cambios |
+| 19 | Configuración final verificada | Pendiente | Se completará después de aplicar y comprobar los cambios seleccionados |
+
+**Resultado:** se revisaron los controles principales de PostgreSQL, la exposición de red, los roles, las extensiones, los permisos del sistema operativo y TLS. Sin embargo, algunos controles están únicamente evaluados o diseñados conceptualmente. La revisión no equivale a haber aplicado todas las medidas de hardening.
+
+Este checklist deberá actualizarse después de implementar y verificar los cambios, indicando las evidencias finales correspondientes.
