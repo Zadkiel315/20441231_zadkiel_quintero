@@ -352,35 +352,36 @@ No se modificaron `pg_hba.conf`, las reglas del firewall, los permisos de Window
 
 ### Actividad 17. Elaborar checklist de hardening
 
-| # | Control | Verificado | Evidencia |
+| # | Control | Verificado | Evidencia / resultado obtenido |
 |---:|---|---|---|
-| 1 | Puerto documentado (`5432`) | Sí | Actividad 1 |
-| 2 | Interfaces de escucha justificadas | Sí | Actividades 3, 13 y 16; `listen_addresses = 'localhost'` |
-| 3 | `pg_hba.conf` revisado | Sí | Actividad 4; reglas locales y de loopback con `scram-sha-256` |
-| 4 | Redes autorizadas restringidas | Parcial | Reglas de acceso revisadas y escucha local configurada; no se modificaron las reglas del firewall |
-| 5 | Autenticación segura revisada | Sí | `password_encryption = scram-sha-256` |
-| 6 | Superusuarios identificados | Sí | Actividad 8; rol `postgres` |
-| 7 | Cuentas de aplicación separadas | Sí | Actividad 16; rol `analista` habilitado para iniciar sesión |
-| 8 | Privilegios mínimos evaluados | Sí | Verificación del rol `analista`: sin privilegios de superusuario, creación de roles o creación de bases de datos; permisos de consulta comprobados |
-| 9 | Extensiones revisadas | Sí | Actividad 10; `pgcrypto` y `plpgsql` permanecen instaladas |
-| 10 | TLS verificado | Sí | Actividad 15; `ssl = off` y conexión comprobada sin TLS |
-| 11 | Archivos de configuración revisados | Sí | Actividad 12; permisos inspeccionados mediante `icacls` |
-| 12 | Directorio de datos revisado | Sí | Actividad 12; permisos inspeccionados mediante `icacls` |
-| 13 | Política de firewall documentada | Sí | Actividad 14; propuesta conceptual, sin cambios aplicados al firewall |
-| 14 | Actualizaciones documentadas | No | Pendiente de verificar y documentar el estado de actualización |
-| 15 | Configuración registrada | Sí | `documentacion.md`, `configuracion/baseline.md` y `configuracion/cambios.md` |
-| 16 | Parámetros de conexión revisados | Sí | Actividades 11 y 16; límites de tiempo configurados y verificados |
-| 17 | Exposición del puerto comprobada | Sí | Verificación posterior en PowerShell; escucha en `127.0.0.1:5432` y `[::1]:5432` |
-| 18 | Cambios de hardening registrados | Sí | `configuracion/cambios.md`; seis cambios aplicados y documentados |
-| 19 | Configuración final verificada | Sí | Actividad 16; parámetros, permisos de conexión y consulta de la vista de análisis comprobados |
+| 1 | Puerto documentado (`5432`) | Sí | PostgreSQL utiliza el puerto `5432` para las conexiones. |
+| 2 | Interfaces de escucha justificadas | Sí | El parámetro `listen_addresses` quedó configurado en `localhost`. |
+| 3 | `pg_hba.conf` revisado | Sí | Se identificaron reglas locales y de loopback IPv4/IPv6 que utilizan `scram-sha-256`. El archivo no fue modificado. |
+| 4 | Redes autorizadas restringidas | Parcial | La escucha quedó limitada a las interfaces locales (`127.0.0.1` y `::1`). No se modificaron las reglas del firewall. |
+| 5 | Autenticación segura revisada | Sí | `password_encryption` devuelve `scram-sha-256`, método utilizado en las conexiones comprobadas. |
+| 6 | Superusuarios identificados | Sí | Se identificó el rol `postgres` como superusuario administrativo. |
+| 7 | Cuentas de aplicación separadas | Sí | Se habilitó el inicio de sesión de `analista`, separando las consultas de análisis de las tareas administrativas. |
+| 8 | Privilegios mínimos evaluados | Sí | `analista` tiene `rolsuper = false`, `rolcreaterole = false` y `rolcreatedb = false`. Se comprobó que puede consultar `public.v_analitica_clientes` y que no tiene permisos de `INSERT`, `UPDATE` ni `DELETE` sobre `public.clientes`. |
+| 9 | Extensiones revisadas | Sí | Se identificaron las extensiones `pgcrypto` versión 1.4 y `plpgsql` versión 1.0. Ambas permanecieron instaladas. |
+| 10 | TLS verificado | Sí | `ssl = off` y la conexión comprobada no utilizaba TLS. No se habilitó el cifrado TLS. |
+| 11 | Archivos de configuración revisados | Sí | Se inspeccionaron los permisos de los archivos mediante `icacls` y se guardaron copias de respaldo de `postgresql.conf` y `pg_hba.conf`. |
+| 12 | Directorio de datos revisado | Sí | Se inspeccionaron los permisos del directorio de datos mediante `icacls`. No se modificaron los permisos de Windows. |
+| 13 | Política de firewall documentada | Sí | Se documentó una propuesta de control del tráfico, pero no se aplicaron cambios a las reglas del firewall. |
+| 14 | Actualizaciones documentadas | No | No se cuenta con una verificación documentada del estado de las actualizaciones de PostgreSQL. |
+| 15 | Configuración registrada | Sí | La configuración inicial y los cambios realizados quedaron documentados en `configuracion/baseline.md` y `configuracion/cambios.md`. |
+| 16 | Parámetros de conexión revisados | Sí | Se verificaron `statement_timeout = 60s` e `idle_in_transaction_session_timeout = 5min`. Para el rol `analista`, `statement_timeout` devuelve `30s` en una nueva sesión. |
+| 17 | Exposición del puerto comprobada | Sí | PowerShell mostró el puerto `5432` en las direcciones locales `127.0.0.1` y `::1`, sin las direcciones de escucha general `0.0.0.0` y `::` observadas inicialmente. |
+| 18 | Cambios de hardening registrados | Sí | Se documentaron siete cambios: restricción de escucha, registros de conexiones, límites globales de tiempo, habilitación de `analista`, registro de consultas lentas, restricción de `CONNECT` para `PUBLIC` y límite específico de consultas para `analista`. |
+| 19 | Configuración final verificada | Sí | Se comprobaron los parámetros modificados, los privilegios del rol `analista`, su conexión a la base de datos y la consulta de `public.v_analitica_clientes`. |
 
 **Resultado:**
 
-Se aplicaron y verificaron seis cambios de hardening en PostgreSQL: restricción de las interfaces de escucha, registro de conexiones y desconexiones, configuración de límites de tiempo, habilitación del inicio de sesión del rol `analista`, registro de consultas lentas y restricción del permiso `CONNECT` para `PUBLIC`.
+Se aplicaron y verificaron siete cambios de hardening en PostgreSQL. Se restringieron las interfaces de escucha a las locales, se habilitaron los registros de conexiones y desconexiones, se establecieron límites de tiempo globales y específicos para `analista`, se habilitó el inicio de sesión de dicho rol, se activó el registro de consultas lentas y se restringió el permiso general `CONNECT` de `PUBLIC`.
 
-También se comprobó que el rol `analista` puede conectarse a la base de datos y consultar la vista `public.v_analitica_clientes`, sin contar con privilegios administrativos. Se conservaron sin modificaciones las reglas de `pg_hba.conf`, la configuración TLS, las reglas del firewall y los permisos del sistema operativo.
+Las verificaciones confirmaron que PostgreSQL escucha en `127.0.0.1` y `::1`, que los parámetros modificados presentan los valores configurados y que `analista` puede conectarse y consultar `public.v_analitica_clientes` sin privilegios administrativos.
 
-Queda pendiente verificar y documentar el estado de las actualizaciones de PostgreSQL. Los controles revisados pero no modificados no deben interpretarse como medidas de hardening implementadas.
+Se revisaron las reglas de `pg_hba.conf`, las extensiones y los permisos de los archivos y del directorio de datos. Sin embargo, no se modificaron la configuración TLS, las reglas del firewall ni los permisos del sistema operativo. También queda pendiente documentar la verificación de las actualizaciones de PostgreSQL. Por ello, los controles revisados pero no modificados no se consideran medidas implementadas.
+
 
 
 ### Actividad 18. Caso integral
