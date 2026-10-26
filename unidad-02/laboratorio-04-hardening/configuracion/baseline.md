@@ -44,3 +44,19 @@ Los archivos de configuración, autenticación y datos se encuentran dentro del 
 | Cambio aplicado | Ninguno; solo se revisó la configuración. |
 
 Se recomienda limitar las interfaces de escucha a las necesarias para el uso previsto del servidor, después de confirmar si requiere conexiones desde otros equipos.
+
+### Actividad 4. Configuración inicial de `pg_hba.conf`
+
+| Elemento | Estado inicial |
+|---|---|
+| Reglas locales | 2 reglas de tipo `local` |
+| Reglas IPv4 | `127.0.0.1` |
+| Reglas IPv6 | `::1` |
+| Bases de datos | `{all}` y `{replication}` |
+| Usuarios | `{all}` |
+| Método de autenticación | `scram-sha-256` |
+| Regla `0.0.0.0/0` | No aparece en los resultados |
+| Regla `::/0` | No aparece en los resultados |
+| Cambios aplicados | Ninguno |
+
+Las reglas de tipo `host` están limitadas a las direcciones de loopback. Se recomienda conservar el acceso local necesario y revisar las restricciones de usuarios y bases de datos de acuerdo con los requerimientos del entorno.

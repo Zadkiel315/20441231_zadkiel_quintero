@@ -42,3 +42,24 @@ Porque permite localizar y revisar la configuración, las reglas de autenticaci�
 La segunda arquitectura reduce mejor la exposición porque mantiene PostgreSQL dentro de una red privada, protegida por un firewall, y evita su acceso directo desde Internet. De esta manera, las conexiones pueden limitarse a los equipos y redes autorizados.
 
 En la primera arquitectura, si el firewall permite conexiones externas al puerto 5432, el servidor podría recibir intentos de conexión desde Internet. Por eso, también deben revisarse las reglas del firewall y de `pg_hba.conf`.
+
+### Actividad 4. Revisar `pg_hba.conf`
+
+**Reglas locales:** Se encontraron dos reglas de tipo `local`: una para todas las bases de datos y todos los usuarios, y otra para conexiones de replicación. No especifican una dirección IP.
+
+**Reglas para conexiones IPv4:** Se encontraron dos reglas que permiten conexiones desde `127.0.0.1`: una para todas las bases de datos y usuarios, y otra para replicación.
+
+**Reglas para conexiones IPv6:** Se encontraron dos reglas que permiten conexiones desde `::1`: una para todas las bases de datos y usuarios, y otra para replicación.
+
+**Bases de datos afectadas:** Las reglas utilizan `{all}` para permitir el acceso a todas las bases de datos y `{replication}` para las conexiones de replicación.
+
+**Usuarios afectados:** Las reglas utilizan `{all}`, por lo que no restringen el acceso a un usuario específico.
+
+**Redes permitidas:** Para las reglas de tipo `host`, se permiten las direcciones de loopback `127.0.0.1` (IPv4) y `::1` (IPv6). Estas direcciones corresponden al propio equipo.
+
+**Métodos de autenticación:** Todas las reglas utilizan `scram-sha-256`, un método de autenticación basado en contraseñas que ofrece una protección más sólida que mecanismos heredados como `md5`.
+
+**Reglas excesivamente amplias:** En los resultados no aparecen las redes `0.0.0.0/0` ni `::/0`. Las reglas de conexión por red están limitadas a las direcciones de loopback, por lo que no se observa una regla que permita conexiones desde cualquier dirección IP.
+
+**Aspecto por considerar:** Aunque las reglas de red están limitadas a direcciones locales, las reglas que utilizan `{all}` no restringen por sí mismas las bases de datos ni los usuarios. Por ello, deben evaluarse junto con los privilegios de los roles y los demás controles de seguridad.
+
