@@ -209,3 +209,54 @@ Se recomienda evitar el uso de `postgres` como cuenta habitual de una aplicació
 **Riesgo identificado:** la conexión actual con PostgreSQL no utiliza TLS. Si se transmiten datos por una red no confiable, estos podrían quedar expuestos al no estar protegidos por TLS.
 
 **Recomendación:** evaluar la habilitación de TLS y la configuración de certificados del servidor, y verificar que los clientes puedan conectarse de forma cifrada. Después de cualquier cambio, debe comprobarse nuevamente el estado de TLS en una conexión real.
+
+## Baseline de seguridad propuesto para PostgreSQL 16
+
+**Estado:** Propuesta pendiente de implementación y verificación.
+
+### Red
+
+- Limitar `listen_addresses` a las interfaces requeridas.
+- Mantener el puerto `5432`, salvo justificación documentada.
+- Permitir en el firewall únicamente los orígenes autorizados.
+- Definir reglas específicas en `pg_hba.conf` según tipo de conexión, base de datos, usuario, origen y método de autenticación.
+
+### Autenticación
+
+- Preferir `scram-sha-256` cuando sea compatible con los clientes.
+- Exigir credenciales robustas, únicas y protegidas.
+- Reservar las cuentas administrativas para tareas que requieran privilegios elevados.
+
+### Autorización
+
+- Aplicar el principio de mínimo privilegio.
+- Separar cuentas administrativas, de aplicación y de consulta.
+- Revisar periódicamente roles, membresías y permisos efectivos.
+
+### Configuración
+
+- Revisar los parámetros de red, autenticación, cifrado y conexiones.
+- Definir límites de tiempo apropiados para consultas y transacciones según los requisitos de la aplicación.
+- Mantener únicamente las extensiones justificadas por el uso del sistema.
+
+### Sistema operativo
+
+- Limitar los permisos sobre los archivos de configuración y el directorio de datos.
+- Permitir el acceso únicamente a las cuentas que lo necesiten.
+- Verificar la propiedad y los permisos efectivos de los archivos.
+
+### Cifrado
+
+- Habilitar TLS y verificar su funcionamiento cuando corresponda.
+- Proteger las credenciales y evitar su exposición.
+- Restringir el acceso a la información sensible.
+
+### Mantenimiento
+
+- Revisar e instalar actualizaciones de seguridad de forma controlada.
+- Realizar revisiones periódicas de accesos, roles, reglas y parámetros.
+- Mantener documentación de los cambios, sus justificaciones y sus resultados de verificación.
+
+### Criterio de aceptación
+
+Cada control deberá verificarse después de su implementación. La configuración inicial observada debe conservarse como referencia para comparar el estado anterior con el posterior. Esta propuesta no constituye evidencia de que los cambios hayan sido aplicados.

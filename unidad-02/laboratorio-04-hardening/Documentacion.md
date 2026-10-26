@@ -366,3 +366,51 @@ En LAB-02 se estudió el cifrado y TLS. En LAB-04 se verifica cómo se integra e
 **Resultado:** se revisaron los controles principales de PostgreSQL, la exposición de red, los roles, las extensiones, los permisos del sistema operativo y TLS. Sin embargo, algunos controles están únicamente evaluados o diseñados conceptualmente. La revisión no equivale a haber aplicado todas las medidas de hardening.
 
 Este checklist deberá actualizarse después de implementar y verificar los cambios, indicando las evidencias finales correspondientes.
+
+### Actividad 18. Caso integral
+
+| # | Problema | Riesgo | Control propuesto |
+|---:|---|---|---|
+| 1 | PostgreSQL acepta conexiones desde cualquier dirección IPv4. | Equipos no autorizados pueden intentar conectarse al servidor. | Restringir los orígenes a las redes autorizadas. |
+| 2 | El servidor escucha en todas las interfaces. | Aumenta la superficie de exposición del servicio. | Configurar `listen_addresses` con las interfaces necesarias. |
+| 3 | El firewall permite el puerto 5432 desde cualquier origen. | El servicio queda accesible desde redes que no necesitan utilizarlo. | Permitir TCP/5432 únicamente desde redes autorizadas y denegar los demás orígenes. |
+| 4 | `pg_hba.conf` permite todas las bases de datos y todos los usuarios desde `0.0.0.0/0`. | Cualquier origen IPv4 puede intentar autenticarse para cualquier base de datos y usuario contemplados por la regla. | Restringir la regla por base de datos, usuario y dirección de origen. |
+| 5 | La aplicación web utiliza una cuenta con privilegios administrativos. | Si la aplicación es comprometida, el atacante podría realizar operaciones administrativas y afectar múltiples bases de datos u objetos. | Crear una cuenta de aplicación con privilegios mínimos. |
+| 6 | No existe una separación efectiva entre la cuenta administrativa y la cuenta de aplicación. | Una vulnerabilidad de la aplicación puede convertirse en un incidente de mayor alcance. | Utilizar cuentas independientes para administración y operación de la aplicación. |
+| 7 | Se considera que las contraseñas fuertes son suficientes para garantizar la seguridad. | Se ignoran los riesgos de exposición de red, privilegios excesivos y configuración permisiva. | Aplicar defensa en profundidad, combinando autenticación, autorización y controles de red. |
+| 8 | La regla de acceso permite cualquier base de datos (`all`). | Una cuenta comprometida podría intentar acceder a más bases de datos de las que necesita. | Limitar el acceso a la base de datos específica requerida por la aplicación. |
+| 9 | La regla de acceso permite cualquier usuario (`all`). | La política no restringe los intentos de conexión a una cuenta concreta. | Definir usuarios específicos y revisar sus privilegios. |
+| 10 | No se menciona una política de monitoreo y revisión de conexiones. | Los intentos de acceso no autorizado o la actividad anómala podrían detectarse tarde. | Habilitar y revisar registros apropiados, supervisar conexiones y auditar actividades relevantes. |
+| 11 | No se especifica protección de las comunicaciones mediante TLS. | Si las conexiones atraviesan redes no confiables sin cifrado, los datos podrían quedar expuestos. | Configurar TLS y verificar que los clientes utilicen conexiones cifradas. |
+| 12 | No se especifica una revisión de los permisos del sistema operativo. | Usuarios no autorizados podrían acceder a archivos de configuración o datos si los permisos fueran excesivos. | Restringir los permisos de los archivos de configuración y del directorio de datos. |
+
+**Análisis:** el escenario combina una exposición de red amplia, reglas de autenticación permisivas y una cuenta de aplicación con privilegios excesivos. Una contraseña fuerte no corrige esos problemas; la seguridad requiere varios controles complementarios.
+
+**¿Es suficiente tener contraseñas fuertes?**
+
+No. Las contraseñas fuertes ayudan a proteger la autenticación, pero no garantizan por sí solas la seguridad de PostgreSQL. La protección depende de varias capas complementarias:
+
+- **Autenticación:** verifica la identidad del usuario. Deben utilizarse métodos seguros y credenciales robustas.
+- **Autorización:** determina qué acciones puede realizar cada usuario. Una aplicación no debe utilizar una cuenta con privilegios administrativos si no los necesita.
+- **Red:** limita quién puede alcanzar el servicio. El firewall y las interfaces de escucha deben restringir el acceso a los orígenes necesarios.
+- **Configuración:** `pg_hba.conf` debe permitir únicamente las conexiones necesarias, restringiendo las bases de datos, los usuarios y las direcciones de origen.
+- **Sistema operativo:** los archivos de configuración y el directorio de datos deben tener permisos adecuados para impedir accesos no autorizados.
+- **Monitoreo:** los registros y la revisión periódica de conexiones ayudan a detectar intentos de acceso indebido y actividad anómala.
+
+En conclusión, las contraseñas fuertes son una medida necesaria, pero insuficiente por sí sola. Se requiere combinar autenticación segura, privilegios mínimos, restricciones de red, configuración adecuada, protección del sistema operativo y monitoreo continuo.
+
+### Actividad 19. Construcción de una línea base de seguridad
+
+La siguiente propuesta establece una línea base de seguridad para PostgreSQL 16, con el propósito de reducir la superficie de ataque, limitar los accesos y proteger la información almacenada. Los valores propuestos deberán adaptarse a las necesidades del entorno y verificarse después de su implementación.
+
+| Categoría | Configuración propuesta |
+|---|---|
+| **Red** | Configurar `listen_addresses` para escuchar únicamente en las interfaces necesarias. Mantener el puerto `5432`, salvo que exista una razón documentada para cambiarlo. Configurar el firewall para permitir conexiones únicamente desde equipos y redes autorizados. Restringir las redes permitidas mediante reglas específicas en `pg_hba.conf`. |
+| **Autenticación** | Utilizar `scram-sha-256` para la autenticación por contraseña, siempre que los clientes sean compatibles. Establecer contraseñas robustas, únicas y protegidas; evitar compartir credenciales y cambiarlas cuando exista sospecha de exposición. Reservar la cuenta administrativa para tareas que requieran privilegios elevados. |
+| **Autorización** | Aplicar el principio de mínimo privilegio. Separar las cuentas administrativas de las cuentas de aplicación y consulta. Otorgar únicamente los permisos necesarios sobre bases de datos, esquemas y tablas. Revisar periódicamente los roles, sus membresías y sus privilegios efectivos. |
+| **Configuración** | Revisar parámetros como `listen_addresses`, `port`, `password_encryption`, `ssl`, `max_connections`, `statement_timeout` e `idle_in_transaction_session_timeout`. Ajustarlos según las necesidades del sistema. Mantener únicamente las extensiones necesarias y verificar su uso antes de retirar alguna. |
+| **Sistema operativo** | Verificar que los archivos de configuración y el directorio de datos pertenezcan a las cuentas de servicio correspondientes y tengan permisos mínimos. Restringir el acceso a usuarios no autorizados y proteger los archivos que puedan contener información sensible. En Windows, revisar los permisos mediante las herramientas del sistema, como `icacls`. |
+| **Cifrado** | Habilitar TLS cuando corresponda, configurar certificados válidos y verificar que las conexiones de los clientes utilicen cifrado. Proteger las credenciales para evitar que se expongan en archivos, scripts o capturas de pantalla. Restringir el acceso a datos sensibles y utilizar mecanismos de protección adecuados para la información almacenada y transmitida. |
+| **Mantenimiento** | Instalar actualizaciones de seguridad después de evaluar su compatibilidad y realizar pruebas. Revisar periódicamente los accesos, roles, reglas de red, parámetros y registros. Documentar la configuración inicial, cada cambio realizado, su justificación y los resultados de las verificaciones. |
+
+**Criterio de cumplimiento:** la línea base se considerará implementada cuando los controles propuestos hayan sido aplicados, verificados y documentados. Mientras no se realicen estas acciones, se trata de una propuesta y no de una configuración endurecida confirmada.
