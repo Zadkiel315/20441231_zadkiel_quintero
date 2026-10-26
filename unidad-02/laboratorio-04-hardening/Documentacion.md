@@ -63,3 +63,48 @@ En la primera arquitectura, si el firewall permite conexiones externas al puerto
 
 **Aspecto por considerar:** Aunque las reglas de red están limitadas a direcciones locales, las reglas que utilizan `{all}` no restringen por sí mismas las bases de datos ni los usuarios. Por ello, deben evaluarse junto con los privilegios de los roles y los demás controles de seguridad.
 
+### Actividad 5. Analizar una regla permisiva
+
+**Regla analizada:**
+
+`host    all    all    0.0.0.0/0    scram-sha-256`
+
+**¿Qué bases de datos permite?**
+Permite conexiones a todas las bases de datos de PostgreSQL.
+
+**¿Qué usuarios permite?**
+Permite conexiones de cualquier usuario, siempre que cumpla con el método de autenticación configurado.
+
+**¿Qué direcciones de origen permite?**
+Permite conexiones desde cualquier dirección IPv4, debido al rango `0.0.0.0/0`.
+
+**¿Qué método de autenticación utiliza?**
+Utiliza `scram-sha-256`, un método de autenticación mediante contraseña.
+
+**¿Por qué puede representar una exposición innecesaria?**
+Porque acepta conexiones desde cualquier dirección IPv4 y no restringe las bases de datos ni los usuarios en la propia regla. Aunque utiliza un método de autenticación sólido, amplía la superficie de exposición y puede facilitar intentos de acceso no autorizado.
+
+**¿Qué información necesitarías para restringirla?**
+Necesitaría conocer la dirección IP o red de origen autorizada, la base de datos a la que se requiere acceso, el usuario específico que utilizará la conexión y el método de autenticación compatible con el entorno.
+
+**Regla actual:**
+
+`host    all    all    0.0.0.0/0    scram-sha-256`
+
+**Problema:**
+Permite conexiones desde cualquier dirección IPv4, para todas las bases de datos y todos los usuarios.
+
+**Origen que realmente necesita acceso:**
+La dirección IP o red privada autorizada que requiera conectarse al servidor. Debe confirmarse de acuerdo con las necesidades reales del entorno.
+
+**Base de datos:**
+La base de datos específica que necesita utilizar la aplicación o el usuario autorizado.
+
+**Usuario:**
+La cuenta específica que necesita conectarse, con los privilegios mínimos necesarios.
+
+**Regla propuesta:**
+
+`host    nombre_bd    usuario_app    IP_O_RED_AUTORIZADA    scram-sha-256`
+
+Esta regla es conceptual: los valores `nombre_bd`, `usuario_app` e `IP_O_RED_AUTORIZADA` deben sustituirse por los datos reales antes de aplicarla.
