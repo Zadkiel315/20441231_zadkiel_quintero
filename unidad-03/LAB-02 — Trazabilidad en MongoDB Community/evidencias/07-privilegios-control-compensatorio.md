@@ -185,7 +185,7 @@ db.getProfilingStatus()
 
 ## 6. Limitaciones que noté
 
-- **El filtro siguió activo en el nivel 2.** Como el estado mostró el `filter` incluso con `was: 2`, el perfilador solo habría dejado pasar `insert`, `update` y `remove`, y un `grantRolesToUser` es un comando, no una de esas operaciones. Así que el `0` del perfilador no se puede atribuir solo a que el perfilador "no ve" estos comandos; en esta prueba el filtro también pudo influir. Lo que sí es firme es el `0` de la bitácora de `mongod`, y que ningún mecanismo de Community me dio autor ni hora.
+- **En nivel 2 el perfilador sí registró un comando de `admin` sobre `system.profile`, pero no el `grantRolesToUser`.** No pude determinar por qué. Lo firme es que ni el perfilador ni la bitácora de `mongod` me dieron autor ni hora del cambio de privilegios.
 - **La instantánea solo vio a `app_ventas`.** `db.getUsers()` lista los usuarios de la base activa (`comercial`). `admin` vive en la base `admin`, así que si alguien cambiara sus roles, esta instantánea no lo detectaría. Un control completo tendría que recorrer también la base `admin`.
 - **La instantánea solo detecta, no atribuye.** Dice que algo cambió y qué, pero no quién ni cuándo.
 
