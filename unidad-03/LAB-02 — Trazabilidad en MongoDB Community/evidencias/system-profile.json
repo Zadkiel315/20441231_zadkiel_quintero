@@ -29,5 +29,62 @@
     "client": "127.0.0.1",
     "appName": "mongosh 2.14.2",
     "user": "admin@admin"
+  },
+  {
+    "op": "insert",
+    "ns": "comercial.clientes",
+    "command": {},
+    "ts": {
+      "$date": "2026-11-16T01:03:57.723Z"
+    },
+    "client": "127.0.0.1",
+    "appName": "app-ventas-web",
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "query",
+    "ns": "comercial.clientes",
+    "command": {},
+    "ts": {
+      "$date": "2026-11-16T01:03:57.734Z"
+    },
+    "client": "127.0.0.1",
+    "appName": "app-ventas-web",
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 99
+      },
+      "u": {
+        "$set": {
+          "rfc": "TEMP000000BBB"
+        }
+      }
+    },
+    "ts": {
+      "$date": "2026-11-16T01:03:57.738Z"
+    },
+    "client": "127.0.0.1",
+    "appName": "app-ventas-web",
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "remove",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 99
+      }
+    },
+    "ts": {
+      "$date": "2026-11-16T01:03:57.739Z"
+    },
+    "client": "127.0.0.1",
+    "appName": "app-ventas-web",
+    "user": "app_ventas@comercial"
   }
 ]

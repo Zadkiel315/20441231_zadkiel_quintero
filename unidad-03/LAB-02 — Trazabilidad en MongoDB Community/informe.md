@@ -19,7 +19,7 @@ Usé MongoDB 7.0.48 en un contenedor `mongo:7` dentro de GitHub Codespaces, con 
 - **Dónde se escribe:** en la salida estándar del proceso, no en un archivo. Se lee con `docker logs`, y con `getLog` desde mongosh (Act. 1).
 - **Accesos:** la bitácora registró dos intentos fallidos (contraseña incorrecta, `result` 18, y usuario inexistente, `result` 11) y un acceso exitoso con `app-ventas-web`. El cliente recibe el mismo mensaje en ambos fallos, y el detalle real queda solo en la bitácora (Act. 5). Hubo 3 líneas de fallo para 2 intentos, porque el usuario inexistente produjo dos líneas.
 - **Cambios de configuración:** `Profiler settings changed` no trae usuario. Lo obtuve correlacionando el `ctx` con el evento `Successfully authenticated` de la misma conexión: los tres cambios (conn23, conn43, conn51) fueron de `admin` (Act. 6). La correlación solo vale dentro del mismo arranque del servidor.
-- **Estructura:** `createCollection` de una colección de prueba quedó registrado, pero la línea no trae usuario.
+- **Estructura:** `createCollection` de una colección de prueba quedó registrado, pero la línea no trae usuario, solo el `ctx` de la conexión.
 
 ## 4. Privilegios
 
@@ -27,7 +27,7 @@ Usé MongoDB 7.0.48 en un contenedor `mongo:7` dentro de GitHub Codespaces, con 
 - **Control compensatorio:** instantáneas de privilegios en `auditoria.instantaneas_privilegios`. Las dos instantáneas (05:51:08 y 05:51:50 UTC) mostraron que `app_ventas` pasó de `readWrite` a `readWrite` + `dbAdmin`.
 - **Su límite:** detecta que cambió y qué rol, pero **no quién ni cuándo exactamente** (solo que fue dentro de una ventana de 42 segundos). `tomada_por` es quien tomó la instantánea, no quien hizo el cambio.
 - **Limitaciones de mi implementación:** solo recorrí la base `comercial`, así que un cambio de roles de `admin` (que vive en la base `admin`) no se detectaría. Además la escribió `admin` (`root`), que podría alterarla.
-- **Un hallazgo sin explicar:** al pasar a nivel 2, el `filter` de la Act. 4 siguió visible en el estado. En nivel 2 el perfilador sí registró un comando de `admin` sobre `system.profile`, pero no el `grantRolesToUser`. No pude determinar por qué.
+- **Un hallazgo sin explicar:** al pasar a nivel 2, el `filter` de la Act. 4 siguió visible en `getProfilingStatus()`. En ese nivel el perfilador registró un comando de `admin` sobre `system.profile` (`op: command`), pero no el `grantRolesToUser`. No pude determinar por qué.
 
 ## 5. Conservación
 
@@ -40,7 +40,7 @@ Riesgos que observé:
 
 Exporté `system.profile`, la bitácora de `getLog` (680 eventos) y `docker logs`, y calculé el SHA-256 de los tres archivos. Revisé que ninguno contuviera las contraseñas de práctica. La configuración permanente (`systemLog` a archivo, `operationProfiling`) no la apliqué, porque en mi contenedor implicaría recrearlo y perder los datos.
 
-Como en la Actividad 4 borré `system.profile` antes de exportar, el primer export no tenía operaciones `query` ni `remove`. Repetí operaciones de `app_ventas` con el nivel 2 sobre un cliente temporal, restablecí el filtro y volví a exportar `system.profile`; recalculé su hash, y los de la bitácora no cambiaron.
+Como en la Actividad 4 borré `system.profile` antes de exportar, el primer export no tenía operaciones `query` ni `remove`. El 2026-11-15 repetí operaciones de `app_ventas` con el nivel 2 sobre un cliente temporal (`_id: 99`: insertar, consultar, actualizar y borrar), restablecí el filtro y volví a exportar. El nuevo `system-profile.json` tiene 6 documentos e incluye `insert`, `query`, `update` y `remove` de `app_ventas`. Su hash cambió, y los de la bitácora y de `docker logs` siguen iguales. Los detalles están en la evidencia 08.
 
 ## 6. Comparación
 
@@ -57,6 +57,8 @@ Resumen de la Actividad 9:
 | Cambio de configuración del registro | Parcial, no comprobado | Parcial (autor por `ctx`) | Documentado, no practicado |
 
 La diferencia más importante: PostgreSQL registró los `GRANT` y `REVOKE`, y MongoDB Community no registró el cambio de privilegios.
+
+"Documentado, no practicado" significa que la auditoría nativa solo existe en Enterprise y Atlas (M10 o superior), que son de pago, y este laboratorio usa Community. Lo que sé de ella viene de la documentación (REF-U3-04), no de haberla usado.
 
 ## 7. Recomendación
 

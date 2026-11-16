@@ -22,3 +22,7 @@ Leyenda: **Sí** (observado), **Parcial** (explico), **No**, **Documentado, no p
 - Casi todo depende de configuración previa: el perfilador de MongoDB se apaga solo al reiniciar y `log_statement` solo registra lo que se activó antes del incidente.
 - La auditoría nativa de Enterprise/Atlas cubre en la documentación los eventos de la tabla, pero no la practiqué y no puedo afirmar cómo se ve su salida.
 - El perfilador y las instantáneas no son equivalentes a la auditoría nativa: son trazabilidad parcial y un control compensatorio.
+
+## Por qué "Documentado, no practicado"
+
+La auditoría nativa solo existe en MongoDB Enterprise y en Atlas (clústeres M10 o superiores), que son de pago. Este laboratorio usa Community, donde no está disponible (`modules: []`, Act. 1). Lo que sé de ella viene de la documentación (REF-U3-04), no de haberla usado.

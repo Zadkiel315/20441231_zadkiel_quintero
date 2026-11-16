@@ -58,7 +58,7 @@ db.grantRolesToUser("app_ventas", [{ role: "dbAdmin", db: "comercial" }])
 { ok: 1 }
 ```
 
-**Qué significa:** `app_ventas` recibió el rol extra `dbAdmin`. Ojo: aunque el nivel ya es 2, el `filter` de la Actividad 4 sigue apareciendo en el estado, porque `setProfilingLevel(2)` no lo quitó. Lo anoto como limitación en la sección 6.
+**Qué significa:** `app_ventas` recibió el rol extra `dbAdmin`. Ojo: aunque el nivel ya es 2, el `filter` de la Actividad 4 sigue apareciendo en el estado, porque `setProfilingLevel(2)` no lo quitó. Lo anoto en la sección 6.
 
 ## 3. Búsqueda de evidencia del cambio
 
@@ -181,11 +181,11 @@ db.getProfilingStatus()
 }
 ```
 
-**Qué significa:** `app_ventas` volvió a tener solo `readWrite` y el perfilador quedó en nivel 1 con el filtro de la Actividad 4. Tampoco quedó registrado en la bitácora ni en el perfilador el `revokeRolesFromUser` (no lo busqué, pero es el mismo tipo de comando).
+**Qué significa:** `app_ventas` volvió a tener solo `readWrite` y el perfilador quedó en nivel 1 con el filtro de la Actividad 4. Tampoco busqué el `revokeRolesFromUser` en la bitácora ni en el perfilador; no tengo evidencia de que haya quedado registrado, aunque es el mismo tipo de comando que el `grantRolesToUser`.
 
 ## 6. Limitaciones que noté
 
-- **En nivel 2 el perfilador sí registró un comando de `admin` sobre `system.profile`, pero no el `grantRolesToUser`.** No pude determinar por qué. Lo firme es que ni el perfilador ni la bitácora de `mongod` me dieron autor ni hora del cambio de privilegios.
+- **El filtro siguió visible al pasar a nivel 2, y no pude explicar por qué.** `getProfilingStatus()` mostró `was: 2` y, a la vez, el `filter` de la Actividad 4. En ese nivel el perfilador registró un comando de `admin` sobre `system.profile` (`op: command`), pero no el `grantRolesToUser`. No pude determinar la causa. Lo firme es que ni el perfilador ni la bitácora de `mongod` me dieron autor ni hora del cambio de privilegios.
 - **La instantánea solo vio a `app_ventas`.** `db.getUsers()` lista los usuarios de la base activa (`comercial`). `admin` vive en la base `admin`, así que si alguien cambiara sus roles, esta instantánea no lo detectaría. Un control completo tendría que recorrer también la base `admin`.
 - **La instantánea solo detecta, no atribuye.** Dice que algo cambió y qué, pero no quién ni cuándo.
 
