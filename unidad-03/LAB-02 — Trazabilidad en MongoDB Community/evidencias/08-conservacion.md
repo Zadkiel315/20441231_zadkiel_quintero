@@ -67,6 +67,8 @@ Contenido exportado:
 
 **Qué significa:** hay 2 documentos. El primero es el `update` del teléfono de la Actividad 4, hecho por `app_ventas`. El segundo es un comando de `admin` sobre `comercial.system.profile` a las 05:51:38 UTC; cae justo cuando activé el nivel 2 en la Actividad 7, así que casi seguro es la propia llamada `setProfilingLevel(2)`. Este documento no contiene el `grantRolesToUser`. Los documentos de las Actividades 2 y 3 ya no están, porque en la Actividad 4 borré `system.profile` (esa evidencia quedó copiada en las evidencias 02 y 03).
 
+Nota: este es el primer export. Se volvió a exportar en la sección 10.
+
 ## 3. Exportar la bitácora
 
 ```bash
@@ -87,7 +89,7 @@ grep -c '^{"t"' evidencias/bitacora-mongod.log
 680
 ```
 
-**Qué significa:** `wc -l` cuenta líneas de texto, no eventos, y dio 1360, que es más de lo que `getLog` puede devolver (1024). Por eso conté los eventos con `grep` por las líneas que empiezan con `{"t"`: son 680 eventos. Es más que los 638 que vi antes del export porque entre las dos consultas corrí más comandos, y cada conexión genera eventos nuevos. Cada evento ocupa más de una línea en el archivo, por eso `wc -l` da casi el doble.
+**Qué significa:** `wc -l` cuenta líneas de texto, no eventos, y dio 1360, que es más de lo que `getLog` puede devolver (1024). Por eso conté los eventos con `grep` por las líneas que empiezan con `{"t"`: son 680 eventos. Es más que los 638 que vi antes del export porque entre las dos consultas corrí más comandos, y cada conexión genera eventos nuevos. Las líneas que devuelve `getLog` ya terminan en salto de línea y `join("\n")` agrega otro, así que queda una línea en blanco entre evento y evento; por eso `wc -l` da exactamente el doble (1360 = 2 × 680).
 
 Además exporté la bitácora completa del contenedor, que guarda más historia que `getLog`:
 
@@ -116,10 +118,12 @@ sha256sum system-profile.json bitacora-mongod.log docker-logs-completo.log > has
 cat hashes.sha256
 ```
 ```
-1ff6108613adcdf9e142a473a38d63c69bbb8215effdf33ec71289840d35bf6c  system-profile.json
+eaa22defcf2dcb24d46c5238b5e9c231add3fc9515db203c32f4cf541832089d  system-profile.json
 d6da9e207a385c54a6c140a2b989521e32e8ec78c9496e9c4d274fa008cabd4b  bitacora-mongod.log
 ebd3faa3c55c712796896d28d1864ee4554ade694bf00994abea969029d07e62  docker-logs-completo.log
 ```
+
+El hash de `system-profile.json` es el del segundo export (sección 10); el del primer export era `1ff6108613adcdf9e142a473a38d63c69bbb8215effdf33ec71289840d35bf6c`.
 
 **Qué significa:** el hash es una huella de cada archivo. Si alguien lo modifica después, aunque sea una coma, el hash cambia, y así se puede demostrar que la evidencia no se alteró desde que la exporté. Esto solo prueba integridad desde ese momento, no que el contenido original sea auténtico.
 
@@ -186,4 +190,44 @@ Es una ventana en memoria con solo los 1024 eventos más recientes. Sirve para c
 
 ## 9. Conclusión
 
-La evidencia de Community es frágil: el perfilador se apaga solo al reiniciar, `system.profile` se sobrescribe y `getLog` se vacía. La exportación con hash sirve para conservar lo que había en un momento dado, pero no resuelve el problema de fondo, que se resuelve con configuración permanente (`systemLog` a archivo, `operationProfiling` desde el arranque) y con exportaciones periódicas.
+La evidencia de Community es frágil: el perfilador se apaga solo al reiniciar, `system.profile` se sobrescribe y `getLog` se vacía. La exportación con hash sirve para conservar lo que había en un momento dado, pero no resuelve el problema de fondo, que se resuelve con configuración permanente (`systemLog` a archivo, `operationProfiling` desde el arranque) y con exportaciones periódicas. Además, tuve que repetir la exportación de `system.profile` (sección 10) porque borrarlo en la Actividad 4 sin exportar destruyó evidencia que ya no se pudo recuperar.
+
+## 10. Re-exportación de system.profile
+
+El primer `system-profile.json` solo tenía un `update` de `app_ventas` y un `command` de `admin`, porque en la Actividad 4 borré `system.profile` antes de exportar. La guía pide que `system.profile` contenga al menos una operación `query`, una `update` y una `remove` de `app_ventas`, así que repetí operaciones y volví a exportar. Esto lo hice el 2026-11-15 a las 18:03 hora de Culiacán (2026-11-16 01:03 UTC), después de reabrir el Codespace.
+
+Pasos, todos con el contenedor `dba-u3-mongo` y sin tocar los datos reales:
+
+1. Con `admin`, apagué y volví a activar el perfilador en nivel 2 (`setProfilingLevel(0)` y luego `setProfilingLevel(2)`). `getProfilingStatus()` mostró `was: 2` y no mostró el campo `filter`.
+2. Con `app_ventas` (`appName=app-ventas-web`), insertó, consultó, actualizó y borró un cliente temporal `_id: 99`.
+3. Con `admin`, restablecí el filtro de la Actividad 4 (`insert`, `update`, `remove`).
+4. Volví a exportar `system.profile` y recalculé los hashes.
+
+```bash
+docker exec dba-u3-mongo mongosh "mongodb://admin:<REDACTED>@127.0.0.1:27017/comercial?authSource=admin" --quiet --eval 'EJSON.stringify(db.system.profile.find({}, { op: 1, ns: 1, user: 1, client: 1, appName: 1, ts: 1, "command.q": 1, "command.u": 1 }).toArray(), null, 2)' > evidencias/system-profile.json
+```
+
+El archivo nuevo tiene 6 documentos: los 2 anteriores y 4 nuevos.
+
+| # | op | Usuario | Aplicación | Momento (UTC) | Qué hizo |
+|---|---|---|---|---|---|
+| 1 | update | app_ventas@comercial | app-ventas-web | 2026-11-13 05:34:28 | Cambió el teléfono del cliente `_id: 1` (Actividad 4) |
+| 2 | command | admin@admin | mongosh 2.14.2 | 2026-11-13 05:51:38 | Comando sobre `system.profile` durante la Actividad 7 |
+| 3 | insert | app_ventas@comercial | app-ventas-web | 2026-11-16 01:03:57.723 | Insertó el cliente temporal `_id: 99` |
+| 4 | query | app_ventas@comercial | app-ventas-web | 2026-11-16 01:03:57.734 | Consultó clientes de Culiacán |
+| 5 | update | app_ventas@comercial | app-ventas-web | 2026-11-16 01:03:57.738 | Cambió el RFC del `_id: 99` |
+| 6 | remove | app_ventas@comercial | app-ventas-web | 2026-11-16 01:03:57.739 | Borró el `_id: 99` |
+
+**Qué significa:** ahora `system.profile` sí contiene una operación `query`, una `update` y una `remove` de `app_ventas`. En el `insert` y el `query` el campo `command` aparece vacío porque la proyección del export solo incluye `command.q` y `command.u`, que esas operaciones no tienen. Las tres operaciones nuevas ocurrieron en 16 ms.
+
+Hashes tras el segundo export:
+
+```
+eaa22defcf2dcb24d46c5238b5e9c231add3fc9515db203c32f4cf541832089d  system-profile.json
+d6da9e207a385c54a6c140a2b989521e32e8ec78c9496e9c4d274fa008cabd4b  bitacora-mongod.log
+ebd3faa3c55c712796896d28d1864ee4554ade694bf00994abea969029d07e62  docker-logs-completo.log
+```
+
+El hash de `system-profile.json` cambió, porque el contenido cambió. Los de la bitácora y de `docker logs` son idénticos a los de la sección 5 del primer export, lo que confirma que esos dos archivos no se modificaron. Revisé además que ningún archivo del laboratorio contenga las contraseñas de práctica.
+
+Esto también muestra el problema de conservación de la Actividad 4: borrar `system.profile` destruyó la evidencia de las Actividades 2 y 3, y solo se conserva lo que copié a mano en `02-` y `03-`.
