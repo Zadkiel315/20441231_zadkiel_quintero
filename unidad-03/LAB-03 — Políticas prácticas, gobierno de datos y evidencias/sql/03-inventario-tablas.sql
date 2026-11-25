@@ -2,8 +2,6 @@
 -- Actividad 4: Catalogo minimo de datos
 -- ============================================================
 
--- Actividad 4: Catalogo minimo de datos
-
 -- Actualizar estadisticas de las tablas
 ANALYZE;
 
