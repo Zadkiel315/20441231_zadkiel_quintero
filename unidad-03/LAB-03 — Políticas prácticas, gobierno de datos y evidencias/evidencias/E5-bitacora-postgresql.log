@@ -1,0 +1,1639 @@
+===== postgresql-2026-10-18_011841.log =====
+2026-10-18 01:18:42 CST LOG:  el sistema de bases de datos fue apagado en 2026-10-18 01:18:32 CST
+2026-10-18 01:20:38 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:38 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:39 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:39 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:40 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:41 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:42 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:43 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:45 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:46 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:47 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:48 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:49 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:50 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:51 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:53 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:54 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:55 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:56 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:57 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:20:59 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:00 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:01 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:02 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:03 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:04 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:05 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:06 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:08 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:09 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:10 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:11 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:12 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:13 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:14 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:15 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:17 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:18 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:19 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:20 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:21 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:22 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:23 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:24 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:25 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:26 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:28 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:29 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:30 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:31 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:32 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:33 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:35 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:36 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:37 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:38 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:39 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:40 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:41 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:43 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:44 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:45 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:46 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:47 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:48 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:49 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:50 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:52 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:53 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:54 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:55 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:56 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:57 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:21:58 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:00 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:01 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:02 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:03 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:04 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:05 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:06 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:08 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:09 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:10 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:11 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:12 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:13 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:14 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:15 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:17 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:18 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:19 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:20 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:21 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:22 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:24 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:25 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:26 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:27 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:28 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:29 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:31 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:32 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:33 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:34 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:35 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:36 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:37 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:38 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:39 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:40 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:42 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:43 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:44 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:45 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:46 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:47 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:48 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:49 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:51 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:52 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:53 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:54 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:55 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:56 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:57 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:58 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:22:59 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:01 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:02 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:03 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:04 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:05 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:06 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:07 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:08 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:09 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:11 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:12 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:13 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:14 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:15 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:17 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:18 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:19 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:20 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:21 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:22 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:23 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:25 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:26 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:27 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:28 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:29 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:30 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:31 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:32 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:33 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:35 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:36 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:37 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:38 CST LOG:  el de paquete de inicio tiene largo incorrecto
+2026-10-18 01:23:42 CST LOG:  empezando checkpoint: time
+2026-10-18 01:23:45 CST LOG:  checkpoint completo: escritos 32 búfers (0.2%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.552 s, sync=0.022 s, total=3.595 s; archivos sincronizados=11, más largo=0.005 s, promedio=0.002 s; distancia=247 kB, estimación=247 kB; lsn=0/1826610, lsn de redo=0/18265B8
+2026-10-18 01:41:25 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-18 01:41:25 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-18 16:49:18 CST LOG:  empezando checkpoint: time
+2026-10-18 16:49:19 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.120 s, sync=0.003 s, total=0.151 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=0 kB, estimación=222 kB; lsn=0/1826880, lsn de redo=0/1826828
+2026-10-18 16:54:25 CST ERROR:  syntax error at or near "database" en carÃ¡cter 1
+2026-10-18 16:54:25 CST SENTENCIA:  database db_20441231_zadkiel_quintero;
+	
+2026-10-18 16:54:46 CST ERROR:  error de sintaxis en o cerca de Â«DatabaseÂ» en carÃ¡cter 1
+2026-10-18 16:54:46 CST SENTENCIA:  Database db_20441231_zadkiel_quintero;
+	
+2026-10-18 16:55:36 CST ERROR:  error de sintaxis en o cerca de Â«USEÂ» en carÃ¡cter 1
+2026-10-18 16:55:36 CST SENTENCIA:  USE db_20441231_zadkiel_quintero;
+2026-10-18 16:56:58 CST ERROR:  relation "clientes" already exists
+2026-10-18 16:56:58 CST SENTENCIA:  CREATE TABLE clientes (
+	    id BIGSERIAL PRIMARY KEY,
+	    nombre VARCHAR(120) NOT NULL,
+	    correo VARCHAR(150) NOT NULL,
+	    telefono VARCHAR(20),
+	    rfc VARCHAR(13),
+	    edad INTEGER,
+	    ciudad VARCHAR(80),
+	    codigo_postal VARCHAR(10),
+	    fecha_alta DATE DEFAULT CURRENT_DATE
+	);
+	
+	INSERT INTO clientes
+	(nombre, correo, telefono, rfc, edad, ciudad, codigo_postal)
+	VALUES
+	('Ana LÃ³pez',
+	 'ana.lopez@example.test',
+	 '6671234567',
+	 'LOAA850315ABC',
+	 41,
+	 'CuliacÃ¡n',
+	 '80000'),
+	
+	('Carlos PÃ©rez',
+	 'carlos.perez@example.test',
+	 '6672345678',
+	 'PECA900720DEF',
+	 35,
+	 'CuliacÃ¡n',
+	 '80100'),
+	
+	('MarÃ­a GarcÃ­a',
+	 'maria.garcia@example.test',
+	 '6673456789',
+	 'GAMA780912GHI',
+	 47,
+	 'MazatlÃ¡n',
+	 '82000'),
+	
+	('Luis Torres',
+	 'luis.torres@example.test',
+	 '6674567890',
+	 'TOLU920201JKL',
+	 34,
+	 'Los Mochis',
+	 '81200'),
+	
+	('Laura SÃ¡nchez',
+	 'laura.sanchez@example.test',
+	 '6675678901',
+	 'SALA880525MNO',
+	 38,
+	 'CuliacÃ¡n',
+	 '80200');
+2026-10-18 16:59:18 CST LOG:  empezando checkpoint: time
+2026-10-18 17:01:10 CST LOG:  checkpoint completo: escritos 997 búfers (6.1%); escritos 1 búfers SLRU; 1 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=111.643 s, sync=0.457 s, total=112.356 s; archivos sincronizados=306, más largo=0.007 s, promedio=0.002 s; distancia=4707 kB, estimación=4707 kB; lsn=0/1CBF5B0, lsn de redo=0/1CBF520
+2026-10-18 17:13:23 CST ERROR:  no existe la funciÃ³n gen_salt(unknown) en carÃ¡cter 40
+2026-10-18 17:13:23 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-18 17:13:23 CST SENTENCIA:  SELECT crypt(
+	    'Password123',
+	    gen_salt('bf')
+	);
+2026-10-18 17:13:47 CST ERROR:  no existe la funciÃ³n gen_salt(unknown) en carÃ¡cter 42
+2026-10-18 17:13:47 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-18 17:13:47 CST SENTENCIA:  
+	SELECT crypt(
+	    'Password123',
+	    gen_salt('bf')
+	);
+2026-10-18 17:14:15 CST ERROR:  no existe la funciÃ³n gen_salt(unknown) en carÃ¡cter 40
+2026-10-18 17:14:15 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-18 17:14:15 CST SENTENCIA:  SELECT crypt(
+	    'Password123',
+	    gen_salt('bf')
+	);
+2026-10-18 17:14:18 CST LOG:  empezando checkpoint: time
+2026-10-18 17:14:22 CST LOG:  checkpoint completo: escritos 34 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.771 s, sync=0.047 s, total=3.835 s; archivos sincronizados=31, más largo=0.007 s, promedio=0.002 s; distancia=128 kB, estimación=4249 kB; lsn=0/1CDF628, lsn de redo=0/1CDF598
+2026-10-18 17:19:18 CST LOG:  empezando checkpoint: time
+2026-10-18 17:19:28 CST LOG:  checkpoint completo: escritos 93 búfers (0.6%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=10.494 s, sync=0.064 s, total=10.575 s; archivos sincronizados=51, más largo=0.006 s, promedio=0.002 s; distancia=529 kB, estimación=3877 kB; lsn=0/1D63CE8, lsn de redo=0/1D63C58
+2026-10-18 17:24:19 CST LOG:  empezando checkpoint: time
+2026-10-18 17:24:23 CST LOG:  checkpoint completo: escritos 39 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=4.377 s, sync=0.032 s, total=4.422 s; archivos sincronizados=36, más largo=0.002 s, promedio=0.001 s; distancia=174 kB, estimación=3507 kB; lsn=0/1D8F850, lsn de redo=0/1D8F7F8
+2026-10-18 17:29:19 CST LOG:  empezando checkpoint: time
+2026-10-18 17:29:19 CST LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.219 s, sync=0.003 s, total=0.244 s; archivos sincronizados=1, más largo=0.003 s, promedio=0.003 s; distancia=16 kB, estimación=3158 kB; lsn=0/1D93990, lsn de redo=0/1D93938
+2026-10-18 18:43:58 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-18 18:43:58 CST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10054
+2026-10-18 18:43:58 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-18 18:43:58 CST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10054
+2026-10-24 17:14:48 CST LOG:  empezando checkpoint: time
+2026-10-24 17:14:48 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.143 s, sync=0.002 s, total=0.181 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=0 kB, estimación=2842 kB; lsn=0/1D93C78, lsn de redo=0/1D93C20
+2026-10-24 17:19:48 CST LOG:  empezando checkpoint: time
+2026-10-24 17:19:51 CST LOG:  checkpoint completo: escritos 31 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.435 s, sync=0.043 s, total=3.522 s; archivos sincronizados=29, más largo=0.006 s, promedio=0.002 s; distancia=145 kB, estimación=2572 kB; lsn=0/1DB8330, lsn de redo=0/1DB82A0
+2026-10-24 17:53:11 CST ERROR:  relation "clientes_soporte" already exists
+2026-10-24 17:53:11 CST SENTENCIA:  CREATE TABLE clientes_soporte (
+	    id BIGINT PRIMARY KEY,
+	    nombre VARCHAR(120) NOT NULL,
+	    correo VARCHAR(150) NOT NULL,
+	    telefono VARCHAR(20)
+	);
+2026-10-24 17:59:48 CST LOG:  empezando checkpoint: time
+2026-10-24 17:59:52 CST LOG:  checkpoint completo: escritos 29 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.203 s, sync=0.030 s, total=3.251 s; archivos sincronizados=26, más largo=0.004 s, promedio=0.002 s; distancia=138 kB, estimación=2329 kB; lsn=0/1DDAC20, lsn de redo=0/1DDABC8
+2026-10-24 18:45:45 CST LOG:  empezando checkpoint: time
+2026-10-24 18:45:48 CST LOG:  checkpoint completo: escritos 32 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.518 s, sync=0.049 s, total=3.599 s; archivos sincronizados=27, más largo=0.006 s, promedio=0.002 s; distancia=142 kB, estimación=2110 kB; lsn=0/1DFE470, lsn de redo=0/1DFE418
+2026-10-24 18:50:45 CST LOG:  empezando checkpoint: time
+2026-10-24 18:50:46 CST LOG:  checkpoint completo: escritos 9 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.986 s, sync=0.013 s, total=1.026 s; archivos sincronizados=7, más largo=0.005 s, promedio=0.002 s; distancia=37 kB, estimación=1903 kB; lsn=0/1E07A70, lsn de redo=0/1E079E0
+2026-10-24 19:16:21 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-24 19:16:21 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-24 19:16:21 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-25 14:28:17 CST LOG:  empezando checkpoint: time
+2026-10-25 14:28:17 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.110 s, sync=0.003 s, total=0.169 s; archivos sincronizados=1, más largo=0.003 s, promedio=0.003 s; distancia=6 kB, estimación=1713 kB; lsn=0/1E09450, lsn de redo=0/1E093F8
+
+===== postgresql-2026-10-19_000000.log =====
+2026-10-25 19:17:50 CST ERROR:  syntax error at or near "all" en carÃ¡cter 24
+2026-10-25 19:17:50 CST SENTENCIA:  SHOW max_connections;
+	all union
+	SHOW superuser_reserved_connections;
+	all union
+	SHOW statement_timeout;
+	all union
+	SHOW idle_in_transaction_session_timeout;
+	
+	
+	
+2026-10-25 19:18:11 CST ERROR:  error de sintaxis en o cerca de Â«unionÂ» en carÃ¡cter 24
+2026-10-25 19:18:11 CST SENTENCIA:  SHOW max_connections;
+	union all 
+	SHOW superuser_reserved_connections;
+	union all
+	SHOW statement_timeout;
+	union all
+	SHOW idle_in_transaction_session_timeout;
+	
+	
+	
+2026-10-25 19:33:00 CST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10054
+2026-10-25 19:33:00 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-25 19:33:00 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-25 19:59:41 CST ERROR:  column "usename" does not exist en carÃ¡cter 23
+2026-10-25 19:59:41 CST SENTENCIA:  SELECT
+	    pid,
+	    usename,
+	    client_addr,
+	    ssl,
+	    version,
+	    cipher
+	FROM pg_stat_ssl
+	WHERE pid = pg_backend_pid();
+	
+	
+2026-10-25 22:41:09 CST FATAL:  terminando la conexiÃ³n debido a una orden del administrador
+2026-10-25 22:41:09 CST FATAL:  terminating connection due to administrator command
+2026-10-25 22:41:09 CST FATAL:  terminating connection due to administrator command
+2026-10-25 22:41:09 CST LOG:  apagando
+2026-10-25 22:41:09 CST LOG:  empezando checkpoint: shutdown immediate
+2026-10-25 22:41:09 CST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.002 s, sync=0.001 s, total=0.048 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=0 kB, estimación=1542 kB; lsn=0/1E09500, lsn de redo=0/1E09500
+
+===== postgresql-2026-10-25_224112.log =====
+2026-10-25 22:41:12 CST LOG:  el sistema de bases de datos fue apagado en 2026-10-25 22:41:09 CST
+2026-10-25 22:46:12 CST LOG:  empezando checkpoint: time
+2026-10-25 22:46:12 CST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.011 s, sync=0.005 s, total=0.058 s; archivos sincronizados=2, más largo=0.003 s, promedio=0.003 s; distancia=0 kB, estimación=0 kB; lsn=0/1E09608, lsn de redo=0/1E095B0
+2026-10-25 23:11:05 CST FATAL:  terminating connection due to administrator command
+2026-10-25 23:11:05 CST FATAL:  terminating connection due to administrator command
+2026-10-25 23:11:05 CST LOG:  apagando
+2026-10-25 23:11:05 CST LOG:  empezando checkpoint: shutdown immediate
+2026-10-25 23:11:05 CST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.001 s, sync=0.001 s, total=0.028 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=0 kB, estimación=0 kB; lsn=0/1E096B8, lsn de redo=0/1E096B8
+
+===== postgresql-2026-10-25_231107.log =====
+2026-10-25 23:11:08 CST LOG:  el sistema de bases de datos fue apagado en 2026-10-25 23:11:05 CST
+2026-10-25 23:11:26 CST LOG:  conexión recibida: host=::1 port=60470
+2026-10-25 23:11:26 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:11:26 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=pgAdmin 4 - DB:postgres
+2026-10-25 23:11:26 CST LOG:  conexión recibida: host=::1 port=60473
+2026-10-25 23:11:26 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:11:26 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:8525755
+2026-10-25 23:16:08 CST LOG:  empezando checkpoint: time
+2026-10-25 23:16:08 CST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.011 s, sync=0.007 s, total=0.056 s; archivos sincronizados=2, más largo=0.004 s, promedio=0.004 s; distancia=0 kB, estimación=0 kB; lsn=0/1E097C0, lsn de redo=0/1E09768
+2026-10-25 23:28:14 CST ERROR:  syntax error at or near "\" en carÃ¡cter 1
+2026-10-25 23:28:14 CST SENTENCIA:  \password analista
+	
+2026-10-25 23:31:08 CST LOG:  empezando checkpoint: time
+2026-10-25 23:31:09 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.125 s, sync=0.279 s, total=0.856 s; archivos sincronizados=2, más largo=0.143 s, promedio=0.140 s; distancia=3 kB, estimación=3 kB; lsn=0/1E0A468, lsn de redo=0/1E0A410
+2026-10-25 23:34:39 CST LOG:  conexión recibida: host=::1 port=61605
+2026-10-25 23:34:39 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:34:39 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - DB:db_20441231_zadkiel_quintero
+2026-10-25 23:35:33 CST LOG:  conexión recibida: host=::1 port=61628
+2026-10-25 23:35:33 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:35:33 CST LOG:  conexión autorizada: usuario=analista base_de_datos=postgres nombre_de_aplicación=pgAdmin 4 - DB:postgres
+2026-10-25 23:36:21 CST LOG:  conexión recibida: host=::1 port=61668
+2026-10-25 23:36:21 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:36:21 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:515594
+2026-10-25 23:41:08 CST LOG:  empezando checkpoint: time
+2026-10-25 23:41:08 CST LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.224 s, sync=0.003 s, total=0.256 s; archivos sincronizados=2, más largo=0.002 s, promedio=0.002 s; distancia=4 kB, estimación=4 kB; lsn=0/1E0B690, lsn de redo=0/1E0B638
+2026-10-25 23:41:42 CST LOG:  conexión recibida: host=::1 port=61959
+2026-10-25 23:41:42 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:41:42 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:515594
+2026-10-25 23:41:42 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.079 usuario=analista base=db_20441231_zadkiel_quintero host=::1 port=61959
+2026-10-25 23:41:42 CST LOG:  disconnection: session time: 0:05:20.790 user=analista database=db_20441231_zadkiel_quintero host=::1 port=61668
+2026-10-25 23:45:14 CST LOG:  duration: 1207.936 ms  statement: SELECT pg_sleep(1.2);
+2026-10-25 23:48:19 CST ERROR:  column "funcion" does not exist en carÃ¡cter 514
+2026-10-25 23:48:19 CST SENTENCIA:  SELECT
+	    p.oid::regprocedure AS funcion,
+	    pg_get_userbyid(p.proowner) AS propietario,
+	    e.extname AS extension,
+	    p.prosecdef AS ejecuta_como_propietario
+	FROM pg_proc p
+	JOIN pg_namespace n
+	    ON n.oid = p.pronamespace
+	LEFT JOIN pg_depend d
+	    ON d.classid = 'pg_proc'::regclass
+	   AND d.objid = p.oid
+	   AND d.refclassid = 'pg_extension'::regclass
+	   AND d.deptype = 'e'
+	LEFT JOIN pg_extension e
+	    ON e.oid = d.refobjid
+	WHERE n.nspname = 'public'
+	  AND p.proacl IS NOT NULL
+	ORDER BY funcion::text;
+2026-10-25 23:48:50 CST ERROR:  column "funcion" does not exist en carÃ¡cter 514
+2026-10-25 23:48:50 CST SENTENCIA:  SELECT
+	    p.oid::regprocedure AS funcion,
+	    pg_get_userbyid(p.proowner) AS propietario,
+	    e.extname AS extension,
+	    p.prosecdef AS ejecuta_como_propietario
+	FROM pg_proc p
+	JOIN pg_namespace n
+	    ON n.oid = p.pronamespace
+	LEFT JOIN pg_depend d
+	    ON d.classid = 'pg_proc'::regclass
+	   AND d.objid = p.oid
+	   AND d.refclassid = 'pg_extension'::regclass
+	   AND d.deptype = 'e'
+	LEFT JOIN pg_extension e
+	    ON e.oid = d.refobjid
+	WHERE n.nspname = 'public'
+	  AND p.proacl IS NOT NULL
+	ORDER BY funcion::text;
+2026-10-25 23:49:54 CST LOG:  conexión recibida: host=::1 port=62483
+2026-10-25 23:49:54 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:49:54 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:3682997
+2026-10-25 23:49:56 CST LOG:  conexión recibida: host=::1 port=62509
+2026-10-25 23:49:56 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:49:56 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:3682997
+2026-10-25 23:49:56 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.076 usuario=postgres base=db_20441231_zadkiel_quintero host=::1 port=62509
+2026-10-25 23:49:56 CST LOG:  disconnection: session time: 0:00:01.633 user=postgres database=db_20441231_zadkiel_quintero host=::1 port=62483
+2026-10-25 23:51:08 CST LOG:  empezando checkpoint: time
+2026-10-25 23:51:10 CST LOG:  checkpoint completo: escritos 20 búfers (0.1%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.200 s, sync=0.005 s, total=2.220 s; archivos sincronizados=3, más largo=0.003 s, promedio=0.002 s; distancia=138 kB, estimación=138 kB; lsn=0/1E2E140, lsn de redo=0/1E2E0E8
+2026-10-25 23:53:23 CST LOG:  conexión recibida: host=::1 port=62834
+2026-10-25 23:53:23 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-25 23:53:23 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:2232089
+2026-10-25 23:56:08 CST LOG:  empezando checkpoint: time
+2026-10-25 23:56:09 CST LOG:  checkpoint completo: escritos 4 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.524 s, sync=0.006 s, total=0.733 s; archivos sincronizados=5, más largo=0.003 s, promedio=0.002 s; distancia=2 kB, estimación=125 kB; lsn=0/1E2EBA8, lsn de redo=0/1E2EB50
+2026-10-25 23:57:32 CST LOG:  disconnection: session time: 0:46:06.283 user=postgres database=postgres host=::1 port=60470
+2026-10-25 23:57:32 CST LOG:  disconnection: session time: 0:46:05.736 user=postgres database=db_20441231_zadkiel_quintero host=::1 port=60473
+
+===== postgresql-2026-10-26_000000.log =====
+2026-10-26 00:00:01 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:00:01 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:00:01 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:06:37.719 usuario=analista base=db_20441231_zadkiel_quintero host=::1 port=62834
+2026-10-26 00:00:01 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:00:01 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:25:21.336 usuario=analista base=db_20441231_zadkiel_quintero host=::1 port=61605
+2026-10-26 00:00:01 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:24:27.754 usuario=analista base=postgres host=::1 port=61628
+2026-10-26 00:01:37 CST LOG:  conexión recibida: host=::1 port=63340
+2026-10-26 00:01:38 CST LOG:  conexión recibida: host=127.0.0.1 port=63343
+2026-10-26 00:01:38 CST LOG:  conexión recibida: host=::1 port=63353
+2026-10-26 00:01:38 CST LOG:  conexión recibida: host=127.0.0.1 port=63355
+2026-10-26 00:01:51 CST LOG:  conexión recibida: host=::1 port=63369
+2026-10-26 00:01:51 CST FATAL:  la autentificación password falló para el usuario «analista»
+2026-10-26 00:01:51 CST DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+2026-10-26 00:01:51 CST LOG:  conexión recibida: host=127.0.0.1 port=63372
+2026-10-26 00:01:51 CST FATAL:  la autentificación password falló para el usuario «analista»
+2026-10-26 00:01:51 CST DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+2026-10-26 00:01:58 CST LOG:  conexión recibida: host=::1 port=63377
+2026-10-26 00:01:58 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-26 00:01:58 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=pgAdmin 4 - DB:postgres
+2026-10-26 00:01:59 CST LOG:  conexión recibida: host=::1 port=63382
+2026-10-26 00:01:59 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-26 00:01:59 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:2301112
+2026-10-26 00:03:16 CST LOG:  conexión recibida: host=::1 port=63434
+2026-10-26 00:03:16 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-26 00:03:16 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - DB:db_20441231_zadkiel_quintero
+2026-10-26 00:03:17 CST LOG:  conexión recibida: host=::1 port=63439
+2026-10-26 00:03:17 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-26 00:03:17 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:1638827
+2026-10-26 00:03:26 CST LOG:  conexión recibida: host=::1 port=63481
+2026-10-26 00:03:26 CST LOG:  conexión recibida: host=::1 port=63482
+2026-10-26 00:03:26 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-26 00:03:26 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - DB:db_20441231_zadkiel_quintero
+2026-10-26 00:03:26 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-26 00:03:26 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - DB:db_20441231_zadkiel_quintero
+2026-10-26 00:03:26 CST LOG:  disconnection: session time: 0:00:00.140 user=postgres database=db_20441231_zadkiel_quintero host=::1 port=63481
+2026-10-26 00:06:08 CST LOG:  empezando checkpoint: time
+2026-10-26 00:06:08 CST LOG:  checkpoint completo: escritos 3 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.336 s, sync=0.006 s, total=0.366 s; archivos sincronizados=3, más largo=0.003 s, promedio=0.002 s; distancia=0 kB, estimación=112 kB; lsn=0/1E2EF08, lsn de redo=0/1E2EEB0
+2026-10-26 00:36:10 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:36:10 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:32:44.064 usuario=postgres base=db_20441231_zadkiel_quintero host=::1 port=63482
+2026-10-26 00:36:10 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:36:10 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:34:11.742 usuario=postgres base=postgres host=::1 port=63377
+2026-10-26 00:36:10 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:36:10 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:34:11.132 usuario=postgres base=db_20441231_zadkiel_quintero host=::1 port=63382
+2026-10-26 00:36:10 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:36:10 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-26 00:36:10 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:32:53.345 usuario=analista base=db_20441231_zadkiel_quintero host=::1 port=63434
+2026-10-26 00:36:10 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:32:53.000 usuario=analista base=db_20441231_zadkiel_quintero host=::1 port=63439
+2026-10-28 22:25:50 CST LOG:  conexión recibida: host=::1 port=61589
+2026-10-28 22:25:50 CST LOG:  conexión recibida: host=127.0.0.1 port=61591
+2026-10-28 22:25:50 CST LOG:  conexión recibida: host=::1 port=61600
+2026-10-28 22:25:50 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-28 22:25:50 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:7837517
+2026-10-28 22:26:18 CST LOG:  conexión recibida: host=::1 port=61647
+2026-10-28 22:26:18 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-28 22:26:18 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=pgAdmin 4 - DB:postgres
+2026-10-28 22:26:18 CST LOG:  conexión recibida: host=::1 port=61654
+2026-10-28 22:26:19 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-28 22:26:19 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:5246698
+2026-10-28 22:26:23 CST LOG:  conexión recibida: host=::1 port=61678
+2026-10-28 22:26:23 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-28 22:26:23 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:5246698
+2026-10-28 22:26:23 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.085 usuario=analista base=db_20441231_zadkiel_quintero host=::1 port=61678
+2026-10-28 22:26:23 CST LOG:  disconnection: session time: 0:00:32.483 user=analista database=db_20441231_zadkiel_quintero host=::1 port=61600
+2026-10-28 22:26:23 CST LOG:  conexión recibida: host=::1 port=61684
+2026-10-28 22:26:23 CST LOG:  conexión autenticada: identidad=«analista» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-28 22:26:23 CST LOG:  conexión autorizada: usuario=analista base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - DB:db_20441231_zadkiel_quintero
+2026-10-28 22:27:03 CST LOG:  empezando checkpoint: time
+2026-10-28 22:27:03 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.120 s, sync=0.002 s, total=0.166 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=0 kB, estimación=101 kB; lsn=0/1E2F150, lsn de redo=0/1E2F0F8
+2026-10-28 22:27:24 CST ERROR:  syntax error at or near "(" en carÃ¡cter 20
+2026-10-28 22:27:24 CST SENTENCIA:  select current_user();
+2026-10-28 22:28:08 CST ERROR:  no existe la funciÃ³n currect_version() en carÃ¡cter 8
+2026-10-28 22:28:08 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-28 22:28:08 CST SENTENCIA:  select currect_version();
+2026-10-28 22:28:55 CST LOG:  duraciÃ³n: 2738.025 ms  sentencia: create database prueba;
+2026-10-28 22:29:18 CST ERROR:  error de sintaxis en o cerca de Â«ownerÂ» en carÃ¡cter 1
+2026-10-28 22:29:18 CST SENTENCIA:  owner Zadkiel;
+2026-10-28 22:29:37 CST ERROR:  error de sintaxis en o cerca de Â«pruebaÂ» en carÃ¡cter 6
+2026-10-28 22:29:37 CST SENTENCIA:  drop prueba;
+2026-10-28 22:29:43 CST LOG:  empezando checkpoint: immediate force wait
+2026-10-28 22:29:43 CST LOG:  checkpoint completo: escritos 3 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.010 s, sync=0.005 s, total=0.038 s; archivos sincronizados=4, más largo=0.003 s, promedio=0.002 s; distancia=4684 kB, estimación=4684 kB; lsn=0/22C2368, lsn de redo=0/22C2310
+2026-10-28 22:29:46 CST ERROR:  no existe el rol Â«zadkielÂ»
+2026-10-28 22:29:46 CST SENTENCIA:  create database prueba
+	owner Zadkiel;
+2026-10-28 22:30:31 CST ERROR:  error de sintaxis en o cerca de Â«withÂ» en carÃ¡cter 30
+2026-10-28 22:30:31 CST SENTENCIA:  create user zadkiel password with '123';
+	
+2026-10-28 22:31:12 CST ERROR:  no se puede eliminar el rol Â«zadkielÂ» porque otros objetos dependen de Ã©l
+2026-10-28 22:31:12 CST DETALLE:  dueÃ±o de base de datos prueba
+2026-10-28 22:31:12 CST SENTENCIA:  drop user zadkiel;
+	
+2026-10-28 22:31:19 CST LOG:  empezando checkpoint: immediate force wait
+2026-10-28 22:31:19 CST LOG:  checkpoint completo: escritos 9 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.016 s, sync=0.025 s, total=0.056 s; archivos sincronizados=10, más largo=0.007 s, promedio=0.003 s; distancia=4689 kB, estimación=4689 kB; lsn=0/2756B58, lsn de redo=0/2756B00
+2026-10-28 22:31:44 CST LOG:  empezando checkpoint: immediate force wait
+2026-10-28 22:31:44 CST LOG:  checkpoint completo: escritos 9 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.015 s, sync=0.011 s, total=0.038 s; archivos sincronizados=10, más largo=0.003 s, promedio=0.002 s; distancia=4690 kB, estimación=4690 kB; lsn=0/2BEB590, lsn de redo=0/2BEB538
+2026-10-28 22:32:53 CST ERROR:  error de sintaxis en o cerca de Â«useÂ» en carÃ¡cter 1
+2026-10-28 22:32:53 CST SENTENCIA:  use prueba;
+	
+2026-10-28 22:36:44 CST LOG:  empezando checkpoint: time
+2026-10-28 22:38:20 CST ERROR:  error de sintaxis en o cerca de Â«(Â» en carÃ¡cter 13
+2026-10-28 22:38:20 CST SENTENCIA:  insert into (Nombre,fecha,lugar) values 
+	('Zadkiel','lascvegas'),
+	('uriel','bar');
+2026-10-28 22:38:29 CST ERROR:  error de sintaxis en o cerca de Â«(Â» en carÃ¡cter 13
+2026-10-28 22:38:29 CST SENTENCIA:  insert into (Nombre,lugar) values 
+	('Zadkiel','lascvegas'),
+	('uriel','bar');
+2026-10-28 22:38:37 CST LOG:  checkpoint completo: escritos 1023 búfers (6.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=112.935 s, sync=0.286 s, total=113.243 s; archivos sincronizados=335, más largo=0.007 s, promedio=0.001 s; distancia=4837 kB, estimación=4837 kB; lsn=0/30A6668, lsn de redo=0/30A4CE8
+2026-10-28 22:38:54 CST ERROR:  error de sintaxis en o cerca de Â«columnÂ» en carÃ¡cter 20
+2026-10-28 22:38:54 CST SENTENCIA:  alter table delete column fecha;
+	
+2026-10-28 22:39:10 CST ERROR:  error de sintaxis en o cerca de Â«deleteÂ» en carÃ¡cter 22
+2026-10-28 22:39:10 CST SENTENCIA:  alter table prueba1
+	delete column fecha;
+2026-10-28 22:39:37 CST ERROR:  error de sintaxis en o cerca de Â«(Â» en carÃ¡cter 13
+2026-10-28 22:39:37 CST SENTENCIA:  insert into (Nombre,lugar) values 
+	('Zadkiel','lascvegas'),
+	('uriel','bar');
+2026-10-28 22:41:44 CST LOG:  empezando checkpoint: time
+2026-10-28 22:41:46 CST LOG:  checkpoint completo: escritos 13 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=1.430 s, sync=0.019 s, total=1.463 s; archivos sincronizados=13, más largo=0.004 s, promedio=0.002 s; distancia=44 kB, estimación=4358 kB; lsn=0/30AFFC0, lsn de redo=0/30AFF68
+2026-10-28 22:46:44 CST LOG:  empezando checkpoint: time
+2026-10-28 22:46:44 CST LOG:  checkpoint completo: escritos 4 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.434 s, sync=0.010 s, total=0.469 s; archivos sincronizados=5, más largo=0.004 s, promedio=0.002 s; distancia=6 kB, estimación=3923 kB; lsn=0/30B1838, lsn de redo=0/30B17E0
+2026-10-28 22:50:14 CST ERROR:  el rol Â«pruebaÂ» ya existe
+2026-10-28 22:50:14 CST SENTENCIA:  create user prueba;
+	
+2026-10-28 22:50:49 CST ERROR:  error de sintaxis en o cerca de Â«inÂ» en carÃ¡cter 22
+2026-10-28 22:50:49 CST SENTENCIA:  grant select, update in prueba1 to prueba;
+	
+2026-10-28 22:51:44 CST LOG:  empezando checkpoint: time
+2026-10-28 22:51:45 CST LOG:  checkpoint completo: escritos 7 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.774 s, sync=0.010 s, total=0.796 s; archivos sincronizados=8, más largo=0.003 s, promedio=0.002 s; distancia=12 kB, estimación=3532 kB; lsn=0/30B4C28, lsn de redo=0/30B4B98
+2026-10-28 22:53:34 CST ERROR:  no existe la funciÃ³n currect_database() en carÃ¡cter 8
+2026-10-28 22:53:34 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-28 22:53:34 CST SENTENCIA:  select currect_database();
+	
+2026-10-28 22:54:07 CST ERROR:  debe ser dueÃ±o de la tabla prueba1
+2026-10-28 22:54:07 CST SENTENCIA:  drop table prueba1;
+	
+2026-10-28 22:55:26 CST ERROR:  error de sintaxis en o cerca de Â«toÂ» en carÃ¡cter 36
+2026-10-28 22:55:26 CST SENTENCIA:  grant all privileges on all tables to prueba;
+	
+2026-10-28 22:56:44 CST LOG:  empezando checkpoint: time
+2026-10-28 22:56:44 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.103 s, sync=0.002 s, total=0.121 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=6 kB, estimación=3179 kB; lsn=0/30B6708, lsn de redo=0/30B66B0
+2026-10-28 22:57:22 CST ERROR:  error de sintaxis en o cerca de Â«toÂ» en carÃ¡cter 32
+2026-10-28 22:57:22 CST SENTENCIA:  revoke drop, delete on prueba1 to prueba;
+	
+2026-10-28 22:57:47 CST ERROR:  error de sintaxis en o cerca de Â«toÂ» en carÃ¡cter 38
+2026-10-28 22:57:47 CST SENTENCIA:  revoke drop, delete on table prueba1 to prueba;
+	
+2026-10-28 22:58:03 CST ERROR:  tipo de privilegio Â«dropÂ» no reconocido
+2026-10-28 22:58:03 CST SENTENCIA:  revoke drop, delete on prueba1 from prueba;
+	
+2026-10-28 22:59:01 CST ERROR:  permiso denegado a la tabla prueba1
+2026-10-28 22:59:01 CST SENTENCIA:  delete from prueba1;
+	
+2026-10-28 23:01:44 CST LOG:  empezando checkpoint: time
+2026-10-28 23:01:44 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.116 s, sync=0.008 s, total=0.140 s; archivos sincronizados=2, más largo=0.006 s, promedio=0.004 s; distancia=7 kB, estimación=2862 kB; lsn=0/30B8348, lsn de redo=0/30B82F0
+2026-10-28 23:06:44 CST LOG:  empezando checkpoint: time
+2026-10-28 23:06:45 CST LOG:  checkpoint completo: escritos 4 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.444 s, sync=0.011 s, total=0.485 s; archivos sincronizados=5, más largo=0.005 s, promedio=0.003 s; distancia=5 kB, estimación=2576 kB; lsn=0/30B9858, lsn de redo=0/30B9800
+2026-10-28 23:06:54 CST ERROR:  no existe la relaciÃ³n Â«infromation_shema.role_table_grantsÂ» en carÃ¡cter 15
+2026-10-28 23:06:54 CST SENTENCIA:  select * from infromation_shema.role_table_grants
+	where table_name = 'prueba1';
+2026-10-28 23:07:06 CST ERROR:  no existe la relaciÃ³n Â«information_shema.role_table_grantsÂ» en carÃ¡cter 15
+2026-10-28 23:07:06 CST SENTENCIA:  select * from information_shema.role_table_grants
+	where table_name = 'prueba1';
+2026-10-28 23:11:52 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«sllÂ» no reconocido
+2026-10-28 23:11:52 CST SENTENCIA:  show sll;
+	
+2026-10-28 23:12:50 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«hba_configÂ» no reconocido
+2026-10-28 23:12:50 CST SENTENCIA:  show hba_config;
+	
+2026-10-28 23:16:44 CST LOG:  empezando checkpoint: time
+2026-10-28 23:16:44 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.118 s, sync=0.002 s, total=0.146 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=6 kB, estimación=2319 kB; lsn=0/30BB3B0, lsn de redo=0/30BB358
+2026-10-28 23:18:21 CST ERROR:  error de sintaxis en o cerca de Â«)Â» en carÃ¡cter 100
+2026-10-28 23:18:21 CST SENTENCIA:  create table prueba2(
+		id_prueba2 serial primary key,
+		nombre varchar(20),
+		fecha date default
+	)
+2026-10-28 23:18:29 CST ERROR:  error de sintaxis en o cerca de Â«)Â» en carÃ¡cter 100
+2026-10-28 23:18:29 CST SENTENCIA:  create table prueba2(
+		id_prueba2 serial primary key,
+		nombre varchar(20),
+		fecha date default
+	);
+2026-10-28 23:19:56 CST ERROR:  error de sintaxis en o cerca de Â«dateÂ» en carÃ¡cter 41
+2026-10-28 23:19:56 CST SENTENCIA:  alter table prueba2
+	alter column fecha date default current_date;
+2026-10-28 23:21:44 CST LOG:  empezando checkpoint: time
+2026-10-28 23:21:47 CST LOG:  checkpoint completo: escritos 31 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.429 s, sync=0.029 s, total=3.501 s; archivos sincronizados=31, más largo=0.004 s, promedio=0.001 s; distancia=149 kB, estimación=2102 kB; lsn=0/30E0B70, lsn de redo=0/30E0B18
+2026-10-28 23:41:44 CST LOG:  empezando checkpoint: time
+2026-10-28 23:41:45 CST LOG:  checkpoint completo: escritos 9 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.992 s, sync=0.017 s, total=1.036 s; archivos sincronizados=9, más largo=0.004 s, promedio=0.002 s; distancia=27 kB, estimación=1895 kB; lsn=0/30E7A40, lsn de redo=0/30E79E8
+2026-10-28 23:42:41 CST ERROR:  no existe la columna Â«idÂ» en carÃ¡cter 37
+2026-10-28 23:42:41 CST SENTENCIA:  create view v_prueba2 as
+	select 
+		id,
+		CONCAT(
+			'**',
+			left(nombre,1)
+		) as nombre,
+	
+		concat(
+			'**',
+			right(fecha,2)
+		) as fecha
+	
+		from prueba2;
+		
+2026-10-28 23:42:53 CST ERROR:  no existe la funciÃ³n right(date, integer) en carÃ¡cter 125
+2026-10-28 23:42:53 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-28 23:42:53 CST SENTENCIA:  create view v_prueba2 as
+	select 
+		id_prueba2,
+		CONCAT(
+			'**',
+			left(nombre,1)
+		) as nombre,
+	
+		concat(
+			'**',
+			right(fecha,2)
+		) as fecha
+	
+		from prueba2;
+		
+2026-10-28 23:43:32 CST ERROR:  error de sintaxis en o cerca de Â«fromÂ» en carÃ¡cter 133
+2026-10-28 23:43:32 CST SENTENCIA:  select * from prueba2;
+	
+	
+	create view v_prueba2 as
+	select 
+		id_prueba2,
+		CONCAT(
+			'**',
+			left(nombre,1)
+		) as nombre,
+	
+		from prueba2;
+		
+	
+2026-10-28 23:43:46 CST ERROR:  error de sintaxis en o cerca de Â«FROMÂ» en carÃ¡cter 105
+2026-10-28 23:43:46 CST SENTENCIA:  create view v_prueba2 as
+	select 
+		id_prueba2,
+		CONCAT(
+			'**',
+			left(nombre,1)
+		) as nombre,
+	
+		FROM prueba2;
+		
+2026-10-28 23:43:56 CST ERROR:  error de sintaxis en o cerca de Â«FROMÂ» en carÃ¡cter 104
+2026-10-28 23:43:56 CST SENTENCIA:  create view v_prueba2 as
+	select 
+		id_prueba2,
+		CONCAT(
+			'**',
+			left(nombre,1)
+		) as nombre,
+	
+	FROM prueba2;
+2026-10-28 23:46:44 CST LOG:  empezando checkpoint: time
+2026-10-28 23:46:47 CST LOG:  checkpoint completo: escritos 21 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.324 s, sync=0.020 s, total=2.356 s; archivos sincronizados=17, más largo=0.002 s, promedio=0.002 s; distancia=120 kB, estimación=1717 kB; lsn=0/3105AA0, lsn de redo=0/3105A48
+2026-10-29 00:00:04 CST ERROR:  la relaciÃ³n Â«v_prueba2Â» ya existe
+2026-10-29 00:00:04 CST SENTENCIA:   CREATE VIEW v_prueba2 AS
+	SELECT
+	    id_prueba2,
+	    concat('LAB-',id_prueba2) AS seudonimo
+	FROM prueba2;
+2026-10-29 00:01:44 CST LOG:  empezando checkpoint: time
+2026-10-29 00:01:46 CST LOG:  checkpoint completo: escritos 20 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.224 s, sync=0.028 s, total=2.279 s; archivos sincronizados=17, más largo=0.005 s, promedio=0.002 s; distancia=111 kB, estimación=1557 kB; lsn=0/3121938, lsn de redo=0/31218E0
+2026-10-29 00:05:57 CST ERROR:  permiso denegado a la vista v3_prueba2
+2026-10-29 00:05:57 CST SENTENCIA:  select * from v3_prueba2;
+	
+2026-10-29 00:06:44 CST LOG:  empezando checkpoint: time
+2026-10-29 00:06:47 CST LOG:  checkpoint completo: escritos 27 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.990 s, sync=0.038 s, total=3.053 s; archivos sincronizados=19, más largo=0.003 s, promedio=0.002 s; distancia=146 kB, estimación=1416 kB; lsn=0/3146270, lsn de redo=0/31461E0
+2026-10-29 00:15:38 CST ERROR:  error de sintaxis en o cerca de Â«(Â» en carÃ¡cter 88
+2026-10-29 00:15:38 CST SENTENCIA:  create table prueba3(
+		id_prueba3 serial primary key,
+		nombre varchar(20),
+		edad int(10)
+	)
+2026-10-29 00:15:47 CST ERROR:  error de sintaxis en o cerca de Â«(Â» en carÃ¡cter 88
+2026-10-29 00:15:47 CST SENTENCIA:  create table prueba3(
+		id_prueba3 serial primary key,
+		nombre varchar(20),
+		edad int(9)
+	)
+2026-10-29 00:16:27 CST ERROR:  permiso denegado al esquema public en carÃ¡cter 14
+2026-10-29 00:16:27 CST SENTENCIA:  create table prueba3(
+		id_prueba3 serial primary key,
+		nombre varchar(20),
+		edad int
+	)
+2026-10-29 00:16:44 CST LOG:  empezando checkpoint: time
+2026-10-29 00:16:48 CST LOG:  checkpoint completo: escritos 36 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.940 s, sync=0.047 s, total=4.007 s; archivos sincronizados=32, más largo=0.004 s, promedio=0.002 s; distancia=155 kB, estimación=1290 kB; lsn=0/316D140, lsn de redo=0/316D0E8
+2026-10-29 00:21:27 CST ERROR:  error de sintaxis en o cerca de Â«yÂ» en carÃ¡cter 39
+2026-10-29 00:21:27 CST SENTENCIA:  select
+		case
+			when edad between 15 y 20 then '15-20'
+			when edad between 21 y 26 then '21-26'
+			else '+27'
+		end as rango_edad,
+		nombre,
+		count(*) as total
+	from prueba3
+	
+	group by 1;
+2026-10-29 00:21:39 CST ERROR:  la columna Â«prueba3.nombreÂ» debe aparecer en la clÃ¡usula GROUP BY o ser usada en una funciÃ³n de agregaciÃ³n en carÃ¡cter 140
+2026-10-29 00:21:39 CST SENTENCIA:  select
+		case
+			when edad between 15 and 20 then '15-20'
+			when edad between 21 and 26 then '21-26'
+			else '+27'
+		end as rango_edad,
+		nombre,
+		count(*) as total
+	from prueba3
+	
+	group by 1;
+2026-10-29 00:21:44 CST LOG:  empezando checkpoint: time
+2026-10-29 00:21:45 CST LOG:  checkpoint completo: escritos 11 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=1.217 s, sync=0.010 s, total=1.243 s; archivos sincronizados=10, más largo=0.002 s, promedio=0.001 s; distancia=38 kB, estimación=1164 kB; lsn=0/3176CB0, lsn de redo=0/3176C20
+2026-10-29 00:22:03 CST ERROR:  la columna Â«prueba3.edadÂ» debe aparecer en la clÃ¡usula GROUP BY o ser usada en una funciÃ³n de agregaciÃ³n en carÃ¡cter 23
+2026-10-29 00:22:03 CST SENTENCIA:  select
+		case
+			when edad between 15 and 20 then '15-20'
+			when edad between 21 and 26 then '21-26'
+			else '+27'
+		end as rango_edad,
+		nombre,
+		count(*) as total
+	from prueba3;
+2026-10-29 00:22:12 CST ERROR:  error de sintaxis en o cerca de Â«selectÂ» en carÃ¡cter 24
+2026-10-29 00:22:12 CST SENTENCIA:  create view v_prueba3
+	select
+		case
+			when edad between 15 and 20 then '15-20'
+			when edad between 21 and 26 then '21-26'
+			else '+27'
+		end as rango_edad,
+		nombre,
+		count(*) as total
+	from prueba3;
+	
+	group by 1,2;
+2026-10-29 00:22:27 CST ERROR:  error de sintaxis en o cerca de Â«selectÂ» en carÃ¡cter 24
+2026-10-29 00:22:27 CST SENTENCIA:  create view v_prueba3
+	select
+		case
+			when edad between 15 and 20 then '15-20'
+			when edad between 21 and 26 then '21-26'
+			else '+27'
+		end as rango_edad,
+		nombre,
+		count(*) as total
+	from prueba3
+	
+	group by 1,2;
+2026-10-29 00:23:27 CST ERROR:  la columna Â«prueba3.nombreÂ» debe aparecer en la clÃ¡usula GROUP BY o ser usada en una funciÃ³n de agregaciÃ³n en carÃ¡cter 140
+2026-10-29 00:23:27 CST SENTENCIA:  select
+		case
+			when edad between 15 and 20 then '15-20'
+			when edad between 21 and 26 then '21-26'
+			else '+27'
+		end as rango_edad,
+		nombre,
+		count(*) as total
+	from prueba3
+	
+	group by 1;
+2026-10-29 00:25:58 CST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10054
+2026-10-29 00:25:58 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 1:59:39.873 usuario=postgres base=db_20441231_zadkiel_quintero host=::1 port=61654
+2026-10-29 00:25:58 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-29 00:25:58 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-29 00:25:58 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 1:59:40.433 usuario=postgres base=postgres host=::1 port=61647
+2026-10-29 00:25:58 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 1:59:35.537 usuario=analista base=db_20441231_zadkiel_quintero host=::1 port=61684
+2026-10-29 11:42:44 CST LOG:  empezando checkpoint: time
+2026-10-29 11:42:44 CST LOG:  checkpoint completo: escritos 3 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.317 s, sync=0.004 s, total=0.335 s; archivos sincronizados=3, más largo=0.002 s, promedio=0.002 s; distancia=6 kB, estimación=1049 kB; lsn=0/31786D0, lsn de redo=0/3178678
+2026-10-29 11:46:33 CST LOG:  conexión recibida: host=::1 port=51637
+2026-10-29 11:46:34 CST LOG:  conexión recibida: host=127.0.0.1 port=51640
+2026-10-29 11:46:42 CST LOG:  conexión recibida: host=::1 port=51684
+2026-10-29 11:46:42 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-29 11:46:42 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=pgAdmin 4 - DB:postgres
+2026-10-29 11:46:42 CST LOG:  conexión recibida: host=::1 port=51689
+2026-10-29 11:46:42 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-10-29 11:46:42 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - CONN:9861872
+2026-10-29 11:47:45 CST ERROR:  column "current_vision" does not exist en carÃ¡cter 8
+2026-10-29 11:47:45 CST SENTENCIA:  select current_vision;
+2026-10-29 11:48:04 CST ERROR:  no existe la funciÃ³n current_vision() en carÃ¡cter 8
+2026-10-29 11:48:04 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-29 11:48:04 CST SENTENCIA:  select current_vision();
+2026-10-29 11:48:32 CST ERROR:  no existe la columna Â«current_visionÂ» en carÃ¡cter 8
+2026-10-29 11:48:32 CST SENTENCIA:  select current_vision;
+2026-10-29 11:48:43 CST ERROR:  no existe la funciÃ³n current_vision() en carÃ¡cter 8
+2026-10-29 11:48:43 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-29 11:48:43 CST SENTENCIA:  select current_vision();
+2026-10-29 11:52:45 CST LOG:  empezando checkpoint: time
+2026-10-29 11:52:49 CST LOG:  checkpoint completo: escritos 41 búfers (0.3%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=4.538 s, sync=0.049 s, total=4.638 s; archivos sincronizados=34, más largo=0.005 s, promedio=0.002 s; distancia=204 kB, estimación=964 kB; lsn=0/31AB8C8, lsn de redo=0/31AB870
+2026-10-29 11:56:35 CST ERROR:  permiso denegado a la tabla prueba7
+2026-10-29 11:56:35 CST SENTENCIA:  insert into prueba7 (nombre,correo,edad) values ('marco','zadkielquintero@gmail.com',22);
+	
+2026-10-29 11:57:45 CST LOG:  empezando checkpoint: time
+2026-10-29 11:57:47 CST LOG:  checkpoint completo: escritos 19 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.097 s, sync=0.034 s, total=2.158 s; archivos sincronizados=18, más largo=0.005 s, promedio=0.002 s; distancia=59 kB, estimación=874 kB; lsn=0/31BA4E0, lsn de redo=0/31BA488
+2026-10-29 12:05:42 CST ERROR:  error de sintaxis en o cerca de Â«leftÂ» en carÃ¡cter 63
+2026-10-29 12:05:42 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			'****'
+			left(nombre,3)
+		),
+		concat(
+			'*****'
+			left(correo),
+			substring(correo from position('@' in correo))
+		),
+		edad,
+		count(*) as rango_total
+	from prueba7;
+2026-10-29 12:05:51 CST ERROR:  error de sintaxis en o cerca de Â«leftÂ» en carÃ¡cter 63
+2026-10-29 12:05:51 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			'****'
+			left(nombre,3)
+		)
+		concat(
+			'*****'
+			left(correo),
+			substring(correo from position('@' in correo))
+		),
+		edad,
+		count(*) as rango_total
+	from prueba7;
+	
+	
+2026-10-29 12:06:45 CST ERROR:  error de sintaxis en o cerca de Â«)Â» en carÃ¡cter 82
+2026-10-29 12:06:45 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			'****',
+			left(nombre,3),
+		) as nombre,
+		concat(
+			'*****'
+			left(correo),
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+	
+2026-10-29 12:07:15 CST ERROR:  error de sintaxis en o cerca de Â«leftÂ» en carÃ¡cter 118
+2026-10-29 12:07:15 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			'****',
+			left(nombre,3)
+		) as nombre,
+		concat(
+			'*****'
+			left(correo),
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+	
+2026-10-29 12:07:27 CST ERROR:  error de sintaxis en o cerca de Â«substringÂ» en carÃ¡cter 135
+2026-10-29 12:07:27 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			'****',
+			left(nombre,3)
+		) as nombre,
+		concat(
+			'*****',
+			left(correo)
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+	
+	
+2026-10-29 12:08:00 CST ERROR:  no existe la funciÃ³n left(character varying) en carÃ¡cter 109
+2026-10-29 12:08:00 CST HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-10-29 12:08:00 CST SENTENCIA:  
+	create view v_prueba7 as
+	select
+		id,
+		concat(
+			'****',
+			left(nombre,3)
+		) as nombre,
+		concat(
+			left(correo),
+			'*****',
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+	
+2026-10-29 12:10:15 CST ERROR:  error de sintaxis en o cerca de Â«substringÂ» en carÃ¡cter 137
+2026-10-29 12:10:15 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			'****',
+			left(nombre,3)
+		) as nombre,
+		concat(
+			'*****',
+			left(correo,3)
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+2026-10-29 12:11:50 CST ERROR:  error de sintaxis en o cerca de Â«)Â» en carÃ¡cter 82
+2026-10-29 12:11:50 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			left(nombre,3),
+			'****',
+		) as nombre,
+		concat(
+			left(correo,3),
+				'*****',
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+2026-10-29 12:11:58 CST ERROR:  error de sintaxis en o cerca de Â«)Â» en carÃ¡cter 82
+2026-10-29 12:11:58 CST SENTENCIA:  create view v_prueba7 as
+	select
+		id,
+		concat(
+			left(nombre,3),
+			'****',
+		) as nombre
+		concat(
+			left(correo,3),
+				'*****',
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+2026-10-29 12:12:45 CST LOG:  empezando checkpoint: time
+2026-10-29 12:12:48 CST LOG:  checkpoint completo: escritos 20 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.219 s, sync=0.030 s, total=2.275 s; archivos sincronizados=17, más largo=0.005 s, promedio=0.002 s; distancia=114 kB, estimación=798 kB; lsn=0/31D6FF0, lsn de redo=0/31D6F98
+2026-10-29 12:17:45 CST LOG:  empezando checkpoint: time
+2026-10-29 12:17:45 CST LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.227 s, sync=0.004 s, total=0.259 s; archivos sincronizados=2, más largo=0.002 s, promedio=0.002 s; distancia=13 kB, estimación=719 kB; lsn=0/31DA520, lsn de redo=0/31DA4C8
+2026-10-29 12:22:45 CST LOG:  empezando checkpoint: time
+2026-10-29 12:22:45 CST LOG:  checkpoint completo: escritos 3 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.337 s, sync=0.005 s, total=0.353 s; archivos sincronizados=4, más largo=0.003 s, promedio=0.002 s; distancia=2 kB, estimación=647 kB; lsn=0/31DAE28, lsn de redo=0/31DADD0
+2026-10-29 12:27:45 CST LOG:  empezando checkpoint: time
+2026-10-29 12:27:51 CST LOG:  checkpoint completo: escritos 52 búfers (0.3%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=5.721 s, sync=0.044 s, total=5.789 s; archivos sincronizados=40, más largo=0.003 s, promedio=0.002 s; distancia=207 kB, estimación=603 kB; lsn=0/320ED30, lsn de redo=0/320ECD8
+2026-10-29 12:32:45 CST LOG:  empezando checkpoint: time
+2026-10-29 12:32:45 CST LOG:  checkpoint completo: escritos 3 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.329 s, sync=0.003 s, total=0.356 s; archivos sincronizados=3, más largo=0.001 s, promedio=0.001 s; distancia=4 kB, estimación=543 kB; lsn=0/320FFE0, lsn de redo=0/320FF88
+2026-10-29 12:36:30 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«hdb_fileÂ» no reconocido
+2026-10-29 12:36:30 CST SENTENCIA:  show hdb_file;
+2026-10-29 12:36:43 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«dbh_fileÂ» no reconocido
+2026-10-29 12:36:43 CST SENTENCIA:  show dbh_file;
+2026-10-29 12:36:50 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«hbd_fileÂ» no reconocido
+2026-10-29 12:36:50 CST SENTENCIA:  show hbd_file;
+2026-10-29 12:36:57 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«hpg_fileÂ» no reconocido
+2026-10-29 12:36:57 CST SENTENCIA:  show hpg_file;
+2026-10-29 12:37:33 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«pgh_fileÂ» no reconocido
+2026-10-29 12:37:33 CST SENTENCIA:  show pgh_file;
+	
+2026-10-29 12:37:47 CST ERROR:  error de sintaxis en o cerca de Â«hpg_fileÂ» en carÃ¡cter 1
+2026-10-29 12:37:47 CST SENTENCIA:  hpg_file
+2026-10-29 12:37:48 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«hpg_fileÂ» no reconocido
+2026-10-29 12:37:48 CST SENTENCIA:  show hpg_file;
+	
+2026-10-29 12:38:08 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«hdp_fileÂ» no reconocido
+2026-10-29 12:38:08 CST SENTENCIA:  show hdp_file;
+	
+2026-10-29 12:39:08 CST ERROR:  parÃ¡metro de configuraciÃ³n Â«hda_fileÂ» no reconocido
+2026-10-29 12:39:08 CST SENTENCIA:  show hda_file;
+	
+2026-10-29 12:39:43 CST ERROR:  no existe la columna Â«portÂ» en carÃ¡cter 8
+2026-10-29 12:39:43 CST SENTENCIA:  select port;
+	
+2026-10-29 22:12:07 CST LOG:  empezando checkpoint: time
+2026-10-29 22:12:07 CST LOG:  checkpoint completo: escritos 3 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.339 s, sync=0.008 s, total=0.377 s; archivos sincronizados=4, más largo=0.005 s, promedio=0.002 s; distancia=1 kB, estimación=489 kB; lsn=0/3210648, lsn de redo=0/32105F0
+2026-10-29 22:12:09 CST ERROR:  error de sintaxis en o cerca de Â«selectÂ» en carÃ¡cter 25
+2026-10-29 22:12:09 CST SENTENCIA:  create view v2_prueba7
+	select
+		id,
+		concat(
+			left(nombre,3),
+			'*****'
+		) as nombre,
+		concat(
+			left(correo,3),
+			'********',
+			substring(correo from position('@' in correo))
+		) as correo,
+		edad
+	from prueba7;
+2026-10-29 22:17:07 CST LOG:  empezando checkpoint: time
+2026-10-29 22:17:10 CST LOG:  checkpoint completo: escritos 20 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.205 s, sync=0.031 s, total=2.264 s; archivos sincronizados=17, más largo=0.004 s, promedio=0.002 s; distancia=109 kB, estimación=451 kB; lsn=0/322BAC0, lsn de redo=0/322BA30
+2026-10-29 22:17:55 CST ERROR:  error de sintaxis en o cerca de Â«,Â» en carÃ¡cter 84
+2026-10-29 22:17:55 CST SENTENCIA:  create view a_prueba7 as
+	select
+		case
+			when edad between 10 and 15 then '10-15',
+			when edad between 16 and 22 then '16-22',
+			when edad between 23 and 25 then '23-26'
+			else '+25'
+		end
+	from prueba7;
+2026-10-29 22:20:52 CST ERROR:  error de sintaxis en o cerca de Â«(Â» en carÃ¡cter 216
+2026-10-29 22:20:52 CST SENTENCIA:  create view a_prueba7 as
+	select
+		id,
+		nombre,
+		case
+			when edad between 10 and 15 then '10-15'
+			when edad between 16 and 22 then '16-22'
+			when edad between 23 and 25 then '23-26'
+			else '+25'
+		end
+		count(*) as total,
+		group by 1,2,3
+	from prueba7;
+	
+2026-10-29 22:22:07 CST LOG:  empezando checkpoint: time
+2026-10-29 22:22:09 CST LOG:  checkpoint completo: escritos 20 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.210 s, sync=0.032 s, total=2.268 s; archivos sincronizados=17, más largo=0.005 s, promedio=0.002 s; distancia=125 kB, estimación=419 kB; lsn=0/324B230, lsn de redo=0/324B1D8
+2026-10-29 22:27:07 CST LOG:  empezando checkpoint: time
+2026-10-29 22:27:09 CST LOG:  checkpoint completo: escritos 20 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.212 s, sync=0.035 s, total=2.286 s; archivos sincronizados=17, más largo=0.005 s, promedio=0.003 s; distancia=115 kB, estimación=388 kB; lsn=0/32680D0, lsn de redo=0/3268040
+2026-10-29 22:30:04 CST ERROR:  la extensiÃ³n Â«cryptogÂ» no estÃ¡ disponible
+2026-10-29 22:30:04 CST HINT:  La extensiÃ³n debe primero ser instalada en el sistema donde PostgreSQL estÃ¡ ejecutÃ¡ndose.
+2026-10-29 22:30:04 CST SENTENCIA:  create extension if not exists cryptog;
+	
+2026-10-29 22:32:26 CST ERROR:  gen_salt: Unknown salt algorithm
+2026-10-29 22:32:26 CST SENTENCIA:  select crypt(
+		'password',
+		gen_salt('fg')
+	)
+2026-10-29 22:32:33 CST ERROR:  gen_salt: Unknown salt algorithm
+2026-10-29 22:32:33 CST SENTENCIA:  select crypt(
+		'password',
+		gen_salt('bg')
+	)
+2026-10-30 00:14:40 CST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10054
+2026-10-30 00:14:40 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 12:27:57.628 usuario=postgres base=db_20441231_zadkiel_quintero host=::1 port=51689
+2026-10-30 00:14:40 CST LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-10-30 00:14:40 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 12:27:58.318 usuario=postgres base=postgres host=::1 port=51684
+
+===== postgresql-2026-10-27_000000.log =====
+2026-11-07 22:44:46 CST LOG:  conexión recibida: host=::1 port=53307
+2026-11-07 22:44:47 CST LOG:  conexión recibida: host=127.0.0.1 port=53309
+2026-11-08 17:06:43 CST LOG:  conexión recibida: host=::1 port=54097
+2026-11-08 17:07:01 CST LOG:  conexión recibida: host=::1 port=54103
+2026-11-08 17:07:01 CST FATAL:  la autentificación password falló para el usuario «postgres»
+2026-11-08 17:07:01 CST DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+2026-11-08 17:07:05 CST LOG:  conexión recibida: host=::1 port=54108
+2026-11-08 17:07:12 CST LOG:  conexión recibida: host=::1 port=54115
+2026-11-08 17:07:12 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 17:07:12 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=psql
+2026-11-08 17:08:21 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:01:08.745 usuario=postgres base=postgres host=::1 port=54115
+2026-11-08 17:12:34 CST LOG:  conexión recibida: host=::1 port=54192
+2026-11-08 17:12:39 CST LOG:  conexión recibida: host=::1 port=54196
+2026-11-08 17:12:39 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 17:12:39 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=psql
+2026-11-08 17:12:40 CST LOG:  disconnection: session time: 0:00:00.568 user=postgres database=postgres host=::1 port=54196
+2026-11-08 17:23:54 CST LOG:  conexión recibida: host=::1 port=54700
+2026-11-08 17:23:59 CST LOG:  conexión recibida: host=::1 port=54704
+2026-11-08 17:23:59 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 17:23:59 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=psql
+2026-11-08 17:26:14 CST LOG:  duraciÃ³n: 2206.098 ms  sentencia: CREATE DATABASE comercial;
+2026-11-08 17:26:19 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:02:20.429 usuario=postgres base=postgres host=::1 port=54704
+2026-11-08 17:26:24 CST LOG:  conexión recibida: host=::1 port=54760
+2026-11-08 17:26:29 CST LOG:  conexión recibida: host=::1 port=54768
+2026-11-08 17:26:29 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 17:26:29 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 17:29:56 CST ERROR:  error de sintaxis en o cerca de Â«clearÂ» en carÃ¡cter 1
+2026-11-08 17:29:56 CST SENTENCIA:  clear
+	SELECT name, setting, source
+	FROM pg_settings
+	WHERE name IN (
+	    'log_destination',
+	    'logging_collector',
+	    'log_directory',
+	    'log_filename',
+	    'log_connections',
+	    'log_disconnections',
+	    'log_line_prefix',
+	    'log_statement',
+	    'log_min_error_statement',
+	    'log_timezone'
+	)
+	ORDER BY name;
+2026-11-08 17:30:08 CST LOG:  empezando checkpoint: time
+2026-11-08 17:31:59 CST LOG:  checkpoint completo: escritos 987 búfers (6.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=110.507 s, sync=0.322 s, total=110.926 s; archivos sincronizados=302, más largo=0.004 s, promedio=0.002 s; distancia=4685 kB, estimación=4685 kB; lsn=0/36FB518, lsn de redo=0/36FB488
+2026-11-08 17:40:08 CST LOG:  empezando checkpoint: time
+2026-11-08 17:40:15 CST LOG:  checkpoint completo: escritos 60 búfers (0.4%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=6.629 s, sync=0.089 s, total=6.747 s; archivos sincronizados=46, más largo=0.006 s, promedio=0.002 s; distancia=267 kB, estimación=4243 kB; lsn=0/373E118, lsn de redo=0/373E0C0
+2026-11-08 17:44:52 CST ERROR:  invalid byte sequence for encoding "UTF8": 0xf3 0x6e 0x20 0x72
+2026-11-08 17:44:52 CST SENTENCIA:  SELECT linea
+	FROM regexp_split_to_table(pg_read_file(pg_current_logfile()), E'\n') AS linea;
+2026-11-08 17:45:21 CST ERROR:  invalid byte sequence for encoding "UTF8": 0xf3 0x6e 0x20 0x72
+2026-11-08 17:45:21 CST SENTENCIA:  SELECT linea FROM regexp_split_to_table(pg_read_file(pg_current_logfile()), E'\n') AS linea;
+2026-11-08 18:03:01 CST LOG:  duration: 2268.882 ms  statement: SELECT linea FROM regexp_split_to_table( convert_from(pg_read_binary_file(pg_current_logfile()), 'LATIN1'), E'\n' ) AS linea;
+2026-11-08 18:03:54 CST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x6e 0x20 0x72
+2026-11-08 18:03:54 CST SENTENCIA:  SELECT num, linea FROM dba.bitacora ORDER BY num DESC LIMIT 10;
+2026-11-08 18:03:54 CST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x6e 0x20 0x72
+2026-11-08 18:03:54 CST SENTENCIA:  SELECT linea FROM dba.bitacora WHERE linea ILIKE '%update%';
+2026-11-08 18:04:03 CST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x6e 0x20 0x72
+2026-11-08 18:04:03 CST SENTENCIA:  SELECT linea FROM dba.bitacora WHERE linea ~ '(FATAL|ERROR)';
+2026-11-08 18:05:08 CST LOG:  empezando checkpoint: time
+2026-11-08 18:05:10 CST LOG:  checkpoint completo: escritos 24 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.647 s, sync=0.039 s, total=2.712 s; archivos sincronizados=21, más largo=0.006 s, promedio=0.002 s; distancia=104 kB, estimación=3829 kB; lsn=0/3758368, lsn de redo=0/37582D8
+2026-11-08 18:14:37 CST ERROR:  no se puede cambiar el ordenamiento de la columna Â«lineaÂ» de la vista de Â«defaultÂ» a Â«CÂ»
+2026-11-08 18:14:37 CST SENTENCIA:  CREATE OR REPLACE VIEW dba.bitacora AS
+	SELECT t.n AS num, t.linea
+	FROM regexp_split_to_table(
+	       convert_from(pg_read_binary_file(pg_current_logfile()), 'LATIN1'),
+	       E'\n')
+	     WITH ORDINALITY AS t(linea, n)
+	WHERE t.linea <> '';
+2026-11-08 18:15:09 CST LOG:  empezando checkpoint: time
+2026-11-08 18:15:09 CST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.004 s, sync=0.003 s, total=0.024 s; archivos sincronizados=1, más largo=0.003 s, promedio=0.003 s; distancia=0 kB, estimación=3446 kB; lsn=0/3758500, lsn de redo=0/37584A8
+2026-11-08 18:20:08 CST LOG:  empezando checkpoint: time
+2026-11-08 18:20:10 CST LOG:  checkpoint completo: escritos 20 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.219 s, sync=0.036 s, total=2.284 s; archivos sincronizados=17, más largo=0.005 s, promedio=0.003 s; distancia=99 kB, estimación=3111 kB; lsn=0/3771160, lsn de redo=0/3771108
+2026-11-08 18:31:48 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 1:05:18.398 usuario=postgres base=comercial host=::1 port=54768
+2026-11-08 18:31:51 CST LOG:  conexión recibida: host=::1 port=58370
+2026-11-08 18:32:00 CST LOG:  conexión recibida: host=::1 port=58380
+2026-11-08 18:32:00 CST FATAL:  la autentificación password falló para el usuario «postgres»
+2026-11-08 18:32:00 CST DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+2026-11-08 18:32:06 CST LOG:  conexión recibida: host=::1 port=58384
+2026-11-08 18:32:10 CST LOG:  conexión recibida: host=::1 port=58388
+2026-11-08 18:32:10 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 18:32:10 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 18:34:40 CST ERROR:  error de sintaxis en o cerca de Â«psqlÂ» en carÃ¡cter 1
+2026-11-08 18:34:40 CST SENTENCIA:  psql "postgresql://app_ventas:Ventas_Practica_2026@127.0.0.1/comercial?application_name=app-ventas-web" -c "UPDATE clientes SET rfc = 'GAMA780912XXX' WHERE id = 3"
+	ALTER ROLE app_ventas PASSWORD 'Ventas_Practica_2026';
+2026-11-08 18:35:08 CST LOG:  empezando checkpoint: time
+2026-11-08 18:35:08 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.115 s, sync=0.004 s, total=0.131 s; archivos sincronizados=2, más largo=0.003 s, promedio=0.002 s; distancia=4 kB, estimación=2801 kB; lsn=0/37723F8, lsn de redo=0/37723A0
+2026-11-08 18:35:34 CST LOG:  conexión recibida: host=127.0.0.1 port=58453
+2026-11-08 18:35:34 CST LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 18:35:34 CST LOG:  conexión autorizada: usuario=app_ventas base_de_datos=comercial nombre_de_aplicación=app-ventas-web
+2026-11-08 18:35:34 CST LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.092 usuario=app_ventas base=comercial host=127.0.0.1 port=58453
+2026-11-08 18:40:08 CST LOG:  empezando checkpoint: time
+2026-11-08 18:40:08 CST LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.227 s, sync=0.011 s, total=0.268 s; archivos sincronizados=3, más largo=0.006 s, promedio=0.004 s; distancia=5 kB, estimación=2521 kB; lsn=0/37739A8, lsn de redo=0/3773950
+2026-11-08 18:42:27 CST LOG:  disconnection: session time: 0:10:16.958 user=postgres database=comercial host=::1 port=58388
+2026-11-08 18:42:31 CST LOG:  conexión recibida: host=::1 port=58633
+2026-11-08 18:42:35 CST LOG:  conexión recibida: host=::1 port=58637
+2026-11-08 18:42:35 CST LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 18:42:35 CST LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+
+===== postgresql-2026-11-06_000000.log =====
+2026-11-08 18:49:16.492 CST [17360] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=59225
+2026-11-08 18:49:16.517 CST [17360] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 18:49:16.517 CST [17360] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 18:49:16.533 CST [524] user=postgres db=comercial app=psql client=::1 LOG:  disconnection: session time: 0:06:41.569 user=postgres database=comercial host=::1 port=58637
+2026-11-08 18:56:59.296 CST [7468] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=59720
+2026-11-08 18:56:59.330 CST [7468] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 FATAL:  la autentificación password falló para el usuario «app_ventas»
+2026-11-08 18:56:59.330 CST [7468] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+2026-11-08 18:57:57.331 CST [12744] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=59896
+2026-11-08 18:57:57.363 CST [12744] user=usuario_inexistente db=comercial app=[desconocido] client=127.0.0.1 FATAL:  la autentificación password falló para el usuario «usuario_inexistente»
+2026-11-08 18:57:57.363 CST [12744] user=usuario_inexistente db=comercial app=[desconocido] client=127.0.0.1 DETALLE:  No existe el rol «usuario_inexistente».
+	La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+2026-11-08 18:58:14.836 CST [15908] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=59908
+2026-11-08 18:58:14.868 CST [15908] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 18:58:14.868 CST [15908] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=comercial nombre_de_aplicación=app-ventas-web
+2026-11-08 18:58:14.978 CST [15908] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.180 usuario=app_ventas base=comercial host=127.0.0.1 port=59908
+2026-11-08 19:05:55.131 CST [17360] user=postgres db=comercial app=psql client=::1 ERROR:  no existe la funciÃ³n currect_user() en carÃ¡cter 8
+2026-11-08 19:05:55.131 CST [17360] user=postgres db=comercial app=psql client=::1 HINT:  Ninguna funciÃ³n coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversiÃ³n explÃ­cita de tipos.
+2026-11-08 19:05:55.131 CST [17360] user=postgres db=comercial app=psql client=::1 SENTENCIA:  select currect_user();
+2026-11-08 19:06:06.917 CST [17360] user=postgres db=comercial app=psql client=::1 ERROR:  no existe la columna Â«currect_userÂ» en carÃ¡cter 8
+2026-11-08 19:06:06.917 CST [17360] user=postgres db=comercial app=psql client=::1 SENTENCIA:  select currect_user;
+2026-11-08 19:07:27.141 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: REVOKE UPDATE ON clientes FROM soporte_ana;
+2026-11-08 19:07:27.154 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: GRANT UPDATE ON clientes TO app_ventas;
+2026-11-08 19:07:28.888 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER TABLE clientes ADD COLUMN segmento VARCHAR(20);
+2026-11-08 19:07:41.025 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: CREATE ROLE rol_temporal LOGIN PASSWORD '<REDACTED>';
+2026-11-08 19:07:42.114 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: DROP ROLE rol_temporal;
+2026-11-08 19:10:08.715 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 19:10:09.516 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 7 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.781 s, sync=0.008 s, total=0.801 s; archivos sincronizados=8, más largo=0.002 s, promedio=0.001 s; distancia=19 kB, estimación=2271 kB; lsn=0/37787C0, lsn de redo=0/3778768
+2026-11-08 19:19:27.778 CST [18264] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=60942
+2026-11-08 19:19:27.811 CST [18264] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 19:19:27.811 CST [18264] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=comercial nombre_de_aplicación=app-ventas-web
+2026-11-08 19:19:27.836 CST [18264] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.093 usuario=app_ventas base=comercial host=127.0.0.1 port=60942
+2026-11-08 19:19:51.024 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER SYSTEM SET log_statement = 'mod';
+2026-11-08 19:20:08.903 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 19:20:09.165 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.227 s, sync=0.007 s, total=0.262 s; archivos sincronizados=3, más largo=0.005 s, promedio=0.003 s; distancia=2 kB, estimación=2044 kB; lsn=0/3779258, lsn de redo=0/3779200
+2026-11-08 19:20:56.344 CST [8064] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=60970
+2026-11-08 19:20:56.377 CST [8064] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 19:20:56.377 CST [8064] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=comercial nombre_de_aplicación=app-ventas-web
+2026-11-08 19:20:56.389 CST [8064] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  sentencia: UPDATE clientes SET telefono = '6679990000' WHERE id = 3
+2026-11-08 19:20:56.465 CST [8064] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.157 usuario=app_ventas base=comercial host=127.0.0.1 port=60970
+2026-11-08 19:25:08.174 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 19:25:08.328 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.118 s, sync=0.007 s, total=0.155 s; archivos sincronizados=2, más largo=0.005 s, promedio=0.004 s; distancia=1 kB, estimación=1840 kB; lsn=0/3779800, lsn de redo=0/37797A8
+2026-11-08 19:33:15.520 CST [6964] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=61461
+2026-11-08 19:33:15.553 CST [6964] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 FATAL:  la autentificación password falló para el usuario «soporte_ana»
+2026-11-08 19:33:15.553 CST [6964] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 DETALLE:  El usuario «soporte_ana» no tiene una contraseña asignada.
+	La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+2026-11-08 19:34:01.000 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: DROP ROLE soporte_ana;
+2026-11-08 19:34:01.007 CST [17360] user=postgres db=comercial app=psql client=::1 ERROR:  no se puede eliminar el rol Â«soporte_anaÂ» porque otros objetos dependen de Ã©l
+2026-11-08 19:34:01.007 CST [17360] user=postgres db=comercial app=psql client=::1 DETALLE:  privilegios para tabla clientes
+2026-11-08 19:34:01.007 CST [17360] user=postgres db=comercial app=psql client=::1 SENTENCIA:  DROP ROLE soporte_ana;
+2026-11-08 19:34:27.217 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: DROP ROLE soporte_ana;
+2026-11-08 19:34:27.218 CST [17360] user=postgres db=comercial app=psql client=::1 ERROR:  no se puede eliminar el rol Â«soporte_anaÂ» porque otros objetos dependen de Ã©l
+2026-11-08 19:34:27.218 CST [17360] user=postgres db=comercial app=psql client=::1 DETALLE:  privilegios para tabla clientes
+2026-11-08 19:34:27.218 CST [17360] user=postgres db=comercial app=psql client=::1 SENTENCIA:  DROP ROLE soporte_ana;
+2026-11-08 19:35:08.402 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 19:35:08.524 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.104 s, sync=0.001 s, total=0.122 s; archivos sincronizados=1, más largo=0.001 s, promedio=0.001 s; distancia=0 kB, estimación=1656 kB; lsn=0/3779BE8, lsn de redo=0/3779B90
+2026-11-08 19:35:54.180 CST [11144] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=61503
+2026-11-08 19:35:54.213 CST [11144] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 FATAL:  la autentificación password falló para el usuario «soporte_ana»
+2026-11-08 19:35:54.213 CST [11144] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 DETALLE:  El usuario «soporte_ana» no tiene una contraseña asignada.
+	La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+2026-11-08 19:37:54.566 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER USER "soporte_ana" PASSWORD 'SCRAM-SHA-256$4096:7zILlcMdXSN9cnOUaxV8gQ==$SQ5dfM9KnTzHEqpZCHCpaTOJz6sUnsb8WeMO3m/QoyM=:726M7DAPEvIsru/sSj5SMO+Rt74o9ZFVdSAjAsQVDXw='
+2026-11-08 19:38:13.832 CST [15508] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=61569
+2026-11-08 19:38:13.865 CST [15508] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 19:38:13.865 CST [15508] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 19:38:13.877 CST [15508] user=soporte_ana db=comercial app=psql client=127.0.0.1 LOG:  sentencia: DELETE FROM clientes WHERE id = 5
+2026-11-08 19:38:13.884 CST [15508] user=soporte_ana db=comercial app=psql client=127.0.0.1 ERROR:  permiso denegado a la tabla clientes
+2026-11-08 19:38:13.884 CST [15508] user=soporte_ana db=comercial app=psql client=127.0.0.1 SENTENCIA:  DELETE FROM clientes WHERE id = 5
+2026-11-08 19:38:13.891 CST [15508] user=soporte_ana db=comercial app=psql client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.094 usuario=soporte_ana base=comercial host=127.0.0.1 port=61569
+2026-11-08 19:40:08.539 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 19:40:08.692 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.119 s, sync=0.008 s, total=0.154 s; archivos sincronizados=2, más largo=0.006 s, promedio=0.004 s; distancia=5 kB, estimación=1491 kB; lsn=0/377B088, lsn de redo=0/377B030
+2026-11-08 19:44:15.781 CST [6528] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=62072
+2026-11-08 19:44:15.818 CST [6528] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 19:44:15.818 CST [6528] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=comercial nombre_de_aplicación=reporte-mensual
+2026-11-08 19:45:08.694 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 19:45:08.839 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.118 s, sync=0.001 s, total=0.146 s; archivos sincronizados=1, más largo=0.001 s, promedio=0.001 s; distancia=5 kB, estimación=1342 kB; lsn=0/377C4C0, lsn de redo=0/377C468
+2026-11-08 19:45:15.896 CST [6528] user=soporte_ana db=comercial app=reporte-mensual client=127.0.0.1 ERROR:  cancelando la sentencia debido a que se agotÃ³ el tiempo de espera de sentencias
+2026-11-08 19:45:15.896 CST [6528] user=soporte_ana db=comercial app=reporte-mensual client=127.0.0.1 SENTENCIA:  SELECT pg_sleep(90)
+2026-11-08 19:45:15.904 CST [6528] user=soporte_ana db=comercial app=reporte-mensual client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:01:00.174 usuario=soporte_ana base=comercial host=127.0.0.1 port=62072
+2026-11-08 19:45:25.744 CST [12856] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=62109
+2026-11-08 19:45:25.777 CST [12856] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 19:45:25.777 CST [12856] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=comercial nombre_de_aplicación=reporte-mensual
+2026-11-08 19:46:25.802 CST [12856] user=soporte_ana db=comercial app=reporte-mensual client=127.0.0.1 ERROR:  cancelando la sentencia debido a que se agotÃ³ el tiempo de espera de sentencias
+2026-11-08 19:46:25.802 CST [12856] user=soporte_ana db=comercial app=reporte-mensual client=127.0.0.1 SENTENCIA:  SELECT pg_sleep(90)
+2026-11-08 19:46:25.829 CST [12856] user=soporte_ana db=comercial app=reporte-mensual client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:01:00.121 usuario=soporte_ana base=comercial host=127.0.0.1 port=62109
+2026-11-08 19:55:31.609 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: CREATE SCHEMA auditoria;
+2026-11-08 19:55:31.635 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: REVOKE ALL ON SCHEMA auditoria FROM PUBLIC;
+2026-11-08 19:55:33.527 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: CREATE TABLE auditoria.cambios_clientes (
+	    id_evento        BIGSERIAL PRIMARY KEY,
+	    momento          TIMESTAMPTZ NOT NULL DEFAULT now(),
+	    usuario_sesion   TEXT        NOT NULL DEFAULT session_user,
+	    usuario_efectivo TEXT        NOT NULL DEFAULT current_user,
+	    aplicacion       TEXT        DEFAULT current_setting('application_name'),
+	    ip_cliente       INET        DEFAULT inet_client_addr(),
+	    operacion        TEXT        NOT NULL,
+	    id_cliente       BIGINT,
+	    valores_antes    JSONB,
+	    valores_despues  JSONB
+	);
+2026-11-08 20:00:08.853 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 20:00:14.783 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 52 búfers (0.3%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=5.851 s, sync=0.061 s, total=5.930 s; archivos sincronizados=44, más largo=0.003 s, promedio=0.002 s; distancia=279 kB, estimación=1236 kB; lsn=0/37C2300, lsn de redo=0/37C2270
+2026-11-08 20:18:22.542 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: CREATE OR REPLACE FUNCTION auditoria.registrar_cambio_cliente()
+	RETURNS trigger
+	LANGUAGE plpgsql
+	SECURITY DEFINER
+	SET search_path = pg_catalog, public
+	AS $$
+	BEGIN
+	    IF TG_OP = 'INSERT' THEN
+	        INSERT INTO auditoria.cambios_clientes (operacion, id_cliente, valores_despues)
+	        VALUES (TG_OP, NEW.id, to_jsonb(NEW));
+	        RETURN NEW;
+	    ELSIF TG_OP = 'UPDATE' THEN
+	        INSERT INTO auditoria.cambios_clientes (operacion, id_cliente, valores_antes, valores_despues)
+	        VALUES (TG_OP, NEW.id, to_jsonb(OLD), to_jsonb(NEW));
+	        RETURN NEW;
+	    ELSIF TG_OP = 'DELETE' THEN
+	        INSERT INTO auditoria.cambios_clientes (operacion, id_cliente, valores_antes)
+	        VALUES (TG_OP, OLD.id, to_jsonb(OLD));
+	        RETURN OLD;
+	    END IF;
+	    RETURN NULL;
+	END;
+	$$;
+2026-11-08 20:18:22.641 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: REVOKE ALL ON FUNCTION auditoria.registrar_cambio_cliente() FROM PUBLIC;
+2026-11-08 20:18:25.160 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: CREATE TRIGGER trg_auditoria_clientes
+	AFTER INSERT OR UPDATE OR DELETE ON clientes
+	FOR EACH ROW EXECUTE FUNCTION auditoria.registrar_cambio_cliente();
+2026-11-08 20:20:08.824 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 20:20:11.421 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 23 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.543 s, sync=0.027 s, total=2.598 s; archivos sincronizados=15, más largo=0.005 s, promedio=0.002 s; distancia=105 kB, estimación=1123 kB; lsn=0/37DC9F8, lsn de redo=0/37DC9A0
+2026-11-08 21:38:57.300 CST [10748] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=51212
+2026-11-08 21:38:57.337 CST [10748] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 21:38:57.337 CST [10748] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=comercial nombre_de_aplicación=app-ventas-web
+2026-11-08 21:38:57.401 CST [10748] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  sentencia: UPDATE clientes SET rfc = 'GAMA780912ZZZ' WHERE id = 3
+2026-11-08 21:38:57.441 CST [10748] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.191 usuario=app_ventas base=comercial host=127.0.0.1 port=51212
+2026-11-08 21:39:05.442 CST [10900] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=51216
+2026-11-08 21:39:05.476 CST [10900] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 21:39:05.477 CST [10900] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 21:39:05.491 CST [10900] user=app_ventas db=comercial app=psql client=127.0.0.1 ERROR:  permiso denegado al esquema auditoria en carÃ¡cter 15
+2026-11-08 21:39:05.491 CST [10900] user=app_ventas db=comercial app=psql client=127.0.0.1 SENTENCIA:  SELECT * FROM auditoria.cambios_clientes
+2026-11-08 21:39:05.500 CST [10900] user=app_ventas db=comercial app=psql client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.094 usuario=app_ventas base=comercial host=127.0.0.1 port=51216
+2026-11-08 21:40:08.554 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 21:40:09.601 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 9 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=1.000 s, sync=0.020 s, total=1.048 s; archivos sincronizados=9, más largo=0.004 s, promedio=0.003 s; distancia=23 kB, estimación=1013 kB; lsn=0/37E2698, lsn de redo=0/37E2608
+2026-11-08 21:48:56.667 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: INSERT INTO clientes (nombre, correo, rfc, edad, ciudad, codigo_postal)
+	VALUES ('Pedro Ruiz', 'pedro.ruiz@example.test', 'RUPE950101AAA', 30, 'Guasave', '81000');
+2026-11-08 21:48:56.678 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: DELETE FROM clientes WHERE nombre = 'Pedro Ruiz';
+2026-11-08 21:50:08.619 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 21:50:09.311 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 6 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.674 s, sync=0.008 s, total=0.693 s; archivos sincronizados=7, más largo=0.003 s, promedio=0.002 s; distancia=3 kB, estimación=912 kB; lsn=0/37E3610, lsn de redo=0/37E35B8
+2026-11-08 21:54:04.062 CST [7220] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=51999
+2026-11-08 21:54:04.107 CST [7220] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 21:54:04.108 CST [7220] user=app_ventas db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=comercial nombre_de_aplicación=app-ventas-web
+2026-11-08 21:54:04.120 CST [7220] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  sentencia: DELETE FROM auditoria.cambios_clientes
+2026-11-08 21:54:04.120 CST [7220] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 ERROR:  permiso denegado al esquema auditoria en carÃ¡cter 13
+2026-11-08 21:54:04.120 CST [7220] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 SENTENCIA:  DELETE FROM auditoria.cambios_clientes
+2026-11-08 21:54:04.145 CST [7220] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  sentencia: ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes
+2026-11-08 21:54:04.147 CST [7220] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 ERROR:  debe ser dueÃ±o de la tabla clientes
+2026-11-08 21:54:04.147 CST [7220] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 SENTENCIA:  ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes
+2026-11-08 21:54:04.151 CST [7220] user=app_ventas db=comercial app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.129 usuario=app_ventas base=comercial host=127.0.0.1 port=51999
+2026-11-08 21:54:23.187 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes;
+2026-11-08 21:54:23.203 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: UPDATE clientes SET rfc = 'GAMA780912GHI' WHERE id = 3;
+2026-11-08 21:54:23.223 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER TABLE clientes ENABLE TRIGGER trg_auditoria_clientes;
+2026-11-08 21:55:08.322 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 21:55:08.563 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.214 s, sync=0.006 s, total=0.242 s; archivos sincronizados=3, más largo=0.002 s, promedio=0.002 s; distancia=2 kB, estimación=821 kB; lsn=0/37E4030, lsn de redo=0/37E3FC0
+2026-11-08 21:59:44.120 CST [16100] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=52223
+2026-11-08 21:59:44.153 CST [16100] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+2026-11-08 21:59:44.153 CST [16100] user=soporte_ana db=comercial app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 21:59:44.240 CST [16100] user=soporte_ana db=comercial app=psql client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.155 usuario=soporte_ana base=comercial host=127.0.0.1 port=52223
+2026-11-08 21:59:53.467 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: UPDATE clientes SET segmento = 'regular';
+2026-11-08 22:00:08.577 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 22:00:09.156 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 5 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.560 s, sync=0.008 s, total=0.579 s; archivos sincronizados=6, más largo=0.003 s, promedio=0.002 s; distancia=7 kB, estimación=739 kB; lsn=0/37E6028, lsn de redo=0/37E5FB8
+2026-11-08 22:09:49.663 CST [17360] user=postgres db=comercial app=psql client=::1 LOG:  disconnection: session time: 3:20:33.206 user=postgres database=comercial host=::1 port=59225
+2026-11-08 22:10:01.473 CST [13084] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52716
+2026-11-08 22:10:07.111 CST [14100] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52720
+2026-11-08 22:10:07.145 CST [14100] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:10:07.145 CST [14100] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 22:10:07.177 CST [14100] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x6e 0x20 0x72
+2026-11-08 22:10:07.177 CST [14100] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT replace(pg_read_file(pg_current_logfile()), '<REDACTED>', '<REDACTED>')
+2026-11-08 22:10:07.187 CST [14100] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.111 usuario=postgres base=comercial host=::1 port=52720
+2026-11-08 22:11:14.339 CST [10176] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52739
+2026-11-08 22:11:20.831 CST [2812] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52745
+2026-11-08 22:11:20.865 CST [2812] user=postgres db=comercial app=[desconocido] client=::1 FATAL:  la autentificación password falló para el usuario «postgres»
+2026-11-08 22:11:20.865 CST [2812] user=postgres db=comercial app=[desconocido] client=::1 DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+2026-11-08 22:11:28.931 CST [11288] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52751
+2026-11-08 22:11:36.790 CST [16104] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52755
+2026-11-08 22:11:36.822 CST [16104] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:11:36.822 CST [16104] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 22:11:36.853 CST [16104] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x6e 0x20 0x72
+2026-11-08 22:11:36.853 CST [16104] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT replace(pg_read_file(pg_current_logfile()), '<REDACTED>', '<REDACTED>')
+2026-11-08 22:11:36.861 CST [16104] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.107 usuario=postgres base=comercial host=::1 port=52755
+2026-11-08 22:15:03.564 CST [7524] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52979
+2026-11-08 22:15:03.737 CST [8876] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=52980
+2026-11-08 22:15:30.059 CST [6216] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53010
+2026-11-08 22:15:30.144 CST [6216] user=postgres db=postgres app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:15:30.144 CST [6216] user=postgres db=postgres app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=postgres nombre_de_aplicación=pgAdmin 4 - DB:postgres
+2026-11-08 22:15:31.110 CST [5556] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53022
+2026-11-08 22:15:31.119 CST [16296] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53023
+2026-11-08 22:15:31.139 CST [5556] user=postgres db=db_20441231_zadkiel_quintero app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:15:31.139 CST [5556] user=postgres db=db_20441231_zadkiel_quintero app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - DB:db_20441231_zadkiel_quintero
+2026-11-08 22:15:31.149 CST [16296] user=postgres db=db_20441231_zadkiel_quintero app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:15:31.149 CST [16296] user=postgres db=db_20441231_zadkiel_quintero app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=db_20441231_zadkiel_quintero nombre_de_aplicación=pgAdmin 4 - DB:db_20441231_zadkiel_quintero
+2026-11-08 22:15:31.248 CST [5556] user=postgres db=db_20441231_zadkiel_quintero app=pgAdmin 4 - DB:db_20441231_zadkiel_quintero client=::1 LOG:  disconnection: session time: 0:00:00.176 user=postgres database=db_20441231_zadkiel_quintero host=::1 port=53022
+2026-11-08 22:15:35.271 CST [524] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53040
+2026-11-08 22:15:35.273 CST [5896] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53041
+2026-11-08 22:15:35.302 CST [524] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:15:35.302 CST [524] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=pgAdmin 4 - DB:comercial
+2026-11-08 22:15:35.303 CST [5896] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:15:35.303 CST [5896] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=pgAdmin 4 - DB:comercial
+2026-11-08 22:15:35.373 CST [524] user=postgres db=comercial app=pgAdmin 4 - DB:comercial client=::1 LOG:  disconnection: session time: 0:00:00.148 user=postgres database=comercial host=::1 port=53040
+2026-11-08 22:16:33.039 CST [12984] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53075
+2026-11-08 22:16:33.069 CST [12984] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:16:33.069 CST [12984] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=pgAdmin 4 - CONN:431197
+2026-11-08 22:17:45.335 CST [12984] user=postgres db=comercial app=pgAdmin 4 - CONN:431197 client=::1 LOG:  statement: ALTER ROLE postgres WITH PASSWORD 'Alumno2026';
+2026-11-08 22:17:59.755 CST [9236] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53173
+2026-11-08 22:18:04.424 CST [8580] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53178
+2026-11-08 22:18:04.456 CST [8580] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:18:04.457 CST [8580] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 22:18:15.911 CST [8580] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:11.522 usuario=postgres base=comercial host=::1 port=53178
+2026-11-08 22:18:57.956 CST [16372] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53212
+2026-11-08 22:19:02.990 CST [16148] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=53222
+2026-11-08 22:19:03.023 CST [16148] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:19:03.023 CST [16148] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 22:19:03.087 CST [16148] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.133 usuario=postgres base=comercial host=::1 port=53222
+2026-11-08 22:20:08.193 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 22:20:08.363 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.111 s, sync=0.008 s, total=0.170 s; archivos sincronizados=2, más largo=0.006 s, promedio=0.004 s; distancia=5 kB, estimación=666 kB; lsn=0/37E75B0, lsn de redo=0/37E7558
+2026-11-08 22:34:00.591 CST [17092] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=54291
+2026-11-08 22:34:05.427 CST [12484] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=54296
+2026-11-08 22:34:05.460 CST [12484] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:34:05.460 CST [12484] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 22:34:43.441 CST [12484] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER USER "postgres" PASSWORD 'SCRAM-SHA-256$4096:ZCZ6n51v/NV63XCqSwe/Yw==$a5h53kgspW4vSmvLI3weiIy/ysBhFKN0fJlffgaySmE=:FLaoyBvDjoBQ6QHXObjkDTXnietre2PuOQJ+Hc+QBc0='
+2026-11-08 22:35:08.378 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 22:35:08.518 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.117 s, sync=0.008 s, total=0.140 s; archivos sincronizados=2, más largo=0.006 s, promedio=0.004 s; distancia=5 kB, estimación=600 kB; lsn=0/37E8C58, lsn de redo=0/37E8C00
+2026-11-08 22:39:27.167 CST [12484] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:05:21.774 usuario=postgres base=comercial host=::1 port=54296
+2026-11-08 22:53:38.101 CST [5104] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=55140
+2026-11-08 22:53:42.774 CST [8936] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=55144
+2026-11-08 22:53:42.809 CST [8936] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-08 22:53:42.809 CST [8936] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-08 22:55:08.546 CST [6392] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-08 22:55:08.675 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.114 s, sync=0.002 s, total=0.129 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=5 kB, estimación=540 kB; lsn=0/37EA298, lsn de redo=0/37EA240
+2026-11-08 23:17:50.091 CST [5896] user=postgres db=comercial app=pgAdmin 4 - DB:comercial client=::1 LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-11-08 23:17:50.091 CST [12984] user=postgres db=comercial app=pgAdmin 4 - CONN:431197 client=::1 LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-11-08 23:17:50.092 CST [12984] user=postgres db=comercial app=pgAdmin 4 - CONN:431197 client=::1 LOG:  disconnection: session time: 1:01:17.092 user=postgres database=comercial host=::1 port=53075
+2026-11-08 23:17:50.092 CST [5896] user=postgres db=comercial app=pgAdmin 4 - DB:comercial client=::1 LOG:  disconnection: session time: 1:02:14.861 user=postgres database=comercial host=::1 port=53041
+2026-11-08 23:17:50.092 CST [6216] user=postgres db=postgres app=pgAdmin 4 - DB:postgres client=::1 LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-11-08 23:17:50.092 CST [6216] user=postgres db=postgres app=pgAdmin 4 - DB:postgres client=::1 LOG:  disconnection: session time: 1:02:20.076 user=postgres database=postgres host=::1 port=53010
+2026-11-08 23:17:50.092 CST [16296] user=postgres db=db_20441231_zadkiel_quintero app=pgAdmin 4 - DB:db_20441231_zadkiel_quintero client=::1 LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-11-08 23:17:50.092 CST [16296] user=postgres db=db_20441231_zadkiel_quintero app=pgAdmin 4 - DB:db_20441231_zadkiel_quintero client=::1 LOG:  disconnection: session time: 1:02:19.011 user=postgres database=db_20441231_zadkiel_quintero host=::1 port=53023
+2026-11-08 23:17:55.086 CST [8936] user=postgres db=comercial app=psql client=::1 LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-11-08 23:17:55.086 CST [8936] user=postgres db=comercial app=psql client=::1 LOG:  disconnection: session time: 0:24:12.348 user=postgres database=comercial host=::1 port=55144
+
+===== postgresql-2026-11-09_000000.log =====
+2026-11-11 23:45:57.484 CST [6392] user= db= app= client= LOG:  apagando
+2026-11-11 23:45:57.487 CST [6392] user= db= app= client= LOG:  empezando checkpoint: shutdown immediate
+
+===== postgresql-2026-11-10_000000.log =====
+2026-11-11 23:45:57.823 CST [9332] user= db= app= client= ERROR:  cancelando la sentencia debido a una petición del usuario
+2026-11-11 23:45:57.844 CST [6392] user= db= app= client= LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.002 s, sync=0.001 s, total=0.360 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=0 kB, estimación=486 kB; lsn=0/37EA348, lsn de redo=0/37EA348
+
+===== postgresql-2026-11-11_234643.log =====
+2026-11-11 23:46:43.865 CST [6212] user= db= app= client= LOG:  el sistema de bases de datos fue apagado en 2026-11-11 23:45:57 CST
+2026-11-11 23:51:43.912 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-11 23:51:43.981 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.012 s, sync=0.006 s, total=0.122 s; archivos sincronizados=2, más largo=0.003 s, promedio=0.003 s; distancia=0 kB, estimación=0 kB; lsn=0/37EA450, lsn de redo=0/37EA3F8
+
+===== postgresql-2026-11-24_000000.log =====
+2026-11-24 21:42:34.196 CST [12348] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=59409
+2026-11-24 21:42:40.138 CST [18608] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=59410
+2026-11-24 21:42:40.206 CST [18608] user=postgres db=comercial app=[desconocido] client=::1 FATAL:  la autentificación password falló para el usuario «postgres»
+2026-11-24 21:42:40.206 CST [18608] user=postgres db=comercial app=[desconocido] client=::1 DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+2026-11-24 21:42:47.912 CST [16444] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=59411
+2026-11-24 21:42:53.210 CST [14468] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=59412
+2026-11-24 21:42:53.244 CST [14468] user=postgres db=comercial app=[desconocido] client=::1 FATAL:  la autentificación password falló para el usuario «postgres»
+2026-11-24 21:42:53.244 CST [14468] user=postgres db=comercial app=[desconocido] client=::1 DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+2026-11-24 21:43:07.368 CST [10740] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=59413
+2026-11-24 21:43:12.317 CST [18740] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=59414
+2026-11-24 21:43:12.351 CST [18740] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 21:43:12.351 CST [18740] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 21:43:51.192 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-24 21:43:51.412 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.113 s, sync=0.003 s, total=0.386 s; archivos sincronizados=1, más largo=0.003 s, promedio=0.003 s; distancia=8 kB, estimación=8 kB; lsn=0/37EC5C8, lsn de redo=0/37EC570
+2026-11-24 21:50:56.930 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: INSERT INTO clientes (nombre, correo, telefono, rfc, edad, ciudad, codigo_postal) VALUES
+	('Ana Lopez', 'ANA.LOPEZ@example.test', '6671234567', 'LOAA850315AB', 41, 'Culiacan', '80000'),
+	('Jorge DÂ¡az', 'sin-correo', '667', NULL, -3, 'CuliacÂ n', '8000');
+2026-11-24 21:52:09.055 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  error de sintaxis en o cerca de Â«edadÂ» en carÃ¡cter 43
+2026-11-24 21:52:09.055 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT id, nombre, edadFROM clientesWHERE edad IS NOT NULLAND (edad < 18 OR edad > 120);
+2026-11-24 21:52:38.990 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  error de sintaxis en o cerca de Â«ISÂ» en carÃ¡cter 49
+2026-11-24 21:52:38.990 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT id, nombre, edad FROM clientesWHERE edad IS NOT NULLAND (edad < 18 OR edad > 120);
+2026-11-24 21:52:50.745 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  error de sintaxis en o cerca de Â«NULLANDÂ» en carÃ¡cter 57
+2026-11-24 21:52:50.745 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT id, nombre, edad FROM clientes WHERE edad IS NOT NULLAND (edad < 18 OR edad > 120);
+2026-11-24 21:53:51.427 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-24 21:53:52.138 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 6 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.664 s, sync=0.014 s, total=0.711 s; archivos sincronizados=7, más largo=0.003 s, promedio=0.002 s; distancia=8 kB, estimación=8 kB; lsn=0/37EE9A0, lsn de redo=0/37EE948
+2026-11-24 22:24:14.495 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  carÃ¡cter con secuencia de bytes 0x81 en codificaciÃ³n Â«WIN1252Â» no tiene equivalente en la codificaciÃ³n Â«UTF8Â»
+2026-11-24 22:25:29.007 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  error de sintaxis en o cerca de Â«information_schemaÂ» en carÃ¡cter 312
+2026-11-24 22:25:29.007 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT c.ordinal_position AS pos,       c.column_name AS columna,       c.data_type AS tipo,       c.character_maximum_length AS longitud,       c.is_nullable AS acepta_nulos,       c.column_default AS valor_por_defecto,       col_description('public.clientes'::regclass, c.ordinal_position) AS descripcionFROM information_schema.columns cWHERE c.table_schema = 'public'  AND c.table_name = 'clientes'ORDER BY c.ordinal_position;
+2026-11-24 22:26:21.012 CST [11760] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60239
+2026-11-24 22:26:26.263 CST [608] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60244
+2026-11-24 22:26:26.297 CST [608] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 22:26:26.297 CST [608] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 22:26:26.353 CST [608] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.127 usuario=postgres base=comercial host=::1 port=60244
+2026-11-24 22:28:51.212 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-24 22:28:51.563 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 3 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.335 s, sync=0.002 s, total=0.352 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=24 kB, estimación=24 kB; lsn=0/37F4AF8, lsn de redo=0/37F4AA0
+2026-11-24 22:28:54.069 CST [1516] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60274
+2026-11-24 22:28:59.493 CST [8520] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60277
+2026-11-24 22:28:59.526 CST [8520] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 22:28:59.526 CST [8520] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 22:28:59.538 CST [8520] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.080 usuario=postgres base=comercial host=::1 port=60277
+2026-11-24 22:32:23.823 CST [1888] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60339
+2026-11-24 22:32:28.545 CST [13044] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60343
+2026-11-24 22:32:28.579 CST [13044] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 22:32:28.579 CST [13044] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 22:32:28.596 CST [13044] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.087 usuario=postgres base=comercial host=::1 port=60343
+2026-11-24 22:35:58.364 CST [2588] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60421
+2026-11-24 22:36:03.984 CST [18964] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60425
+2026-11-24 22:36:04.018 CST [18964] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 22:36:04.018 CST [18964] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 22:36:04.036 CST [18964] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.089 usuario=postgres base=comercial host=::1 port=60425
+2026-11-24 22:37:12.036 CST [12204] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60451
+2026-11-24 22:37:17.228 CST [18916] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60455
+2026-11-24 22:37:17.262 CST [18916] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 22:37:17.262 CST [18916] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 22:37:17.274 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON TABLE public.clientes IS
+	'Clientes de Comercializadora Norte. Propietario: Gerencia Comercial. Custodio: DBA. ClasificaciÃƒÂ³n: confidencial (contiene datos personales).';
+2026-11-24 22:37:17.654 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.id IS
+	'Identificador interno del cliente. Generado por el sistema.';
+2026-11-24 22:37:17.658 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.nombre IS
+	'Nombre completo. Dato personal identificador directo.';
+2026-11-24 22:37:17.670 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.correo IS
+	'Correo de contacto. Dato personal. Uso: notificaciones al cliente.';
+2026-11-24 22:37:17.672 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.telefono IS
+	'Numero telefonico de contacto. Dato personal. Uso: comunicacion con el cliente.';
+2026-11-24 22:37:17.674 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.rfc IS
+	'RFC del cliente. Dato personal. Uso: facturaciÃƒÂ³n. Cambios auditados en auditoria.cambios_clientes.';
+2026-11-24 22:37:17.675 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.edad IS
+	'Edad en aÃƒÂ±os cumplidos. Dato personal. Uso: analÃƒÂ­tica agregada.';
+2026-11-24 22:37:17.676 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.ciudad IS
+	'Ciudad relacionada con el cliente. Dato de ubicaciÃƒÂ³n. Uso: organizaciÃƒÂ³n y anÃƒÂ¡lisis de clientes por zona.';
+2026-11-24 22:37:17.677 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.codigo_postal IS
+	'Codigo postal relacionado con el cliente. Dato de ubicaciÃƒÂ³n. Uso: identificaciÃƒÂ³n de zona y cobertura.';
+2026-11-24 22:37:17.678 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.fecha_alta IS
+	'Fecha en que el cliente fue registrado en el sistema. Uso: seguimiento de antigÃƒÂ¼edad del cliente.';
+2026-11-24 22:37:17.679 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.segmento IS
+	'ClasificaciÃƒÂ³n comercial del cliente. Uso: organizaciÃƒÂ³n y anÃƒÂ¡lisis de clientes por segmento.';
+2026-11-24 22:37:17.680 CST [18916] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.488 usuario=postgres base=comercial host=::1 port=60455
+2026-11-24 22:38:51.579 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-24 22:38:52.062 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 4 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.444 s, sync=0.013 s, total=0.483 s; archivos sincronizados=5, más largo=0.005 s, promedio=0.003 s; distancia=26 kB, estimación=26 kB; lsn=0/37FB578, lsn de redo=0/37FB520
+2026-11-24 22:49:17.162 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xa2
+2026-11-24 22:55:37.925 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON TABLE public.clientes IS'Clientes de Comercializadora Norte. Propietario: Gerencia Comercial. Custodio: DBA. Clasificacion: confidencial (contiene datos personales).';
+2026-11-24 22:55:46.785 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.id IS
+	'Identificador interno del cliente. Generado por el sistema.';
+2026-11-24 22:55:52.129 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.nombre IS
+	'Nombre completo. Dato personal identificador directo.';
+2026-11-24 22:55:58.322 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.correo IS
+	'Correo de contacto. Dato personal. Uso: notificaciones al cliente.';
+2026-11-24 22:56:02.033 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.telefono IS
+	'Numero telefonico de contacto. Dato personal. Uso: comunicacion con el cliente.';
+2026-11-24 22:56:06.321 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xa2
+2026-11-24 22:56:22.826 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.rfc IS'RFC del cliente. Dato personal. Uso: facturacion. Cambios auditados en auditoria.cambios_clientes.';
+2026-11-24 22:56:29.353 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xa4
+2026-11-24 22:56:59.506 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.edad IS'Edad en anios cumplidos. Dato personal. Uso: analitica agregada.';
+2026-11-24 22:57:16.242 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xa2
+2026-11-24 22:57:32.458 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.ciudad IS
+	'Ciudad relacionada con el cliente. Dato de ubicacion. Uso: organizacion y analisis de clientes por zona.';
+2026-11-24 22:57:45.290 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xa2
+2026-11-24 22:57:56.001 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.codigo_postal IS
+	'Codigo postal relacionado con el cliente. Dato de ubicacion. Uso: identificacion de zona y cobertura.';
+2026-11-24 22:58:09.505 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.fecha_alta IS
+	'Fecha en que el cliente fue registrado en el sistema. Uso: seguimiento de antiguedad del cliente.';
+2026-11-24 22:58:14.465 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xa2
+2026-11-24 22:58:27.906 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN public.clientes.segmento IS
+	'Clasificacion comercial del cliente. Uso: organizacion y analisis de clientes por segmento.';
+2026-11-24 22:58:51.718 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-24 22:58:52.418 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 6 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.674 s, sync=0.009 s, total=0.700 s; archivos sincronizados=4, más largo=0.004 s, promedio=0.003 s; distancia=40 kB, estimación=40 kB; lsn=0/3805868, lsn de redo=0/3805810
+2026-11-24 23:00:14.122 CST [17984] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60907
+2026-11-24 23:00:19.003 CST [5420] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=60915
+2026-11-24 23:00:19.037 CST [5420] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 23:00:19.037 CST [5420] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 23:00:19.106 CST [5420] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.140 usuario=postgres base=comercial host=::1 port=60915
+2026-11-24 23:11:04.864 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  error de sintaxis en o cerca de Â«psqlÂ» en carÃ¡cter 1
+2026-11-24 23:11:04.864 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  psql -U postgres -d comercial --csv -c "SELECT c.column_name AS columna, c.data_type AS tipo, c.character_maximum_length AS longitud, c.is_nullable AS acepta_nulos, col_description('public.clientes'::regclass, c.ordinal_position) AS descripcion FROM information_schema.columns c WHERE c.table_schema = 'public' AND c.table_name = 'clientes' ORDER BY c.ordinal_position" > evidencias/diccionario-clientes.csv
+	ANALYZE;
+2026-11-24 23:11:32.140 CST [15840] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=61353
+2026-11-24 23:11:36.473 CST [15740] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=61357
+2026-11-24 23:11:36.508 CST [15740] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 23:11:36.508 CST [15740] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 23:11:37.996 CST [15740] user=postgres db=comercial app=psql client=::1 LOG:  duraciÃ³n: 1475.158 ms  sentencia: ANALYZE;
+2026-11-24 23:11:38.110 CST [15740] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:01.676 usuario=postgres base=comercial host=::1 port=61357
+2026-11-24 23:13:51.443 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-24 23:13:59.763 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 75 búfers (0.5%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=8.265 s, sync=0.029 s, total=8.321 s; archivos sincronizados=17, más largo=0.004 s, promedio=0.002 s; distancia=588 kB, estimación=588 kB; lsn=0/38989F0, lsn de redo=0/3898960
+2026-11-24 23:40:45.139 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: CREATE SCHEMA gobierno;
+2026-11-24 23:40:45.173 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: REVOKE ALL ON SCHEMA gobierno FROM PUBLIC;
+2026-11-24 23:40:45.199 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: CREATE TABLE gobierno.solicitudes_cambio (
+	    folio            TEXT PRIMARY KEY,
+	    descripcion      TEXT NOT NULL,
+	    solicitado_por   TEXT NOT NULL,
+	    aprobado_por     TEXT,
+	    ambiente         TEXT NOT NULL CHECK (ambiente IN ('desarrollo', 'pruebas', 'produccion')),
+	    fecha_aprobacion TIMESTAMPTZ,
+	    ventana_inicio   TIMESTAMPTZ,
+	    ventana_fin      TIMESTAMPTZ
+	);
+2026-11-24 23:40:47.605 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0x82
+2026-11-24 23:41:00.555 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0x82
+2026-11-24 23:41:22.206 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON TABLE gobierno.solicitudes_cambio IS 'Registro de solicitudes de cambio en la base comercial. Propietario: Comite de cambios. Custodio: DBA. Evidencia de POL-06.';
+2026-11-24 23:41:29.788 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0x82
+2026-11-24 23:41:29.809 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER TABLE clientes ADD COLUMN canal_alta VARCHAR(20);
+2026-11-24 23:41:39.637 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: COMMENT ON COLUMN clientes.canal_alta IS 'Canal por el que se registro el cliente. Cambio CAM-2026-014.';
+2026-11-24 23:42:23.067 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0x82
+2026-11-24 23:42:58.878 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: INSERT INTO gobierno.solicitudes_cambio VALUES ('CAM-2026-014', 'Agregar columna canal_alta a clientes', 'Gerencia Comercial', 'Comite de cambios', 'produccion', now() - interval '1 day', now() - interval '5 minutes', now() + interval '1 hour');
+2026-11-24 23:43:08.181 CST [18740] user=postgres db=comercial app=psql client=::1 LOG:  sentencia: ALTER TABLE clientes ADD COLUMN canal_alta VARCHAR(20);
+2026-11-24 23:43:08.184 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  ya existe la columna Â«canal_altaÂ» en la relaciÃ³n Â«clientesÂ»
+2026-11-24 23:43:08.184 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  ALTER TABLE clientes ADD COLUMN canal_alta VARCHAR(20);
+2026-11-24 23:43:51.790 CST [7156] user= db= app= client= LOG:  empezando checkpoint: time
+2026-11-24 23:43:55.906 CST [7156] user= db= app= client= LOG:  checkpoint completo: escritos 37 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=4.049 s, sync=0.046 s, total=4.116 s; archivos sincronizados=34, más largo=0.003 s, promedio=0.002 s; distancia=165 kB, estimación=546 kB; lsn=0/38C1F50, lsn de redo=0/38C1EF8
+2026-11-24 23:44:42.642 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  error de sintaxis en o cerca de Â«.Â» en carÃ¡cter 26
+2026-11-24 23:44:42.642 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT num, lineaFROM dba.bitacoraORDER BY num DESCLIMIT 20;
+2026-11-24 23:45:28.715 CST [18740] user=postgres db=comercial app=psql client=::1 ERROR:  error de sintaxis en o cerca de Â«dbaÂ» en carÃ¡cter 171
+2026-11-24 23:45:28.715 CST [18740] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT num,       substr(linea, 1, 23) AS momento,       substring(linea from 'user=([^ ]*)') AS usuario,       substring(linea from 'sentencia: (.*)$') AS sentenciaFROM dba.bitacoraWHERE linea ~ 'sentencia: (CREATE|ALTER|DROP|GRANT|REVOKE)'ORDER BY num;
+2026-11-24 23:59:54.461 CST [8240] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63043
+2026-11-24 23:59:59.225 CST [9864] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63050
+2026-11-24 23:59:59.258 CST [9864] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-24 23:59:59.258 CST [9864] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-24 23:59:59.286 CST [9864] user=postgres db=comercial app=psql client=::1 LOG:  disconnection: session time: 0:00:00.096 user=postgres database=comercial host=::1 port=63050
+2026-11-25 00:02:05.178 CST [18748] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63105
+2026-11-25 00:02:10.030 CST [9248] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63114
+2026-11-25 00:02:10.064 CST [9248] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-25 00:02:10.064 CST [9248] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-25 00:02:10.139 CST [9248] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.146 usuario=postgres base=comercial host=::1 port=63114
+2026-11-25 00:02:40.509 CST [13532] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63132
+2026-11-25 00:02:44.849 CST [16712] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63140
+2026-11-25 00:02:44.882 CST [16712] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-25 00:02:44.882 CST [16712] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-25 00:02:44.934 CST [16712] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.122 usuario=postgres base=comercial host=::1 port=63140
+2026-11-25 00:03:51.537 CST [11792] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63173
+2026-11-25 00:03:56.406 CST [17364] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63182
+2026-11-25 00:03:56.439 CST [17364] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-25 00:03:56.439 CST [17364] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-25 00:03:56.454 CST [17364] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.084 usuario=postgres base=comercial host=::1 port=63182
+2026-11-25 00:06:39.044 CST [5016] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63274
+2026-11-25 00:06:43.622 CST [19684] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63281
+2026-11-25 00:06:43.656 CST [19684] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-25 00:06:43.656 CST [19684] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-25 00:06:43.728 CST [19684] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xfa
+2026-11-25 00:06:43.728 CST [19684] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT string_agg('===== ' || name || E'\n' || replace(pg_read_file('log/' || name), '<REDACTED>', '<REDACTED>'), E'\n' ORDER BY name) FROM pg_ls_logdir();
+2026-11-25 00:06:43.734 CST [19684] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.147 usuario=postgres base=comercial host=::1 port=63281
+2026-11-25 00:08:07.722 CST [11556] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63344
+2026-11-25 00:08:12.635 CST [19168] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63348
+2026-11-25 00:08:12.668 CST [19168] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-25 00:08:12.669 CST [19168] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-25 00:08:12.699 CST [19168] user=postgres db=comercial app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xfa
+2026-11-25 00:08:12.699 CST [19168] user=postgres db=comercial app=psql client=::1 SENTENCIA:  SELECT string_agg('===== ' || name || E'\n' || replace(pg_read_file('log/' || name), '<REDACTED>', '<REDACTED>'), E'\n' ORDER BY name) FROM pg_ls_logdir();
+2026-11-25 00:08:12.707 CST [19168] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.109 usuario=postgres base=comercial host=::1 port=63348
+2026-11-25 00:11:07.818 CST [1388] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63388
+2026-11-25 00:11:12.597 CST [19816] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63392
+2026-11-25 00:11:12.631 CST [19816] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-25 00:11:12.631 CST [19816] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+2026-11-25 00:11:13.121 CST [19816] user=postgres db=comercial app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.559 usuario=postgres base=comercial host=::1 port=63392
+2026-11-25 00:13:44.756 CST [9200] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63415
+2026-11-25 00:13:51.964 CST [18752] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63425
+2026-11-25 00:13:51.998 CST [18752] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+2026-11-25 00:13:51.998 CST [18752] user=postgres db=comercial app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=comercial nombre_de_aplicación=psql
+
